@@ -48,7 +48,7 @@ def inference_second_stream(model, image):
 
 def prepare_second_stream():
     cfg2 = get_cfg()
-    cfg2.merge_from_file('./configs/second_stream.yaml')
+    cfg2.merge_from_file('./src/configs/second_stream.yaml')
     cfg2.MODEL.WEIGHTS = "/home/legion/.torch/iopath_cache/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/model_final_a3ec72.pkl"
     model2 = CustomPredictor(cfg2)
     return model2
@@ -107,7 +107,7 @@ if __name__ == '__main__':
     # if the scores for all contact states is less than corresponding thresholds, No-Contact is predicted; 0.5 is dummy here, it is not used.
 
     model2 = prepare_second_stream()
-    model1 = prepare_first_stream('./configs/ContactHands.yaml', './models/combined_data_model.pth', roi_score_thresh)
+    model1 = prepare_first_stream('./src/configs/ContactHands.yaml', './models/combined_data_model.pth', roi_score_thresh)
 
     images = sorted(os.listdir(images_path))
     count = 0
@@ -123,3 +123,53 @@ if __name__ == '__main__':
         v = v.draw_instance_predictions(outputs["instances"].to("cpu"))
         out_im = add_legend(v.get_image()[:, :, ::-1])
         cv2.imwrite('./results/res_' + img, out_im)        
+
+
+def overlap_ratio(hand_box, roi):
+    x1 = max(hand_box[0], roi[0])
+    y1 = max(hand_box[1], roi[1])
+    x2 = min(hand_box[2], roi[2])
+    y2 = min(hand_box[3], roi[3])
+
+    if x2 <= x1 or y2 <= y1:
+        return 0.0
+
+    intersection = (x2 - x1) * (y2 - y1)
+    hand_area = max(
+        1.0,
+        (hand_box[2] - hand_box[0]) *
+        (hand_box[3] - hand_box[1])
+    )
+
+    return intersection / hand_area
+
+
+def find_painting_touches(
+    instances,
+    roi,
+    oc_thresh=0.6,
+    overlap_thresh=0.3,
+):
+    if len(instances) == 0:
+        return []
+
+    boxes = instances.pred_boxes.tensor.numpy()
+    det_scores = instances.scores.numpy()
+    cats = instances.pred_cats.numpy()
+
+    oc_scores = cats[:, 3] * det_scores
+
+    alerts = []
+
+    for box, oc in zip(boxes, oc_scores):
+        if oc < oc_thresh:
+            continue
+
+        ratio = overlap_ratio(box, roi)
+
+        if ratio >= overlap_thresh:
+            alerts.append(
+                (box, float(oc), float(ratio))
+            )
+
+    return alerts
