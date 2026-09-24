@@ -4,6 +4,9 @@ import time
 
 from src.core.contacthands import ContactHandsDetector
 from src.services.alert import trigger_alert
+from src.services.history import save_alert
+from pathlib import Path
+from datetime import datetime
 from src.services.status import save_status
 from src.utils.config import (
     ROI,
@@ -13,6 +16,8 @@ from src.utils.config import (
 
 FRAME_PATH = "/mnt/c/Users/LEGION/PaintingProtection/webcam_frame.jpg"
 STATUS_PATH = "/mnt/c/Users/LEGION/PaintingProtection/webcam_status.txt"
+ALERT_DIR = Path(__file__).resolve().parents[1] / "data" / "alerts"
+ALERT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def main():
@@ -53,7 +58,19 @@ def main():
 
             if touches:
                 status = "ALERT: CHAM TRANH"
-                trigger_alert(status)
+
+                if trigger_alert(status):
+                    _, oc, overlap = touches[0]
+
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    image_path = ALERT_DIR / f"alert_{timestamp}.jpg"
+                    cv2.imwrite(str(image_path), image)
+
+                    save_alert(
+                        status,
+                        oc=oc,
+                        overlap=overlap,
+                    )
             else:
                 status = "OK"
 

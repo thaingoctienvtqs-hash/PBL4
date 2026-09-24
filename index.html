@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>PBL4 - Painting Protection</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: #1f2937;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#status {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.ok {
+    color: #22c55e;
+}
+
+.alert {
+    color: #ef4444;
+}
+
+.info {
+    color: #9ca3af;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #374151;
+}
+
+th {
+    background: #374151;
+}
+
+.alert-row {
+    color: #f87171;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h1>🖼️ PBL4</h1>
+        <h2>Hệ thống giám sát và bảo vệ tranh</h2>
+
+        <div id="status" class="info">
+            Đang kết nối...
+        </div>
+
+        <div id="time" style="text-align:center;"></div>
+    </div>
+
+    <div class="card">
+        <h2>📋 Lịch sử cảnh báo</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Thời gian</th>
+                    <th>Trạng thái</th>
+                    <th>OC</th>
+                    <th>Overlap</th>
+                </tr>
+            </thead>
+
+            <tbody id="history">
+                <tr>
+                    <td colspan="4">Đang tải...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script>
+
+async function updateStatus() {
+
+    try {
+
+        const response =
+            await fetch("http://localhost:8000/status");
+
+        const data = await response.json();
+
+        const status =
+            document.getElementById("status");
+
+        status.textContent = data.status;
+
+        if (data.status.startsWith("ALERT")) {
+
+            status.className = "alert";
+
+        } else if (data.status === "OK") {
+
+            status.className = "ok";
+
+        } else {
+
+            status.className = "info";
+        }
+
+        document.getElementById("time").textContent =
+            "Cập nhật: " +
+            new Date().toLocaleTimeString("vi-VN");
+
+    } catch (error) {
+
+        document.getElementById("status").textContent =
+            "Không kết nối được API";
+
+        document.getElementById("status").className =
+            "alert";
+    }
+}
+
+
+async function updateHistory() {
+
+    try {
+
+        const response =
+            await fetch("http://localhost:8000/history");
+
+        const data = await response.json();
+
+        const history =
+            document.getElementById("history");
+
+        if (data.length === 0) {
+
+            history.innerHTML =
+                '<tr><td colspan="4">Chưa có cảnh báo</td></tr>';
+
+            return;
+        }
+
+        const recent =
+            data.slice().reverse().slice(0, 20);
+
+        history.innerHTML = recent.map(item => {
+
+            const oc =
+                item.oc !== null
+                    ? Number(item.oc).toFixed(3)
+                    : "-";
+
+            const overlap =
+                item.overlap !== null
+                    ? (Number(item.overlap) * 100).toFixed(0) + "%"
+                    : "-";
+
+            return `
+                <tr class="alert-row">
+                    <td>${item.time}</td>
+                    <td>${item.status}</td>
+                    <td>${oc}</td>
+                    <td>${overlap}</td>
+                </tr>
+            `;
+
+        }).join("");
+
+    } catch (error) {
+
+        document.getElementById("history").innerHTML =
+            '<tr><td colspan="4">Không tải được lịch sử</td></tr>';
+    }
+}
+
+
+updateStatus();
+updateHistory();
+
+setInterval(updateStatus, 500);
+setInterval(updateHistory, 2000);
+
+</script>
+
+</body>
+</html>
