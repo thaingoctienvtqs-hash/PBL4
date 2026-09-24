@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+
+# Dataset lớn
+dataset/*
+!dataset/.gitkeep
+
+# Model / checkpoint lớn
+models/*.pth
+models/*.pkl
+models/*.pt
+models/*.onnx
+
+# Realtime files
+webcam_frame.jpg
+webcam_result.jpg
+webcam_status.txt
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
