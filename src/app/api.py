@@ -2,15 +2,23 @@ from pathlib import Path
 import json
 
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.services.status import get_status
 
 
+
+
+ALERT_DIR = Path(__file__).resolve().parents[1] / "data" / "alerts"
+ALERT_DIR.mkdir(parents=True, exist_ok=True)
+
 app = FastAPI(
     title="PBL4 Painting Protection API",
     version="1.0.0",
 )
+
+app.mount("/alerts", StaticFiles(directory=str(ALERT_DIR)), name="alerts")
 
 
 app.add_middleware(

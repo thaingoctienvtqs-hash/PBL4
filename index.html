@@ -95,6 +95,7 @@ th {
                     <th>Trạng thái</th>
                     <th>OC</th>
                     <th>Overlap</th>
+                    <th>Bằng chứng</th>
                 </tr>
             </thead>
 
@@ -193,6 +194,13 @@ async function updateHistory() {
                     <td>${item.status}</td>
                     <td>${oc}</td>
                     <td>${overlap}</td>
+                    <td>
+                        ${
+                            item.image
+                                ? `<a href="http://localhost:8000/alerts/${encodeURIComponent(item.image)}" target="_blank">🖼️ Xem ảnh</a>`
+                                : "-"
+                        }
+                    </td>
                 </tr>
             `;
 

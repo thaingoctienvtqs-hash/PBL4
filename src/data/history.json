@@ -154,5 +154,276 @@
     "status": "ALERT: CHAM TRANH",
     "oc": 0.9729347229003906,
     "overlap": 1.0
+  },
+  {
+    "time": "2026-09-24 15:57:08",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9962605834007263,
+    "overlap": 1.0
+  },
+  {
+    "time": "2026-09-24 15:57:10",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9985536336898804,
+    "overlap": 1.0
+  },
+  {
+    "time": "2026-09-24 15:57:14",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9950677752494812,
+    "overlap": 1.0
+  },
+  {
+    "time": "2026-09-24 15:58:19",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.8048630356788635,
+    "overlap": 1.0
+  },
+  {
+    "time": "2026-09-24 16:00:06",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9976137280464172,
+    "overlap": 1.0
+  },
+  {
+    "time": "2026-09-24 16:00:08",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9989938735961914,
+    "overlap": 1.0
+  },
+  {
+    "time": "2026-09-24 16:00:10",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9987878799438477,
+    "overlap": 1.0
+  },
+  {
+    "time": "2026-09-24 16:00:12",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9992523789405823,
+    "overlap": 1.0
+  },
+  {
+    "time": "2026-09-24 16:00:14",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9992387294769287,
+    "overlap": 1.0
+  },
+  {
+    "time": "2026-09-24 16:14:54",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.726549506187439,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:10",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9980394840240479,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:12",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9987621307373047,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:14",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9594380259513855,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:16",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9768465757369995,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:18",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9974008798599243,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:20",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9936087727546692,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:23",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9920373558998108,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:25",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9983978271484375,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:27",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9975267052650452,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:29",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9980928897857666,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:31",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9981452822685242,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:34",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.7500001788139343,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:15:37",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9340329170227051,
+    "overlap": 1.0,
+    "image": null
+  },
+  {
+    "time": "2026-09-24 16:23:38",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.6581364870071411,
+    "overlap": 1.0,
+    "image": "alert_20260924_162338_085831.jpg"
+  },
+  {
+    "time": "2026-09-24 16:23:52",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.7029118537902832,
+    "overlap": 1.0,
+    "image": "alert_20260924_162352_330408.jpg"
+  },
+  {
+    "time": "2026-09-24 16:24:49",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9943990707397461,
+    "overlap": 1.0,
+    "image": "alert_20260924_162449_238128.jpg"
+  },
+  {
+    "time": "2026-09-24 16:26:18",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.8699541091918945,
+    "overlap": 1.0,
+    "image": "alert_20260924_162618_137924.jpg"
+  },
+  {
+    "time": "2026-09-24 16:26:38",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.7070757746696472,
+    "overlap": 1.0,
+    "image": "alert_20260924_162638_815774.jpg"
+  },
+  {
+    "time": "2026-09-24 16:26:44",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9974239468574524,
+    "overlap": 1.0,
+    "image": "alert_20260924_162644_281849.jpg"
+  },
+  {
+    "time": "2026-09-24 16:26:46",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9945759177207947,
+    "overlap": 1.0,
+    "image": "alert_20260924_162646_369587.jpg"
+  },
+  {
+    "time": "2026-09-24 16:26:48",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.8727655410766602,
+    "overlap": 1.0,
+    "image": "alert_20260924_162648_470446.jpg"
+  },
+  {
+    "time": "2026-09-24 16:29:24",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.7486584782600403,
+    "overlap": 1.0,
+    "image": "alert_20260924_162924_463388.jpg"
+  },
+  {
+    "time": "2026-09-24 16:30:12",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.926363468170166,
+    "overlap": 1.0,
+    "image": "alert_20260924_163012_723937.jpg"
+  },
+  {
+    "time": "2026-09-24 16:30:16",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9649054408073425,
+    "overlap": 1.0,
+    "image": "alert_20260924_163016_159423.jpg"
+  },
+  {
+    "time": "2026-09-24 16:30:18",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9980682730674744,
+    "overlap": 1.0,
+    "image": "alert_20260924_163018_456217.jpg"
+  },
+  {
+    "time": "2026-09-24 16:30:31",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9950685501098633,
+    "overlap": 1.0,
+    "image": "alert_20260924_163031_729935.jpg"
+  },
+  {
+    "time": "2026-09-24 16:30:33",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.995893657207489,
+    "overlap": 1.0,
+    "image": "alert_20260924_163033_820464.jpg"
+  },
+  {
+    "time": "2026-09-24 16:30:35",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9788816571235657,
+    "overlap": 1.0,
+    "image": "alert_20260924_163035_834992.jpg"
+  },
+  {
+    "time": "2026-09-24 16:30:37",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.973870038986206,
+    "overlap": 1.0,
+    "image": "alert_20260924_163037_851717.jpg"
+  },
+  {
+    "time": "2026-09-24 16:30:39",
+    "status": "ALERT: CHAM TRANH",
+    "oc": 0.9723672866821289,
+    "overlap": 1.0,
+    "image": "alert_20260924_163039_899983.jpg"
   }
 ]

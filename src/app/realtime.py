@@ -1,21 +1,19 @@
 import cv2
 import os
 import time
+from pathlib import Path
+from datetime import datetime
 
 from src.core.contacthands import ContactHandsDetector
 from src.services.alert import trigger_alert
 from src.services.history import save_alert
-from pathlib import Path
-from datetime import datetime
 from src.services.status import save_status
-from src.utils.config import (
-    ROI,
-    OC_THRESH,
-    OVERLAP_THRESH,
-)
+from src.utils.config import ROI, OC_THRESH, OVERLAP_THRESH
+
 
 FRAME_PATH = "/mnt/c/Users/LEGION/PaintingProtection/webcam_frame.jpg"
 STATUS_PATH = "/mnt/c/Users/LEGION/PaintingProtection/webcam_status.txt"
+
 ALERT_DIR = Path(__file__).resolve().parents[1] / "data" / "alerts"
 ALERT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -53,7 +51,7 @@ def main():
                 image,
                 ROI,
                 OC_THRESH,
-                OVERLAP_THRESH,
+                OVERLAP_THRESH
             )
 
             if touches:
@@ -62,15 +60,36 @@ def main():
                 if trigger_alert(status):
                     _, oc, overlap = touches[0]
 
-                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                    image_path = ALERT_DIR / f"alert_{timestamp}.jpg"
-                    cv2.imwrite(str(image_path), image)
+                    timestamp = datetime.now().strftime(
+                        "%Y%m%d_%H%M%S_%f"
+                    )
+
+                    image_path = (
+                        ALERT_DIR / f"alert_{timestamp}.jpg"
+                    )
+
+                    saved = cv2.imwrite(
+                        str(image_path),
+                        image
+                    )
+
+                    print(
+                        f"Evidence: {image_path}",
+                        flush=True
+                    )
+
+                    print(
+                        f"Evidence saved: {saved}",
+                        flush=True
+                    )
 
                     save_alert(
                         status,
                         oc=oc,
                         overlap=overlap,
+                        image_path=str(image_path)
                     )
+
             else:
                 status = "OK"
 
