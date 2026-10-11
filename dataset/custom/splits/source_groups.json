@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "seed": "pbl4-custom-v1",
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "splits": {
+    "train": [],
+    "val": [],
+    "test": []
+  },
+  "source_groups": 0,
+  "unique_images": 0,
+  "image_counts": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+  },
+  "source_group_counts_by_split": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+  },
+  "duplicate_image_hash_groups": 0,
+  "duplicate_images_excluded": 0,
+  "duplicate_image_paths_excluded": [],
+  "meaningful_evaluation": false,
+  "readiness": "No reviewed custom polygons exist; nothing is eligible for YOLO segmentation splits."
+}

@@ -2,7 +2,9 @@ from pathlib import Path
 
 
 def save_status(status, path):
-    Path(path).write_text(status, encoding="utf-8")
+    target = Path(path)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(status, encoding="utf-8")
 
 
 def get_status(path):

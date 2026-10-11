@@ -1,0 +1,54 @@
+{
+  "sample_type": "SYNTHETIC_LOGIC_ONLY",
+  "generated_at_utc": "2026-10-11T05:49:13.325918+00:00",
+  "test_scope": "ContactAnalyzer on hand-supplied geometric detections; no image model, video labels, or real footage involved.",
+  "scenarios": [
+    {
+      "sample_type": "SYNTHETIC_LOGIC_ONLY",
+      "scenario_label": "SAFE",
+      "expected_contact": false,
+      "predicted_contact": false,
+      "event_count": 0,
+      "states_seen": [
+        "safe"
+      ],
+      "pass": true
+    },
+    {
+      "sample_type": "SYNTHETIC_LOGIC_ONLY",
+      "scenario_label": "NEAR",
+      "expected_contact": false,
+      "predicted_contact": false,
+      "event_count": 0,
+      "states_seen": [
+        "near"
+      ],
+      "pass": true
+    },
+    {
+      "sample_type": "SYNTHETIC_LOGIC_ONLY",
+      "scenario_label": "CONTACT",
+      "expected_contact": true,
+      "predicted_contact": true,
+      "event_count": 1,
+      "states_seen": [
+        "contact_event",
+        "contact_pending"
+      ],
+      "pass": true
+    }
+  ],
+  "counts": {
+    "true_positive": 1,
+    "false_positive": 0,
+    "false_negative": 0,
+    "true_negative": 2
+  },
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "synthetic_event_detection_rate": 1.0,
+  "false_alarms_per_hour": null,
+  "false_alarms_per_hour_note": "Not meaningful: these short geometric logic cases are not representative labeled video durations.",
+  "real_world_artwork_contact_validation": false
+}

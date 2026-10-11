@@ -1,3 +1,7 @@
+# Current Windows setup
+
+For a fresh Windows checkout, Python version, dependency install, cache placement, and data reacquisition, follow [WINDOWS_TRANSFER.md](WINDOWS_TRANSFER.md). The legacy notes below describe the original ContactHands/Detectron2 environment and are not a current portable environment recipe.
+
 # PBL4 - Setup môi trường
 
 ## 1. Clone repository

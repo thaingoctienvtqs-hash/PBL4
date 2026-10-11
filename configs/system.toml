@@ -1,0 +1,66 @@
+[model]
+architecture = "YOLOv8n-seg"
+weights = "yolov8n-seg.pt"
+pretrained_weights = "yolov8n-seg.pt"
+device = "cpu"
+image_size = 320
+confidence_threshold = 0.5
+tracker = "bytetrack.yaml"
+
+[classes]
+painting = 0
+person = 1
+hand = 2
+tool = 3
+hand_aliases = ["hand", "human hand", "left hand", "right hand"]
+tool_aliases = ["tool", "pen", "scissors", "knife"]
+
+[painting_roi]
+enabled = true
+mode = "when_missing"
+# Normalized polygon vertices. This is a fixed-camera demonstrator ROI and must be calibrated per scene.
+points = [[0.35, 0.18], [0.65, 0.18], [0.65, 0.78], [0.35, 0.78]]
+
+[hand_landmarker]
+enabled = false
+task_model = "dataset/public/mediapipe/hand_landmarker.task"
+min_detection_confidence = 0.5
+num_hands = 4
+
+[contact]
+contact_overlap_threshold = 0.2
+near_distance_threshold = 20.0
+minimum_contact_duration = 0.75
+required_positive_frames = 4
+sliding_window_size = 6
+alert_cooldown = 5.0
+
+[server]
+host = "0.0.0.0"
+port = 8000
+max_frame_bytes = 8388608
+database_path = "server/data/events.sqlite3"
+evidence_directory = "server/data/evidence"
+save_evidence = true
+
+[training]
+epochs = 20
+image_size = 320
+batch_size = 1
+learning_rate = 0.001
+augment = true
+workers = 0
+device = "cpu"
+seed = 42
+project = "experiments"
+cache = false
+minimum_available_ram_bytes = 3221225472
+smoke_fraction = 0.1
+
+[dataset]
+root = "dataset"
+train_ratio = 0.7
+val_ratio = 0.2
+test_ratio = 0.1
+split_seed = 42
+group_fields = ["video_id", "session_id", "person_id"]

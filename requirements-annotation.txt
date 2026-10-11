@@ -1,0 +1,2 @@
+# Optional desktop polygon annotation tool; compatible with Python >=3.12.
+labelme==7.8.1

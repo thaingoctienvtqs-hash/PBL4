@@ -1,0 +1,2154 @@
+{
+  "generated_at_utc": "2026-10-11T05:54:26+00:00",
+  "verified_downloads": [
+    {
+      "path": "dataset/public/open_images/metadata/oidv7-class-descriptions-boxable.csv",
+      "hash_matches": true,
+      "bytes": 12064,
+      "format_validation": {
+        "format_valid": true,
+        "rows": 601,
+        "columns": [
+          "LabelName",
+          "DisplayName"
+        ]
+      }
+    },
+    {
+      "path": "dataset/public/other_sources/vcoco/annotations/vcoco_train.json",
+      "hash_matches": true,
+      "bytes": 3135892,
+      "format_validation": {
+        "format_valid": true,
+        "actions": 26,
+        "action_names": [
+          "hold",
+          "stand",
+          "sit",
+          "ride",
+          "walk",
+          "look",
+          "hit",
+          "eat",
+          "jump",
+          "lay",
+          "talk_on_phone",
+          "carry",
+          "throw",
+          "catch",
+          "cut",
+          "run",
+          "work_on_computer",
+          "ski",
+          "surf",
+          "skateboard",
+          "smile",
+          "drink",
+          "kick",
+          "point",
+          "read",
+          "snowboard"
+        ]
+      }
+    },
+    {
+      "path": "dataset/public/other_sources/vcoco/metadata/LICENSE",
+      "hash_matches": true,
+      "bytes": 1133,
+      "format_validation": {
+        "format_valid": true
+      }
+    },
+    {
+      "path": "dataset/public/open_images/metadata/oidv7-classes-segmentation.txt",
+      "hash_matches": true,
+      "bytes": 3351,
+      "format_validation": {
+        "format_valid": true
+      }
+    },
+    {
+      "path": "dataset/public/open_images/metadata/oidv7-class-descriptions.csv",
+      "hash_matches": true,
+      "bytes": 501178,
+      "format_validation": {
+        "format_valid": true,
+        "rows": 20931,
+        "columns": [
+          "LabelName",
+          "DisplayName"
+        ]
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/validation-annotations-object-segmentation.csv",
+      "hash_matches": true,
+      "bytes": 2920821,
+      "format_validation": {
+        "format_valid": true,
+        "rows": 24730,
+        "columns": [
+          "MaskPath",
+          "ImageID",
+          "LabelName",
+          "BoxID",
+          "BoxXMin",
+          "BoxXMax",
+          "BoxYMin",
+          "BoxYMax",
+          "PredictedIoU",
+          "Clicks"
+        ]
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/validation-annotations-bbox.csv",
+      "hash_matches": true,
+      "bytes": 25105048,
+      "format_validation": {
+        "format_valid": true,
+        "rows": 303980,
+        "columns": [
+          "ImageID",
+          "Source",
+          "LabelName",
+          "Confidence",
+          "XMin",
+          "XMax",
+          "YMin",
+          "YMax",
+          "IsOccluded",
+          "IsTruncated",
+          "IsGroupOf",
+          "IsDepiction",
+          "IsInside"
+        ]
+      }
+    },
+    {
+      "path": "dataset/public/open_images/metadata/validation-images-with-rotation.csv",
+      "hash_matches": true,
+      "bytes": 15245485,
+      "format_validation": {
+        "format_valid": true,
+        "rows": 41620,
+        "columns": [
+          "ImageID",
+          "Subset",
+          "OriginalURL",
+          "OriginalLandingURL",
+          "License",
+          "AuthorProfileURL",
+          "Author",
+          "Title",
+          "OriginalSize",
+          "OriginalMD5",
+          "Thumbnail300KURL",
+          "Rotation"
+        ]
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-0.zip",
+      "hash_matches": true,
+      "bytes": 3746207,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1566
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-1.zip",
+      "hash_matches": true,
+      "bytes": 3671742,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1571
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-2.zip",
+      "hash_matches": true,
+      "bytes": 3507780,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1447
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-3.zip",
+      "hash_matches": true,
+      "bytes": 4122191,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1765
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-4.zip",
+      "hash_matches": true,
+      "bytes": 3459177,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1473
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-5.zip",
+      "hash_matches": true,
+      "bytes": 3549308,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1561
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-6.zip",
+      "hash_matches": true,
+      "bytes": 3503979,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1495
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-7.zip",
+      "hash_matches": true,
+      "bytes": 3473248,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1467
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-8.zip",
+      "hash_matches": true,
+      "bytes": 3853829,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1609
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-9.zip",
+      "hash_matches": true,
+      "bytes": 3849739,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1686
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-a.zip",
+      "hash_matches": true,
+      "bytes": 3360016,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1464
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-b.zip",
+      "hash_matches": true,
+      "bytes": 3530025,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1530
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-c.zip",
+      "hash_matches": true,
+      "bytes": 3619116,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1665
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-d.zip",
+      "hash_matches": true,
+      "bytes": 3402178,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1504
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-e.zip",
+      "hash_matches": true,
+      "bytes": 3721143,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1536
+      }
+    },
+    {
+      "path": "dataset/public/open_images/original_annotations/mask_shards/validation-masks-f.zip",
+      "hash_matches": true,
+      "bytes": 3193857,
+      "format_validation": {
+        "format_valid": true,
+        "members": 1391
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/eb97d92532808dc6.jpg",
+      "hash_matches": true,
+      "bytes": 168589,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/49c13010ba2a6395.jpg",
+      "hash_matches": true,
+      "bytes": 179943,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/cfdb8ad0e8c68054.jpg",
+      "hash_matches": true,
+      "bytes": 632223,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 681,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/f380abeff1c2838d.jpg",
+      "hash_matches": true,
+      "bytes": 813736,
+      "format_validation": {
+        "valid": true,
+        "width": 977,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/a9a8fb7b7c44a376.jpg",
+      "hash_matches": true,
+      "bytes": 390716,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 689,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/9007d38b9cfd0e53.jpg",
+      "hash_matches": true,
+      "bytes": 365814,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/df61f7297c06866b.jpg",
+      "hash_matches": true,
+      "bytes": 280645,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/8179463a99757b11.jpg",
+      "hash_matches": true,
+      "bytes": 123395,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/31b2fbf65d04dc2a.jpg",
+      "hash_matches": true,
+      "bytes": 145233,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/b37629b16f6260a2.jpg",
+      "hash_matches": true,
+      "bytes": 207477,
+      "format_validation": {
+        "valid": true,
+        "width": 678,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/86659395ac46f0ba.jpg",
+      "hash_matches": true,
+      "bytes": 276926,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 677,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/2f8519bef8ae1be2.jpg",
+      "hash_matches": true,
+      "bytes": 128876,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/8b2ecf1bf3a03bdf.jpg",
+      "hash_matches": true,
+      "bytes": 260623,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 767,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/a6ee28c427dafa94.jpg",
+      "hash_matches": true,
+      "bytes": 298299,
+      "format_validation": {
+        "valid": true,
+        "width": 683,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/75489b3b21039330.jpg",
+      "hash_matches": true,
+      "bytes": 147905,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 556,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/82f1a9e2176a2145.jpg",
+      "hash_matches": true,
+      "bytes": 120093,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/e3a105756dfc8062.jpg",
+      "hash_matches": true,
+      "bytes": 525193,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 613,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/ca025cba1d6fd1c8.jpg",
+      "hash_matches": true,
+      "bytes": 844460,
+      "format_validation": {
+        "valid": true,
+        "width": 683,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/d72175fe6f73495e.jpg",
+      "hash_matches": true,
+      "bytes": 651484,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 682,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/e96e29141cab0bc6.jpg",
+      "hash_matches": true,
+      "bytes": 560239,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/02fcc80210b7cd5b.jpg",
+      "hash_matches": true,
+      "bytes": 760725,
+      "format_validation": {
+        "valid": true,
+        "width": 683,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/8c8313003cc8f081.jpg",
+      "hash_matches": true,
+      "bytes": 546423,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/2fbbee1ecc00b515.jpg",
+      "hash_matches": true,
+      "bytes": 109701,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 954,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/dc75142906a58d1e.jpg",
+      "hash_matches": true,
+      "bytes": 260395,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/7f8ef92c55a63b32.jpg",
+      "hash_matches": true,
+      "bytes": 103965,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 671,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/92a7c03c939944a3.jpg",
+      "hash_matches": true,
+      "bytes": 402400,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/2b96210e388009ff.jpg",
+      "hash_matches": true,
+      "bytes": 183086,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/705cd0f2472a5424.jpg",
+      "hash_matches": true,
+      "bytes": 132161,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/e14d08276ee6391d.jpg",
+      "hash_matches": true,
+      "bytes": 43529,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/4dea4e5cd46ba41d.jpg",
+      "hash_matches": true,
+      "bytes": 803210,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 576,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/f73b5ab96e12a7c2.jpg",
+      "hash_matches": true,
+      "bytes": 95847,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/c551aea05b9a7c57.jpg",
+      "hash_matches": true,
+      "bytes": 127441,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 821,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/7b9ac446f589d9b3.jpg",
+      "hash_matches": true,
+      "bytes": 402427,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/30dc8f6e837f7b47.jpg",
+      "hash_matches": true,
+      "bytes": 128019,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 682,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/272b1e8e7117cfab.jpg",
+      "hash_matches": true,
+      "bytes": 166106,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/3345a69be733d5f2.jpg",
+      "hash_matches": true,
+      "bytes": 413734,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 750,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/ccd1baf21b64d13a.jpg",
+      "hash_matches": true,
+      "bytes": 522360,
+      "format_validation": {
+        "valid": true,
+        "width": 678,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/775cbcfc9813d9b3.jpg",
+      "hash_matches": true,
+      "bytes": 108316,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/0b876e80ebc98978.jpg",
+      "hash_matches": true,
+      "bytes": 198477,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/20475afc076832f3.jpg",
+      "hash_matches": true,
+      "bytes": 111153,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/9d69848590304a04.jpg",
+      "hash_matches": true,
+      "bytes": 303583,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 767,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/b1d30660a76bd843.jpg",
+      "hash_matches": true,
+      "bytes": 354080,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/9356eb642fb13c87.jpg",
+      "hash_matches": true,
+      "bytes": 434064,
+      "format_validation": {
+        "valid": true,
+        "width": 929,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/8d3142853f95bb80.jpg",
+      "hash_matches": true,
+      "bytes": 605375,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 654,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/a9dc47961e3ffc92.jpg",
+      "hash_matches": true,
+      "bytes": 266150,
+      "format_validation": {
+        "valid": true,
+        "width": 768,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/ad08afb5c0f5bb34.jpg",
+      "hash_matches": true,
+      "bytes": 184970,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/1137e8fdcdfb2976.jpg",
+      "hash_matches": true,
+      "bytes": 588186,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 636,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/37313a1dd7f2fd3e.jpg",
+      "hash_matches": true,
+      "bytes": 128410,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/abc2f1094f20ab42.jpg",
+      "hash_matches": true,
+      "bytes": 206493,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 680,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/b4c7d3bc294ce9b9.jpg",
+      "hash_matches": true,
+      "bytes": 678084,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/1893009e751e6d21.jpg",
+      "hash_matches": true,
+      "bytes": 67754,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 327,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/1f3915bdd8737cd8.jpg",
+      "hash_matches": true,
+      "bytes": 272366,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/12e529ac3ceecdb3.jpg",
+      "hash_matches": true,
+      "bytes": 81489,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/857b6398458a0474.jpg",
+      "hash_matches": true,
+      "bytes": 68915,
+      "format_validation": {
+        "valid": true,
+        "width": 681,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/f8687bab62acc83e.jpg",
+      "hash_matches": true,
+      "bytes": 71904,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/483ade136f9e676d.jpg",
+      "hash_matches": true,
+      "bytes": 254300,
+      "format_validation": {
+        "valid": true,
+        "width": 768,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/1a08289e9fcda126.jpg",
+      "hash_matches": true,
+      "bytes": 109992,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/df85e966037f9ae8.jpg",
+      "hash_matches": true,
+      "bytes": 271973,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/bd55ece1044ab937.jpg",
+      "hash_matches": true,
+      "bytes": 497408,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/7dbaee3401e010fb.jpg",
+      "hash_matches": true,
+      "bytes": 244416,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/90ed579e04c8b872.jpg",
+      "hash_matches": true,
+      "bytes": 163753,
+      "format_validation": {
+        "valid": true,
+        "width": 588,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/a0a856528c99b22f.jpg",
+      "hash_matches": true,
+      "bytes": 227040,
+      "format_validation": {
+        "valid": true,
+        "width": 768,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/f2a857d82894ff0d.jpg",
+      "hash_matches": true,
+      "bytes": 237163,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/3fcd4d7ee5c3b03d.jpg",
+      "hash_matches": true,
+      "bytes": 261516,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 1014,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/4c255e74648107e7.jpg",
+      "hash_matches": true,
+      "bytes": 268104,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/e3f2995cf9135eaa.jpg",
+      "hash_matches": true,
+      "bytes": 175256,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 975,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/14dc34954fe89fc2.jpg",
+      "hash_matches": true,
+      "bytes": 75790,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/0c5dc73c4cb7559b.jpg",
+      "hash_matches": true,
+      "bytes": 161305,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 896,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/bc71141cd06440ac.jpg",
+      "hash_matches": true,
+      "bytes": 40965,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/a52f6f3295c54667.jpg",
+      "hash_matches": true,
+      "bytes": 146756,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 576,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/cdd09c6c115ca5be.jpg",
+      "hash_matches": true,
+      "bytes": 75159,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/88d2508b4fba0184.jpg",
+      "hash_matches": true,
+      "bytes": 230202,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/cb3f53fbf104bd9a.jpg",
+      "hash_matches": true,
+      "bytes": 66748,
+      "format_validation": {
+        "valid": true,
+        "width": 670,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/a7935166240eb68b.jpg",
+      "hash_matches": true,
+      "bytes": 199643,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/56fcb95d0e8bce2b.jpg",
+      "hash_matches": true,
+      "bytes": 179270,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/8fa208a996978dc6.jpg",
+      "hash_matches": true,
+      "bytes": 135507,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/0a8fc50cd3e3df1a.jpg",
+      "hash_matches": true,
+      "bytes": 80745,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/702dc4764e530967.jpg",
+      "hash_matches": true,
+      "bytes": 199923,
+      "format_validation": {
+        "valid": true,
+        "width": 768,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/7406fa8518dbb1e9.jpg",
+      "hash_matches": true,
+      "bytes": 131560,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/c8c8df9a949b0b81.jpg",
+      "hash_matches": true,
+      "bytes": 299959,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/69534cd72f120485.jpg",
+      "hash_matches": true,
+      "bytes": 174572,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/2dcab96f79ef52c4.jpg",
+      "hash_matches": true,
+      "bytes": 118202,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/cf5c3c91e3591b4e.jpg",
+      "hash_matches": true,
+      "bytes": 154762,
+      "format_validation": {
+        "valid": true,
+        "width": 683,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/af3afc5e442f53cb.jpg",
+      "hash_matches": true,
+      "bytes": 78134,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 681,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/f44cdd2942011550.jpg",
+      "hash_matches": true,
+      "bytes": 113921,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/3fb99a237c0fa424.jpg",
+      "hash_matches": true,
+      "bytes": 98006,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 795,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/7fff40a3a0a719ea.jpg",
+      "hash_matches": true,
+      "bytes": 66986,
+      "format_validation": {
+        "valid": true,
+        "width": 803,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/07caab7b663b7e86.jpg",
+      "hash_matches": true,
+      "bytes": 307123,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/2b7b75dbf1a4b762.jpg",
+      "hash_matches": true,
+      "bytes": 329999,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 768,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/a4057b0f894f18e1.jpg",
+      "hash_matches": true,
+      "bytes": 19215,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/6fdf51d6dafe5500.jpg",
+      "hash_matches": true,
+      "bytes": 121453,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 707,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/cd4566a835fe0d35.jpg",
+      "hash_matches": true,
+      "bytes": 421973,
+      "format_validation": {
+        "valid": true,
+        "width": 685,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/9ae2d9c5782e3d8c.jpg",
+      "hash_matches": true,
+      "bytes": 65144,
+      "format_validation": {
+        "valid": true,
+        "width": 768,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/fc7f2e6df99fd71f.jpg",
+      "hash_matches": true,
+      "bytes": 90759,
+      "format_validation": {
+        "valid": true,
+        "width": 577,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/c3888b2867e68c2f.jpg",
+      "hash_matches": true,
+      "bytes": 217916,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 576,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/b2d4015657e11690.jpg",
+      "hash_matches": true,
+      "bytes": 462514,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 683,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/73dee0f201062631.jpg",
+      "hash_matches": true,
+      "bytes": 447706,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 680,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/9b1b3f353126eba6.jpg",
+      "hash_matches": true,
+      "bytes": 251662,
+      "format_validation": {
+        "valid": true,
+        "width": 648,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/43c19287631911c6.jpg",
+      "hash_matches": true,
+      "bytes": 422952,
+      "format_validation": {
+        "valid": true,
+        "width": 1024,
+        "height": 681,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/open_images/images/validation/26d3e6efda2035c0.jpg",
+      "hash_matches": true,
+      "bytes": 97192,
+      "format_validation": {
+        "valid": true,
+        "width": 719,
+        "height": 1024,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/metmuseum/images/438467.jpg",
+      "hash_matches": true,
+      "bytes": 3787923,
+      "format_validation": {
+        "valid": true,
+        "width": 3867,
+        "height": 3390,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/metmuseum/images/436347.jpg",
+      "hash_matches": true,
+      "bytes": 3704192,
+      "format_validation": {
+        "valid": true,
+        "width": 3173,
+        "height": 4000,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/metmuseum/images/435645.jpg",
+      "hash_matches": true,
+      "bytes": 4048047,
+      "format_validation": {
+        "valid": true,
+        "width": 2816,
+        "height": 3890,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/metmuseum/images/437403.jpg",
+      "hash_matches": true,
+      "bytes": 2489070,
+      "format_validation": {
+        "valid": true,
+        "width": 2912,
+        "height": 3722,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/metmuseum/images/436010.jpg",
+      "hash_matches": true,
+      "bytes": 2486626,
+      "format_validation": {
+        "valid": true,
+        "width": 3911,
+        "height": 3216,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/metmuseum/images/437755.jpg",
+      "hash_matches": true,
+      "bytes": 2791334,
+      "format_validation": {
+        "valid": true,
+        "width": 3811,
+        "height": 3008,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/metmuseum/images/436839.jpg",
+      "hash_matches": true,
+      "bytes": 3255733,
+      "format_validation": {
+        "valid": true,
+        "width": 2947,
+        "height": 4000,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/metmuseum/images/437245.jpg",
+      "hash_matches": true,
+      "bytes": 2381556,
+      "format_validation": {
+        "valid": true,
+        "width": 3811,
+        "height": 2946,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/metmuseum/images/770595.jpg",
+      "hash_matches": true,
+      "bytes": 5370614,
+      "format_validation": {
+        "valid": true,
+        "width": 2560,
+        "height": 4000,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/metmuseum/images/437039.jpg",
+      "hash_matches": true,
+      "bytes": 3260859,
+      "format_validation": {
+        "valid": true,
+        "width": 4000,
+        "height": 2643,
+        "channels": 3
+      }
+    },
+    {
+      "path": "dataset/public/mediapipe/hand_landmarker.task",
+      "hash_matches": true,
+      "bytes": 7819105,
+      "format_validation": {
+        "format_valid": true,
+        "bytes": 7819105,
+        "runtime_validation": "MediaPipe task loader not invoked by acquisition validator"
+      }
+    }
+  ],
+  "missing_downloads": [],
+  "manifest_history_reconciliation": {
+    "superseded_duplicate_successes": 2,
+    "recovered_failures": 26,
+    "updated_rows_this_run": 0
+  },
+  "open_images_boxable_inventory": {
+    "inventory_file": "dataset/public/open_images/metadata/oidv7-class-descriptions-boxable.csv",
+    "row_count": 601,
+    "unique_class_names": 601,
+    "official_facts_page_box_class_count": 600,
+    "count_discrepancy": true,
+    "target_name_matches": {
+      "painting": [],
+      "person": [
+        "boy",
+        "girl",
+        "man",
+        "person",
+        "woman"
+      ],
+      "hand": [
+        "human hand"
+      ],
+      "tool": [
+        "mobile phone",
+        "pen",
+        "scissors",
+        "tool"
+      ]
+    },
+    "related_artwork_names_not_painting_labels": [
+      "picture frame"
+    ],
+    "segmentation_class_inventory_verified": false,
+    "scope": "Boxable class vocabulary only; not proof of samples or segmentation-mask availability. A picture-frame label is not a painting label. Raw CSV count differs from the official facts-page headline and has not been normalized."
+  },
+  "open_images_pilot": {
+    "generated_at_utc": "2026-10-10T13:55:40+00:00",
+    "official_dataset_split": "validation",
+    "image_list_file": "dataset/public/open_images/metadata/validation-image-list.txt",
+    "requested_images": 100,
+    "actual_images_downloaded": 100,
+    "valid_images": 100,
+    "invalid_images": [],
+    "failed_image_downloads": [],
+    "license_skips_considered_candidates": 0,
+    "preflight_failed_image_ids": [],
+    "valid_segmentation_masks_by_source_class": {
+      "Person": 54,
+      "Suit": 3,
+      "Ipod": 7,
+      "Mobile phone": 35,
+      "Girl": 1,
+      "Beer": 1,
+      "Horse": 4,
+      "Dress": 3,
+      "Pen": 22,
+      "Coffee cup": 1,
+      "Human body": 1,
+      "Man": 3,
+      "Bicycle wheel": 3,
+      "Jeans": 2,
+      "Belt": 1,
+      "Camera": 1,
+      "Trousers": 2,
+      "Shorts": 2,
+      "Piano": 2,
+      "Human ear": 1,
+      "Remote control": 1,
+      "Broccoli": 1,
+      "Calculator": 1,
+      "Harpsichord": 2,
+      "Human mouth": 1,
+      "Dog": 1,
+      "Wine": 1,
+      "Dumbbell": 1
+    },
+    "images_with_masks_by_source_class": {
+      "Beer": 1,
+      "Belt": 1,
+      "Bicycle wheel": 1,
+      "Broccoli": 1,
+      "Calculator": 1,
+      "Camera": 1,
+      "Coffee cup": 1,
+      "Dog": 1,
+      "Dress": 2,
+      "Dumbbell": 1,
+      "Girl": 1,
+      "Harpsichord": 2,
+      "Horse": 2,
+      "Human body": 1,
+      "Human ear": 1,
+      "Human mouth": 1,
+      "Ipod": 4,
+      "Jeans": 2,
+      "Man": 2,
+      "Mobile phone": 25,
+      "Pen": 15,
+      "Person": 50,
+      "Piano": 2,
+      "Remote control": 1,
+      "Shorts": 1,
+      "Suit": 3,
+      "Trousers": 2,
+      "Wine": 1
+    },
+    "bounding_box_only_instances_by_source_class": {
+      "Human hand": 44,
+      "Person": 214,
+      "Mobile phone": 9,
+      "Pen": 6
+    },
+    "images_with_bbox_only_target_class_annotations": 66,
+    "images_with_any_instance_mask": 95,
+    "images_without_any_instance_mask": 5,
+    "images_with_boxes_but_no_instance_mask": 5,
+    "source_target_capabilities": {
+      "painting": {
+        "source_aliases_checked": [
+          "Painting"
+        ],
+        "box_classes_available": [],
+        "mask_classes_available": [],
+        "box_annotation_available": false,
+        "instance_mask_annotation_available": false,
+        "annotation_status": "no exact usable source class"
+      },
+      "person": {
+        "source_aliases_checked": [
+          "Person"
+        ],
+        "box_classes_available": [
+          "Person"
+        ],
+        "mask_classes_available": [
+          "Person"
+        ],
+        "box_annotation_available": true,
+        "instance_mask_annotation_available": true,
+        "annotation_status": "instance masks and boxes"
+      },
+      "hand": {
+        "source_aliases_checked": [
+          "Human hand",
+          "Hand"
+        ],
+        "box_classes_available": [
+          "Human hand"
+        ],
+        "mask_classes_available": [],
+        "box_annotation_available": true,
+        "instance_mask_annotation_available": false,
+        "annotation_status": "boxes only"
+      },
+      "tool": {
+        "source_aliases_checked": [
+          "Tool",
+          "Mobile phone",
+          "Pen",
+          "Pencil"
+        ],
+        "box_classes_available": [
+          "Mobile phone",
+          "Pen",
+          "Tool"
+        ],
+        "mask_classes_available": [
+          "Mobile phone",
+          "Pen"
+        ],
+        "box_annotation_available": true,
+        "instance_mask_annotation_available": true,
+        "annotation_status": "instance masks and boxes"
+      },
+      "picture_frame_not_painting": {
+        "box_available": true,
+        "mask_available": true,
+        "mapped_to_painting": false
+      }
+    },
+    "target_mapping": {
+      "person": [
+        "Person"
+      ],
+      "tool": [
+        "Pen",
+        "Mobile phone"
+      ],
+      "hand": [
+        "Human hand"
+      ],
+      "painting": [
+        "Painting"
+      ]
+    },
+    "picture_frame_mapped_to_painting": false,
+    "masks_failed_or_invalid": [],
+    "mask_alignment_failures": [],
+    "downloaded_source_mask_files": 158,
+    "valid_image_aligned_mask_files": 158,
+    "downloaded_mask_files": 158,
+    "resampled_mask_count": 154,
+    "mask_shards_downloaded": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "source_split_image_counts": {
+      "train": 0,
+      "validation": 100,
+      "test": 0
+    },
+    "source_image_ids": [
+      "eb97d92532808dc6",
+      "49c13010ba2a6395",
+      "cfdb8ad0e8c68054",
+      "f380abeff1c2838d",
+      "a9a8fb7b7c44a376",
+      "9007d38b9cfd0e53",
+      "df61f7297c06866b",
+      "8179463a99757b11",
+      "31b2fbf65d04dc2a",
+      "b37629b16f6260a2",
+      "86659395ac46f0ba",
+      "2f8519bef8ae1be2",
+      "8b2ecf1bf3a03bdf",
+      "a6ee28c427dafa94",
+      "75489b3b21039330",
+      "82f1a9e2176a2145",
+      "e3a105756dfc8062",
+      "ca025cba1d6fd1c8",
+      "d72175fe6f73495e",
+      "e96e29141cab0bc6",
+      "02fcc80210b7cd5b",
+      "8c8313003cc8f081",
+      "2fbbee1ecc00b515",
+      "dc75142906a58d1e",
+      "7f8ef92c55a63b32",
+      "92a7c03c939944a3",
+      "2b96210e388009ff",
+      "705cd0f2472a5424",
+      "e14d08276ee6391d",
+      "4dea4e5cd46ba41d",
+      "f73b5ab96e12a7c2",
+      "c551aea05b9a7c57",
+      "7b9ac446f589d9b3",
+      "30dc8f6e837f7b47",
+      "272b1e8e7117cfab",
+      "3345a69be733d5f2",
+      "ccd1baf21b64d13a",
+      "775cbcfc9813d9b3",
+      "0b876e80ebc98978",
+      "20475afc076832f3",
+      "9d69848590304a04",
+      "b1d30660a76bd843",
+      "9356eb642fb13c87",
+      "8d3142853f95bb80",
+      "a9dc47961e3ffc92",
+      "ad08afb5c0f5bb34",
+      "1137e8fdcdfb2976",
+      "37313a1dd7f2fd3e",
+      "abc2f1094f20ab42",
+      "b4c7d3bc294ce9b9",
+      "1893009e751e6d21",
+      "1f3915bdd8737cd8",
+      "12e529ac3ceecdb3",
+      "857b6398458a0474",
+      "f8687bab62acc83e",
+      "483ade136f9e676d",
+      "1a08289e9fcda126",
+      "df85e966037f9ae8",
+      "bd55ece1044ab937",
+      "7dbaee3401e010fb",
+      "90ed579e04c8b872",
+      "a0a856528c99b22f",
+      "f2a857d82894ff0d",
+      "3fcd4d7ee5c3b03d",
+      "4c255e74648107e7",
+      "e3f2995cf9135eaa",
+      "14dc34954fe89fc2",
+      "0c5dc73c4cb7559b",
+      "bc71141cd06440ac",
+      "a52f6f3295c54667",
+      "cdd09c6c115ca5be",
+      "88d2508b4fba0184",
+      "cb3f53fbf104bd9a",
+      "a7935166240eb68b",
+      "56fcb95d0e8bce2b",
+      "8fa208a996978dc6",
+      "0a8fc50cd3e3df1a",
+      "702dc4764e530967",
+      "7406fa8518dbb1e9",
+      "c8c8df9a949b0b81",
+      "69534cd72f120485",
+      "2dcab96f79ef52c4",
+      "cf5c3c91e3591b4e",
+      "af3afc5e442f53cb",
+      "f44cdd2942011550",
+      "3fb99a237c0fa424",
+      "7fff40a3a0a719ea",
+      "07caab7b663b7e86",
+      "2b7b75dbf1a4b762",
+      "a4057b0f894f18e1",
+      "6fdf51d6dafe5500",
+      "cd4566a835fe0d35",
+      "9ae2d9c5782e3d8c",
+      "fc7f2e6df99fd71f",
+      "c3888b2867e68c2f",
+      "b2d4015657e11690",
+      "73dee0f201062631",
+      "9b1b3f353126eba6",
+      "43c19287631911c6",
+      "26d3e6efda2035c0"
+    ],
+    "annotation_files": [
+      "dataset/public/open_images/original_annotations/validation-annotations-object-segmentation.csv",
+      "dataset/public/open_images/original_annotations/validation-annotations-bbox.csv",
+      "dataset/public/open_images/original_annotations/pilot-validation-segmentation-selected.csv",
+      "dataset/public/open_images/original_annotations/pilot-validation-bbox-selected.csv"
+    ],
+    "image_disk_bytes": 25847811,
+    "pilot_bytes_including_metadata_and_mask_shards": 127615997,
+    "selected_uncompressed_mask_bytes": 428768,
+    "disk_bytes_after_pilot": 132402982,
+    "license": "Selected image metadata must explicitly list CC BY 2.0. Preserve original URL, landing URL, author when available, and license URL for each downloaded image. Open Images disclaims warranties; users remain responsible for source-image rights.",
+    "conversion": {
+      "yolo_polygons_created": 0,
+      "image_aligned_masks": "Nearest-neighbor raster resize only, only for same-aspect ratio pairs with zero/unspecified rotation; source PNGs remain unchanged.",
+      "reason": "No contour approximation or bounding-box-to-polygon conversion was made."
+    },
+    "training_ready": false,
+    "training_readiness_reason": "Not ready: validation-only subset; no painting or hand instance masks; source annotations are not exhaustively complete for every instance; no independent train/test sample; no artwork harmful-contact labels. Tool masks are limited to source classes Pen and Mobile phone under the documented target mapping."
+  },
+  "custom_readiness": {
+    "generated_at_utc": "2026-10-11T05:51:43+00:00",
+    "custom_recording_sessions": 0,
+    "custom_extracted_frames": 0,
+    "annotation_tasks": {
+      "tasks": 0,
+      "states": {},
+      "reviewed_polygon_counts": {},
+      "invalid_reviewed_tasks": []
+    },
+    "minimum_target_polygon_counts": {
+      "painting": 0,
+      "person": 0,
+      "hand": 0,
+      "tool": 0
+    },
+    "all_reviewed_scenes_completeness_confirmed": false,
+    "event_files": 0,
+    "valid_event_files": [],
+    "invalid_event_files": [],
+    "reviewed_event_label_counts": {
+      "CONTACT": 0,
+      "NEAR": 0,
+      "SAFE": 0
+    },
+    "custom_split_counts": {
+      "train": 0,
+      "val": 0,
+      "test": 0
+    },
+    "source_groups": 0,
+    "duplicate_hash_groups": 0,
+    "split_hash_leakage": false,
+    "meaningful_evaluation_split": false,
+    "custom_provenance": {
+      "custom_images": 0,
+      "custom_masks": 0,
+      "files_without_provenance": 0
+    },
+    "open_images_pilot": {
+      "images": 100,
+      "valid_masks_by_class": {
+        "Person": 54,
+        "Suit": 3,
+        "Ipod": 7,
+        "Mobile phone": 35,
+        "Girl": 1,
+        "Beer": 1,
+        "Horse": 4,
+        "Dress": 3,
+        "Pen": 22,
+        "Coffee cup": 1,
+        "Human body": 1,
+        "Man": 3,
+        "Bicycle wheel": 3,
+        "Jeans": 2,
+        "Belt": 1,
+        "Camera": 1,
+        "Trousers": 2,
+        "Shorts": 2,
+        "Piano": 2,
+        "Human ear": 1,
+        "Remote control": 1,
+        "Broccoli": 1,
+        "Calculator": 1,
+        "Harpsichord": 2,
+        "Human mouth": 1,
+        "Dog": 1,
+        "Wine": 1,
+        "Dumbbell": 1
+      },
+      "bbox_only_instances": {
+        "Human hand": 44,
+        "Person": 214,
+        "Mobile phone": 9,
+        "Pen": 6
+      },
+      "training_ready": false
+    },
+    "missing_work": [
+      "Record consented, representative museum/gallery webcam sessions, including SAFE and NEAR cases.",
+      "Human-review LabelMe polygons for painting, person, hand, and tool; Open Images does not supply painting or hand masks.",
+      "Manually review SAFE/NEAR/CONTACT intervals; do not infer contact from box overlap.",
+      "Collect independent recording sessions for train, validation, and test; one session must never cross splits.",
+      "Resolve tool taxonomy, annotation completeness policy, and class balance from real recordings."
+    ],
+    "training_ready": false,
+    "training_readiness_reason": "Not ready: need at least 10 reviewed polygons per target class, scene-completeness attestations, reviewed SAFE/NEAR/CONTACT labels, independent source-group splits with minimum counts, no hash leakage, valid provenance and no malformed reviewed annotations. Open Images has no painting/hand masks or artwork-contact labels."
+  },
+  "vcoco_action_inventory": {
+    "annotation_file": "dataset/public/other_sources/vcoco/annotations/vcoco_train.json",
+    "action_count": 26,
+    "action_names": [
+      "hold",
+      "stand",
+      "sit",
+      "ride",
+      "walk",
+      "look",
+      "hit",
+      "eat",
+      "jump",
+      "lay",
+      "talk_on_phone",
+      "carry",
+      "throw",
+      "catch",
+      "cut",
+      "run",
+      "work_on_computer",
+      "ski",
+      "surf",
+      "skateboard",
+      "smile",
+      "drink",
+      "kick",
+      "point",
+      "read",
+      "snowboard"
+    ],
+    "unique_coco_image_ids": 2533,
+    "has_instance_masks": false,
+    "painting_or_harmful_contact_labels": false
+  },
+  "met_artwork_inventory": {
+    "objects": 10,
+    "valid_images": 10,
+    "bytes": 33575954,
+    "files": [
+      {
+        "object_id": 438467,
+        "path": "dataset/public/metmuseum/images/438467.jpg",
+        "bytes": 3787923,
+        "sha256": "2ed2f5a5294815d7332c713eef824d2f616db12e5636ff5253908d87469832df",
+        "valid_image": true
+      },
+      {
+        "object_id": 436347,
+        "path": "dataset/public/metmuseum/images/436347.jpg",
+        "bytes": 3704192,
+        "sha256": "dfd7403df6ca87bd05da964d6a23ecd8fd8048ff60cc76a4cc018683d33aaa4d",
+        "valid_image": true
+      },
+      {
+        "object_id": 435645,
+        "path": "dataset/public/metmuseum/images/435645.jpg",
+        "bytes": 4048047,
+        "sha256": "4bd369971a4044d0f94ab59f497ee798c4919edb0d37a8c303716fe430ab9fc1",
+        "valid_image": true
+      },
+      {
+        "object_id": 437403,
+        "path": "dataset/public/metmuseum/images/437403.jpg",
+        "bytes": 2489070,
+        "sha256": "015e51f529aeb95802d536f18313a14e421719e0ca9d28a088664e0564e2691c",
+        "valid_image": true
+      },
+      {
+        "object_id": 436010,
+        "path": "dataset/public/metmuseum/images/436010.jpg",
+        "bytes": 2486626,
+        "sha256": "3cdc8d403b99e98bbd02925cc85ffc58dfd624340e7a331495d78fe6dc65fa0d",
+        "valid_image": true
+      },
+      {
+        "object_id": 437755,
+        "path": "dataset/public/metmuseum/images/437755.jpg",
+        "bytes": 2791334,
+        "sha256": "507558dec29016d230a827e69806bc3d917697528111eaa0be6303eba36d4bae",
+        "valid_image": true
+      },
+      {
+        "object_id": 436839,
+        "path": "dataset/public/metmuseum/images/436839.jpg",
+        "bytes": 3255733,
+        "sha256": "408b6ed786d8a1bb24a9f407c0a0fa8bf6f4211c2d30dd0f4d14b9bea9047d18",
+        "valid_image": true
+      },
+      {
+        "object_id": 437245,
+        "path": "dataset/public/metmuseum/images/437245.jpg",
+        "bytes": 2381556,
+        "sha256": "81ef3edc843ec133240eea3d9590e60f4e7b6cee92453298a84def864d170feb",
+        "valid_image": true
+      },
+      {
+        "object_id": 770595,
+        "path": "dataset/public/metmuseum/images/770595.jpg",
+        "bytes": 5370614,
+        "sha256": "7dfb3f5b091fec90adba21d2df2b5320a20107de975f7c24093b34c6c56dba67",
+        "valid_image": true
+      },
+      {
+        "object_id": 437039,
+        "path": "dataset/public/metmuseum/images/437039.jpg",
+        "bytes": 3260859,
+        "sha256": "1f97096d182c72b493bed4cd9fe705bde8bab4c5d59255b6c83d5ee60c49949e",
+        "valid_image": true
+      }
+    ],
+    "missing_or_invalid": [],
+    "license": "CC0 1.0 only; source metadata must confirm isPublicDomain=true",
+    "gallery_scene_images": 0
+  },
+  "mediapipe_hand_landmarker": {
+    "package_installed": true,
+    "package_installed_in_active_environment": false,
+    "package_installed_in_isolated_environment": true,
+    "model_path": "dataset/public/mediapipe/hand_landmarker.task",
+    "model_present_and_hash_verified": true,
+    "bytes": 7819105,
+    "status": "INSTALLED_IN_ISOLATED_ENVIRONMENT",
+    "output_type": "21 landmarks and handedness; no pixel mask or contact ground truth"
+  },
+  "synthetic_scene_inventory": {
+    "sample_type": "SYNTHETIC",
+    "images": 60,
+    "masks": 120,
+    "split_counts": {
+      "train": 48,
+      "val": 6,
+      "test": 6
+    },
+    "event_counts": {
+      "SAFE": 20,
+      "NEAR": 20,
+      "CONTACT": 20
+    },
+    "source_groups": 10,
+    "source_group_leaks": [],
+    "validation_errors": [],
+    "orphan_files": [],
+    "manifest": "dataset/synthetic/art_contact/metadata/synthetic_manifest.jsonl"
+  },
+  "public_video_inventory": {
+    "count": 0,
+    "valid": 0,
+    "total_bytes": 0,
+    "files": [],
+    "invalid": []
+  },
+  "training_components": {
+    "object_segmentation": {
+      "status": "NOT_TRAINED",
+      "available_mask_instances": {
+        "Person": 54,
+        "Pen": 22
+      },
+      "reason": "The existing 100-image Open Images subset comes only from its official validation split and has incomplete target-instance annotation. It has no painting masks; Human hand is box-only. A source-grouped, complete training set for the desired task is not ready."
+    },
+    "hand_localization": {
+      "status": "PRETRAINED_LANDMARK_ADAPTER_READY",
+      "reason": "MediaPipe supplies 21 hand landmarks and the integrated adapter tests fingertip points against the configured painting mask; it does not supply hand segmentation masks or calibrated contact labels. The package and Apache 2.0 task model are validated in an isolated environment; install requirements-hands.txt in the selected server environment before enabling it. Open Images Human hand labels are boxes only, and ContactHands hosted-image terms remain unstated."
+    },
+    "painting_detection": {
+      "status": "ROI_FALLBACK_CONFIGURED",
+      "reason": "The fixed-camera polygon ROI is configurable. Met artwork images do not teach framed-painting scene detection."
+    },
+    "artwork_contact_event": {
+      "status": "NOT_TRAINED",
+      "reason": "No genuine painting-contact video labels are available. Synthetic logic scenarios are not real-world model training data."
+    }
+  },
+  "yolo_segmentation_validation": {
+    "images": 0,
+    "valid_segmentation_rows": 0,
+    "box_only_rows": 0,
+    "malformed_rows": 0,
+    "class_counts": {},
+    "missing_labels": 0,
+    "invalid_images": 0,
+    "orphan_labels": 0
+  },
+  "duplicate_groups": [],
+  "provenance": {
+    "public_images": 110,
+    "public_masks": 316,
+    "public_without_provenance": [],
+    "custom_images": 0,
+    "custom_masks": 0,
+    "custom_without_provenance": []
+  },
+  "source_split_leakage": {
+    "checked": false,
+    "leaks": [],
+    "reason": "No source-level split assignments recorded."
+  },
+  "dataset_bytes_scanned": 167388256,
+  "training_ready": false,
+  "training_readiness_reason": "Not ready for the full painting/person/hand/tool task: no compatible, complete, independently split masks cover painting and hand. Person and Pen masks exist only in a small validation-only pilot with incomplete annotation coverage. No custom or contact-labeled videos are available."
+}

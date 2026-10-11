@@ -1,0 +1,46 @@
+{
+  "sample_type": "SYNTHETIC",
+  "generated_at_utc": "2026-10-11T05:36:40.820551+00:00",
+  "seed": 42,
+  "artwork_sources": 10,
+  "images": 60,
+  "masks": 120,
+  "events": {
+    "SAFE": 20,
+    "NEAR": 20,
+    "CONTACT": 20
+  },
+  "images_by_split": {
+    "train": 48,
+    "val": 6,
+    "test": 6
+  },
+  "artwork_source_groups_by_split": {
+    "train": [
+      "met-object-435645",
+      "met-object-436010",
+      "met-object-436839",
+      "met-object-437039",
+      "met-object-437245",
+      "met-object-437403",
+      "met-object-437755",
+      "met-object-770595"
+    ],
+    "val": [
+      "met-object-438467"
+    ],
+    "test": [
+      "met-object-436347"
+    ]
+  },
+  "source_group_leakage": false,
+  "real_hand_cutouts_used": 0,
+  "real_gallery_backgrounds_used": 0,
+  "training_ready_for_real_world_claims": false,
+  "limitations": [
+    "Hand/tool shapes and wall are explicit vector synthetic assets, not real cutouts or gallery photographs.",
+    "The artwork crop boundary is valid only for this synthetic artwork-image-region task.",
+    "Do not use synthetic-only metrics as real-world accuracy or artwork-contact validation."
+  ],
+  "manifest": "dataset/synthetic/art_contact/metadata/synthetic_manifest.jsonl"
+}

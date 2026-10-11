@@ -6,6 +6,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.services.status import get_status
+from src.utils.config import STATUS_PATH
 
 
 
@@ -32,8 +33,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-STATUS_PATH = "/mnt/c/Users/LEGION/PaintingProtection/webcam_status.txt"
 
 HISTORY_PATH = (
     Path(__file__).resolve().parents[1]

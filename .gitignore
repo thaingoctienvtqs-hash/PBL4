@@ -5,21 +5,42 @@ __pycache__/
 
 # Virtual environment
 .venv/
+.venv*/
 venv/
 env/
 
 # Environment / secrets
 .env
 
-# Dataset lớn
-dataset/*
-!dataset/.gitkeep
+# Dataset content is local; keep the documented directory skeleton.
+dataset/raw/**
+!dataset/raw/.gitkeep
+dataset/images/**
+!dataset/images/
+!dataset/images/train/
+!dataset/images/train/.gitkeep
+!dataset/images/val/
+!dataset/images/val/.gitkeep
+!dataset/images/test/
+!dataset/images/test/.gitkeep
+dataset/labels/**
+!dataset/labels/
+!dataset/labels/train/
+!dataset/labels/train/.gitkeep
+!dataset/labels/val/
+!dataset/labels/val/.gitkeep
+!dataset/labels/test/
+!dataset/labels/test/.gitkeep
+dataset/annotations/**
+!dataset/annotations/.gitkeep
 
 # Model / checkpoint lớn
 models/*.pth
 models/*.pkl
 models/*.pt
 models/*.onnx
+models/*.engine
+models/*.bin
 
 # Realtime files
 webcam_frame.jpg
@@ -33,3 +54,48 @@ webcam_status.txt
 # OS
 .DS_Store
 Thumbs.db
+
+# Acquired dataset payloads remain local; manifests and reports stay reviewable.
+runtime/
+experiments/
+yolov8n.pt
+yolov8n-seg.pt
+dataset/public/**
+dataset/custom/raw_videos/**
+dataset/custom/extracted_frames/**
+dataset/custom/annotated/**
+dataset/custom/prepared/images/**
+dataset/custom/prepared/labels/**
+dataset/prepared/**
+dataset/synthetic/art_contact/images/**
+dataset/synthetic/art_contact/masks/**
+server/data/results/**
+_pytest_codex_*/
+_codex_partial_synthetic_20261011/
+
+# Generated runtime data, interpreter/test caches, and temporary downloads.
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+htmlcov/
+.coverage
+.coverage.*
+*.log
+*.tmp
+*.temp
+*.part
+*.partial
+*.download
+server/data/**
+
+# Downloaded or trained model artifacts. Existing tracked baseline files remain tracked.
+*.pt
+*.pth
+*.pkl
+*.onnx
+*.engine
+*.ckpt
+*.safetensors
+*.task
+*.bin

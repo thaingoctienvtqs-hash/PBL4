@@ -1,0 +1,4 @@
+painting
+person
+hand
+tool

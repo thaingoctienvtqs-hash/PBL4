@@ -8,11 +8,8 @@ from src.core.contacthands import ContactHandsDetector
 from src.services.alert import trigger_alert
 from src.services.history import save_alert
 from src.services.status import save_status
-from src.utils.config import ROI, OC_THRESH, OVERLAP_THRESH
+from src.utils.config import FRAME_PATH, STATUS_PATH, ROI, OC_THRESH, OVERLAP_THRESH
 
-
-FRAME_PATH = "/mnt/c/Users/LEGION/PaintingProtection/webcam_frame.jpg"
-STATUS_PATH = "/mnt/c/Users/LEGION/PaintingProtection/webcam_status.txt"
 
 ALERT_DIR = Path(__file__).resolve().parents[1] / "data" / "alerts"
 ALERT_DIR.mkdir(parents=True, exist_ok=True)
