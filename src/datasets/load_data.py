@@ -1,5 +1,6 @@
 import numpy as np
 import os
+from pathlib import Path
 import xml.etree.ElementTree as ET
 from fvcore.common.file_io import PathManager
 import cv2 
@@ -24,8 +25,17 @@ def load_voc_hand_instances(dirname: str, split: str):
         dirname: Contain "Annotations", "ImageSets", "JPEGImages"
         split (str): one of "train", "test", "val", "trainval"
     """
-    with PathManager.open(os.path.join(dirname, "ImageSets", "Main", split + ".txt")) as f:
-        fileids = np.loadtxt(f, dtype=np.str)
+    split_file = os.path.join(dirname, "ImageSets", "Main", split + ".txt")
+    if not os.path.isfile(split_file):
+        raise FileNotFoundError(
+            "ContactHands split file not found: {}. Set CONTACTHANDS_DATA_ROOT "
+            "to the dataset directory.".format(split_file)
+        )
+    with PathManager.open(split_file) as f:
+        # np.str was removed in NumPy 1.24; ndmin handles a one-image split.
+        fileids = np.loadtxt(f, dtype=str, ndmin=1)
+    if fileids.size == 0:
+        return []
 
     # Needs to read many small annotation files. Makes sense at local
     annotation_dirname = PathManager.get_local_path(os.path.join(dirname, "Annotations/"))
@@ -87,7 +97,15 @@ def register_pascal_voc(name, dirname, split, year):
         thing_classes=CLASS_NAMES, dirname=dirname, year=year, split=split
     )
 
-splits = ["train", "test", "sub"]
-dirname = "./ContactHands/"
-for split in splits:
-    register_pascal_voc("ContactHands_" + split , dirname, split, 2007)
+def register_available_datasets():
+    dirname = os.environ.get(
+        "CONTACTHANDS_DATA_ROOT",
+        str(Path(__file__).resolve().parents[2] / "dataset" / "contacthands"),
+    )
+    for split in ("train", "test", "sub"):
+        name = "ContactHands_" + split
+        if name not in DatasetCatalog.list():
+            register_pascal_voc(name, dirname, split, 2007)
+
+
+register_available_datasets()

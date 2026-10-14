@@ -1,226 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>PBL4 - Painting Protection</title>
-
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PBL4 · Giám sát tranh</title>
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background: #111827;
-    color: white;
-    margin: 0;
-    padding: 40px;
-}
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.card {
-    background: #1f2937;
-    padding: 30px;
-    border-radius: 20px;
-    margin-bottom: 25px;
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-#status {
-    text-align: center;
-    font-size: 42px;
-    font-weight: bold;
-    margin: 30px;
-}
-
-.ok {
-    color: #22c55e;
-}
-
-.alert {
-    color: #ef4444;
-}
-
-.info {
-    color: #9ca3af;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 12px;
-    text-align: center;
-    border-bottom: 1px solid #374151;
-}
-
-th {
-    background: #374151;
-}
-
-.alert-row {
-    color: #f87171;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <div class="card">
-        <h1>🖼️ PBL4</h1>
-        <h2>Hệ thống giám sát và bảo vệ tranh</h2>
-
-        <div id="status" class="info">
-            Đang kết nối...
-        </div>
-
-        <div id="time" style="text-align:center;"></div>
-    </div>
-
-    <div class="card">
-        <h2>📋 Lịch sử cảnh báo</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Thời gian</th>
-                    <th>Trạng thái</th>
-                    <th>OC</th>
-                    <th>Overlap</th>
-                    <th>Bằng chứng</th>
-                </tr>
-            </thead>
-
-            <tbody id="history">
-                <tr>
-                    <td colspan="4">Đang tải...</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-</div>
-
+:root{color-scheme:light;--ink:#17212b;--muted:#667481;--line:#d9e1e8;--bg:#f3f6f8;--blue:#155eef}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,"Segoe UI",sans-serif}
+header{background:#122231;color:#fff;padding:20px max(22px,calc((100vw - 1180px)/2))}header h1{margin:0;font-size:21px}header p{margin:4px 0 0;color:#bdc9d3}
+main{max-width:1180px;padding:20px;margin:auto;display:grid;gap:16px;grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr)}
+section{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px;min-width:0}h2{margin:0 0 12px;font-size:16px}.wide{grid-column:1/-1}.muted{color:var(--muted);font-size:13px}
+.state{font-size:19px;font-weight:700}.pill{display:inline-block;border-radius:20px;padding:4px 10px;background:#edf1f4;font-size:12px;font-weight:700}
+.pill.ALERT,.pill.CAMERA_DISCONNECTED,.pill.ERROR,.pill.WORKER_NOT_RESPONDING{background:#fee4e2;color:#b42318}.pill.OK{background:#dcfae6;color:#067647}.pill.VERIFYING,.pill.NEEDS_CONFIGURATION{background:#fff1c2;color:#854a0e}
+.frame{background:#111;border-radius:8px;min-height:230px;display:flex;align-items:center;justify-content:center;overflow:hidden}.frame img{display:block;max-width:100%;max-height:540px;object-fit:contain}.frame span{color:#c8d0d7;padding:20px;text-align:center}
+dl{display:grid;grid-template-columns:120px 1fr;gap:5px 10px;margin:12px 0 0}dt{color:var(--muted)}dd{margin:0;overflow-wrap:anywhere}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.field{display:grid;gap:3px;font-size:12px;color:var(--muted)}input[type=number]{width:100%;padding:8px;border:1px solid #c7d1db;border-radius:7px;color:var(--ink)}
+button{margin-top:12px;padding:9px 13px;background:var(--blue);color:#fff;border:0;border-radius:7px;cursor:pointer;font-weight:650}table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-weight:600}.events{overflow:auto}a{color:var(--blue)}
+@media(max-width:800px){main{grid-template-columns:1fr}.wide{grid-column:auto}.grid{grid-template-columns:repeat(2,1fr)}}
+</style></head>
+<body><header><h1>PBL4 · Hệ thống giám sát và bảo vệ tranh</h1><p>ContactHands · cảnh báo AI là dấu hiệu cần người kiểm tra</p></header>
+<main>
+  <section><h2>Khung hình mới nhất</h2><div class="frame"><img id="frame" alt="Khung hình đã xử lý" hidden><span id="frame-note">Chưa có khung hình được xử lý</span></div></section>
+  <section><h2>Trạng thái hệ thống</h2><span id="state" class="pill">NOT_STARTED</span><p id="condition" class="state">Chưa có worker</p><p id="message" class="muted">Khởi chạy inference worker để bắt đầu.</p>
+    <dl><dt>Chế độ</dt><dd id="mode">—</dd><dt>Cập nhật</dt><dd id="updated">—</dd><dt>Cảm biến</dt><dd id="sensor">Chưa cấu hình</dd><dt>Camera</dt><dd id="camera">—</dd></dl></section>
+  <section><h2>Vùng tranh và ngưỡng</h2><label><input id="roi-enabled" type="checkbox"> Bật giám sát ROI</label>
+    <div class="grid"><label class="field">x1<input id="x1" type="number" step="0.01" min="0" max="1"></label><label class="field">y1<input id="y1" type="number" step="0.01" min="0" max="1"></label><label class="field">x2<input id="x2" type="number" step="0.01" min="0" max="1"></label><label class="field">y2<input id="y2" type="number" step="0.01" min="0" max="1"></label>
+    <label class="field">Self-Contact<input id="self" type="number" step="0.01" min="0" max="1"></label><label class="field">Person-Contact<input id="person" type="number" step="0.01" min="0" max="1"></label><label class="field">Object-Contact<input id="object" type="number" step="0.01" min="0" max="1"></label><label class="field">ROI overlap min<input id="overlap" type="number" step="0.01" min="0" max="1"></label><label class="field">Khung xác nhận<input id="frames" type="number" min="1" step="1"></label></div>
+    <button id="save">Lưu cấu hình</button><span id="save-result" class="muted"></span><p class="muted">Tọa độ chuẩn hóa từ 0 đến 1. Ngưỡng cần hiệu chỉnh trên dữ liệu thật; nhãn Object-Contact không chứng minh tay chạm tranh.</p></section>
+  <section><h2>Cảnh báo gần nhất</h2><div id="latest-alert" class="muted">Chưa có cảnh báo đã lưu.</div></section>
+  <section class="wide events"><h2>Lịch sử sự kiện</h2><label class="field" style="max-width:300px">Lọc loại sự kiện<select id="event-filter"><option value="">Tất cả</option><option value="AI_CONTACT_SUSPECTED_IN_ROI">AI nghi vấn trong ROI</option><option value="legacy">Lịch sử cũ</option></select></label><table><thead><tr><th>Thời gian</th><th>Loại</th><th>Điểm OC</th><th>Overlap</th><th>Bằng chứng</th></tr></thead><tbody id="history"><tr><td colspan="5" class="muted">Đang tải…</td></tr></tbody></table></section>
+</main>
 <script>
-
-async function updateStatus() {
-
-    try {
-
-        const response =
-            await fetch("http://localhost:8000/status");
-
-        const data = await response.json();
-
-        const status =
-            document.getElementById("status");
-
-        status.textContent = data.status;
-
-        if (data.status.startsWith("ALERT")) {
-
-            status.className = "alert";
-
-        } else if (data.status === "OK") {
-
-            status.className = "ok";
-
-        } else {
-
-            status.className = "info";
-        }
-
-        document.getElementById("time").textContent =
-            "Cập nhật: " +
-            new Date().toLocaleTimeString("vi-VN");
-
-    } catch (error) {
-
-        document.getElementById("status").textContent =
-            "Không kết nối được API";
-
-        document.getElementById("status").className =
-            "alert";
-    }
+const $=id=>document.getElementById(id),timeText=item=>item.updated_local||((item.updated_at)?new Date(item.updated_at*1000).toLocaleString('vi-VN'):'—');
+async function json(url,options){const r=await fetch(url,options);const body=await r.json();if(!r.ok)throw new Error(body.error||r.statusText);return body}
+async function refresh(){
+  try{const data=await json('/status'),s=data.status;$('state').textContent=s.status||'NOT_STARTED';$('state').className='pill '+(s.status||'');$('condition').textContent=s.condition||s.status||'Chưa có worker';$('message').textContent=s.message||'';$('mode').textContent=s.mode||'—';$('updated').textContent=timeText(s);$('sensor').textContent=s.sensor?(s.sensor.state+' · '+(s.sensor.message||'')):'Chưa cấu hình';if(s.mode==='file-watch')$('camera').textContent='Đang theo dõi file capture Windows';else if(s.mode==='camera')$('camera').textContent='Worker đang lấy ảnh trực tiếp';
+    const frameUrl='/frame/latest.jpg?t='+Date.now(),r=await fetch(frameUrl,{cache:'no-store'});$('frame').hidden=!r.ok;$('frame-note').hidden=r.ok;if(r.ok)$('frame').src=frameUrl;
+    const query=new URLSearchParams({limit:'30'});if($('event-filter').value)query.set('event_type',$('event-filter').value);const entries=await json('/history?'+query.toString()),body=$('history');body.replaceChildren();if(!entries.length){const row=body.insertRow(),cell=row.insertCell();cell.colSpan=5;cell.textContent='Không có sự kiện phù hợp bộ lọc.';cell.className='muted'}
+    for(const event of entries){const row=body.insertRow();row.insertCell().textContent=event.time||'—';row.insertCell().textContent=event.status||'AI contact suspicion';row.insertCell().textContent=event.oc==null?'—':Number(event.oc).toFixed(3);row.insertCell().textContent=event.overlap==null?'—':(Number(event.overlap)*100).toFixed(0)+'%';const cell=row.insertCell();if(event.image){const a=document.createElement('a');a.href='/alerts/'+encodeURIComponent(event.image);a.target='_blank';a.textContent='Mở ảnh';cell.append(a)}else cell.textContent='Không có'}
+    $('latest-alert').textContent=entries.length?entries[0].status+' · '+(entries[0].time||''):'Chưa có cảnh báo đã lưu.';
+  }catch(error){$('message').textContent='Không tải được trạng thái: '+error.message;$('state').textContent='API ERROR';$('state').className='pill ERROR'}
 }
-
-
-async function updateHistory() {
-
-    try {
-
-        const response =
-            await fetch("http://localhost:8000/history");
-
-        const data = await response.json();
-
-        const history =
-            document.getElementById("history");
-
-        if (data.length === 0) {
-
-            history.innerHTML =
-                '<tr><td colspan="4">Chưa có cảnh báo</td></tr>';
-
-            return;
-        }
-
-        const recent =
-            data.slice().reverse().slice(0, 20);
-
-        history.innerHTML = recent.map(item => {
-
-            const oc =
-                item.oc !== null
-                    ? Number(item.oc).toFixed(3)
-                    : "-";
-
-            const overlap =
-                item.overlap !== null
-                    ? (Number(item.overlap) * 100).toFixed(0) + "%"
-                    : "-";
-
-            return `
-                <tr class="alert-row">
-                    <td>${item.time}</td>
-                    <td>${item.status}</td>
-                    <td>${oc}</td>
-                    <td>${overlap}</td>
-                    <td>
-                        ${
-                            item.image
-                                ? `<a href="http://localhost:8000/alerts/${encodeURIComponent(item.image)}" target="_blank">🖼️ Xem ảnh</a>`
-                                : "-"
-                        }
-                    </td>
-                </tr>
-            `;
-
-        }).join("");
-
-    } catch (error) {
-
-        document.getElementById("history").innerHTML =
-            '<tr><td colspan="4">Không tải được lịch sử</td></tr>';
-    }
-}
-
-
-updateStatus();
-updateHistory();
-
-setInterval(updateStatus, 500);
-setInterval(updateHistory, 2000);
-
+async function loadConfig(){try{const c=await json('/config'),r=c.roi;$('roi-enabled').checked=Boolean(r.enabled);['x1','y1','x2','y2'].forEach((id,i)=>$(id).value=r.coordinates[i]);$('self').value=c.thresholds.self_contact;$('person').value=c.thresholds.other_person_contact;$('object').value=c.thresholds.object_contact;$('overlap').value=r.minimum_bbox_overlap;$('frames').value=c.alert.confirm_frames;$('camera').textContent=c.camera_configured?'URL có trong môi trường API':'Chưa cấu hình URL trong API'}catch(e){$('save-result').textContent=e.message}}
+$('save').addEventListener('click',async()=>{const roi={enabled:$('roi-enabled').checked,coordinates:['x1','y1','x2','y2'].map(id=>Number($(id).value)),minimum_bbox_overlap:Number($('overlap').value)};const body={roi,thresholds:{self_contact:Number($('self').value),other_person_contact:Number($('person').value),object_contact:Number($('object').value)},alert:{confirm_frames:Number($('frames').value)}};try{await json('/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});$('save-result').textContent='Đã lưu';}catch(e){$('save-result').textContent=e.message}});
+$('event-filter').addEventListener('change',refresh);loadConfig();refresh();setInterval(refresh,2500);
 </script>
-
-</body>
-</html>
+<script>
+const originalLoadConfig=loadConfig;
+loadConfig=async()=>{await originalLoadConfig();try{const c=await json('/config'),r=c.roi,polygon=r.shape==='polygon';['x1','y1','x2','y2'].forEach(id=>$(id).disabled=polygon);let note=$('roi-shape-note');if(!note){note=document.createElement('p');note.id='roi-shape-note';note.className='muted';$('overlap').closest('.grid').after(note)}note.textContent=polygon?'ROI đa giác đã hiệu chuẩn ('+(r.points||[]).length+' góc). Dùng python -m src.calibrate_roi --image <ảnh> để hiệu chuẩn lại; không chỉnh bounding rectangle ở đây.':'ROI hình chữ nhật; đặt bốn cạnh bằng tọa độ chuẩn hóa hoặc dùng python -m src.calibrate_roi để chọn bốn góc.'}catch(e){}};
+loadConfig();
+</script></body></html>

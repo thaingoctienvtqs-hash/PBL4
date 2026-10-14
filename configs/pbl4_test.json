@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "camera": {
+    "url": "",
+    "request_timeout_seconds": 5.0,
+    "poll_interval_seconds": 0.5
+  },
+  "roi": {
+    "enabled": true,
+    "shape": "polygon",
+    "coordinates": [
+      0.25210084033613445,
+      0.22124999999999997,
+      0.7563025210084034,
+      0.7649999999999999
+    ],
+    "points": [
+      [
+        0.25210084033613445,
+        0.22124999999999997
+      ],
+      [
+        0.7563025210084034,
+        0.22249999999999998
+      ],
+      [
+        0.7535014005602241,
+        0.7649999999999999
+      ],
+      [
+        0.25210084033613445,
+        0.7637499999999999
+      ]
+    ],
+    "normalized": true,
+    "minimum_bbox_overlap": 0.3
+  },
+  "thresholds": {
+    "hand_score": 0.7,
+    "no_contact": 0.5,
+    "self_contact": 0.5,
+    "other_person_contact": 0.4,
+    "object_contact": 0.15
+  },
+  "alert": {
+    "confirm_frames": 2,
+    "cooldown_seconds": 10.0,
+    "stationary_seconds": 2.0,
+    "move_threshold_pixels": 20.0,
+    "track_timeout_seconds": 1.0,
+    "track_match_distance_normalized": 0.25,
+    "track_iou_threshold": 0.1,
+    "movement_threshold_normalized": 0.015,
+    "history_window_frames": 5,
+    "minimum_contact_roi_frames": 3,
+    "fast_contact_score": 0.85,
+    "fast_contact_consecutive_frames": 2,
+    "clear_after_seconds": 0.75
+  },
+  "model": {
+    "device": "auto",
+    "contacthands_config": "src/configs/ContactHands.yaml",
+    "contacthands_weights": "models/combined_data_model.pth",
+    "second_stream_config": "src/configs/second_stream.yaml",
+    "second_stream_weights": ""
+  },
+  "paths": {
+    "capture_frame": "data/camera_frame.jpg",
+    "latest_frame": "src/data/latest.jpg",
+    "event_db": "src/data/events.sqlite3",
+    "status_file": "src/data/status.txt",
+    "evidence_dir": "src/data/alerts"
+  },
+  "dashboard": {
+    "host": "127.0.0.1",
+    "port": 8000,
+    "stale_after_seconds": 15
+  }
+}

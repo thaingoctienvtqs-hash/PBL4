@@ -2,6 +2,7 @@ import random
 import cv2
 import os
 import argparse
+from pathlib import Path
 import numpy as np 
 import torch
 from detectron2.config import get_cfg
@@ -13,6 +14,17 @@ from contact_hands_two_stream.engine import CustomPredictor
 from detectron2.modeling import build_model
 from detectron2.data import MetadataCatalog
 from detectron2.checkpoint import DetectionCheckpointer, PeriodicCheckpointer
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_SECOND_STREAM_URI = (
+    "detectron2://COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/"
+    "138205316/model_final_a3ec72.pkl"
+)
+DEFAULT_SECOND_STREAM_CACHE = (
+    Path.home() / ".torch" / "iopath_cache" / "detectron2" /
+    "COCO-InstanceSegmentation" / "mask_rcnn_R_101_FPN_3x" /
+    "138205316" / "model_final_a3ec72.pkl"
+)
 
 
 class CustomPredictorTwoStream:
@@ -46,19 +58,49 @@ def inference_second_stream(model, image):
     outputs = model(image)   
     return outputs 
 
-def prepare_second_stream():
+def prepare_second_stream(weights=None, config_file=None, device="auto"):
     cfg2 = get_cfg()
-    cfg2.merge_from_file('./src/configs/second_stream.yaml')
-    cfg2.MODEL.WEIGHTS = "/home/legion/.torch/iopath_cache/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_101_FPN_3x/138205316/model_final_a3ec72.pkl"
+    config_file = Path(config_file or PROJECT_ROOT / "src" / "configs" / "second_stream.yaml")
+    if not config_file.is_file():
+        raise FileNotFoundError("Second-stream config not found: {}".format(config_file))
+    cfg2.merge_from_file(str(config_file))
+    weights = weights or os.environ.get("CONTACTHANDS_SECOND_STREAM_WEIGHTS")
+    if weights:
+        if not str(weights).startswith("detectron2://"):
+            weight_path = Path(weights).expanduser()
+            if not weight_path.is_file():
+                raise FileNotFoundError("Second-stream checkpoint not found: {}".format(weight_path))
+            weights = str(weight_path.resolve())
+    else:
+        # Some project-local Detectron2 checkpointers do not resolve detectron2:// URIs.
+        # Use the standard cache directly when present; keep the URI fallback portable.
+        weights = (str(DEFAULT_SECOND_STREAM_CACHE)
+                   if DEFAULT_SECOND_STREAM_CACHE.is_file()
+                   else DEFAULT_SECOND_STREAM_URI)
+    cfg2.MODEL.WEIGHTS = weights
+    if device != "auto":
+        cfg2.MODEL.DEVICE = device
+    elif not torch.cuda.is_available():
+        cfg2.MODEL.DEVICE = "cpu"
     model2 = CustomPredictor(cfg2)
     return model2
 
-def prepare_first_stream(cfg_file, weights, roi_score_thresh):
+def prepare_first_stream(cfg_file, weights, roi_score_thresh, device="auto"):
     cfg1 = get_cfg()
     add_contacthands_config(cfg1)
-    cfg1.merge_from_file(cfg_file)
+    cfg_file = Path(cfg_file)
+    weights = Path(weights).expanduser()
+    if not cfg_file.is_file():
+        raise FileNotFoundError("ContactHands config not found: {}".format(cfg_file))
+    if not weights.is_file():
+        raise FileNotFoundError("ContactHands checkpoint not found: {}".format(weights))
+    cfg1.merge_from_file(str(cfg_file))
     cfg1.MODEL.ROI_HEADS.SCORE_THRESH_TEST = roi_score_thresh
-    cfg1.MODEL.WEIGHTS = weights
+    cfg1.MODEL.WEIGHTS = str(weights.resolve())
+    if device != "auto":
+        cfg1.MODEL.DEVICE = device
+    elif not torch.cuda.is_available():
+        cfg1.MODEL.DEVICE = "cpu"
     model1 = CustomPredictorTwoStream(cfg1)
     
     return model1   
@@ -87,34 +129,52 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Arguments for evaluation')
     
-    parser.add_argument('--image_dir', required=True, metavar='path to images', help='path to images')
-    parser.add_argument('--ROI_SCORE_THRESH', required=False, metavar='threshold for hand detections', \
-    	help='hand detection score threshold', default=0.7)
-    parser.add_argument('--sc', required=False, metavar='threshold for self-contact', 
-        help='threshold for self-contact', default=0.5)
-    parser.add_argument('--pc', required=False, metavar='threshold for person-contact', 
-        help='threshold for self-contact', default=0.3)
-    parser.add_argument('--oc', required=False, metavar='threshold for object-contact', 
-        help='threshold for self-contact', default=0.6)
+    parser.add_argument('--image_dir', metavar='path to images', help='directory of images')
+    parser.add_argument('--image', help='single image path')
+    parser.add_argument('--weights', default=str(PROJECT_ROOT / 'models' / 'combined_data_model.pth'))
+    parser.add_argument('--second-stream-weights', default=None)
+    parser.add_argument('--output-dir', default=str(PROJECT_ROOT / 'results'))
+    parser.add_argument('--device', choices=('auto', 'cpu', 'cuda'), default='auto')
+    parser.add_argument('--ROI_SCORE_THRESH', type=float, metavar='hand threshold', default=0.7)
+    parser.add_argument('--sc', type=float, help='self-contact threshold', default=0.5)
+    parser.add_argument('--pc', type=float, help='other-person-contact threshold', default=0.4)
+    parser.add_argument('--oc', type=float, help='object-contact threshold', default=0.6)
 
     args = parser.parse_args()
-    images_path = args.image_dir
-    roi_score_thresh = float(args.ROI_SCORE_THRESH)
-    sc_thresh = float(args.sc)
-    pc_thresh = float(args.pc)
-    oc_thresh = float(args.oc)
+    if not args.image and not args.image_dir:
+        parser.error('provide --image or --image_dir')
+    for name in ('ROI_SCORE_THRESH', 'sc', 'pc', 'oc'):
+        if not 0.0 <= getattr(args, name) <= 1.0:
+            parser.error('--{} must be between 0 and 1'.format(name))
+    roi_score_thresh = args.ROI_SCORE_THRESH
+    sc_thresh, pc_thresh, oc_thresh = args.sc, args.pc, args.oc
     contact_thresh = [0.5, sc_thresh, pc_thresh, oc_thresh] 
     # if the scores for all contact states is less than corresponding thresholds, No-Contact is predicted; 0.5 is dummy here, it is not used.
 
-    model2 = prepare_second_stream()
-    model1 = prepare_first_stream('./src/configs/ContactHands.yaml', './models/combined_data_model.pth', roi_score_thresh)
+    model2 = prepare_second_stream(args.second_stream_weights, device=args.device)
+    model1 = prepare_first_stream(PROJECT_ROOT / 'src' / 'configs' / 'ContactHands.yaml',
+                                  args.weights, roi_score_thresh, args.device)
 
-    images = sorted(os.listdir(images_path))
+    image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tif', '.tiff'}
+    if args.image:
+        images = [Path(args.image).expanduser()]
+    else:
+        images_path = Path(args.image_dir).expanduser()
+        if not images_path.is_dir():
+            parser.error('image directory does not exist: {}'.format(images_path))
+        images = sorted(path for path in images_path.iterdir()
+                        if path.is_file() and path.suffix.lower() in image_extensions)
+        if not images:
+            parser.error('image directory contains no supported images')
+    output_dir = Path(args.output_dir).expanduser()
+    output_dir.mkdir(parents=True, exist_ok=True)
     count = 0
     for img in images:
         count += 1
-        print(count)
-        im = cv2.imread(os.path.join(images_path, img))
+        im = cv2.imread(str(img))
+        if im is None:
+            print('SKIP unreadable image: {}'.format(img))
+            continue
         height, width = im.shape[0], im.shape[1]
         ratio = height / width
         im = cv2.resize(im, (720, int(720*ratio)))
@@ -122,7 +182,10 @@ if __name__ == '__main__':
         v = CustomVisualizer(im[:, :, ::-1], MetadataCatalog.get("ContactHands_test"), scale=1, scores_thresh=contact_thresh)   
         v = v.draw_instance_predictions(outputs["instances"].to("cpu"))
         out_im = add_legend(v.get_image()[:, :, ::-1])
-        cv2.imwrite('./results/res_' + img, out_im)        
+        output_path = output_dir / ('res_' + img.name)
+        if not cv2.imwrite(str(output_path), out_im):
+            raise OSError('could not write inference result: {}'.format(output_path))
+        print('{}/{} {}'.format(count, len(images), output_path))
 
 
 def overlap_ratio(hand_box, roi):
@@ -153,11 +216,12 @@ def find_painting_touches(
     if len(instances) == 0:
         return []
 
-    boxes = instances.pred_boxes.tensor.numpy()
-    det_scores = instances.scores.numpy()
-    cats = instances.pred_cats.numpy()
+    instances = instances.to("cpu")
+    boxes = instances.pred_boxes.tensor.detach().cpu().numpy()
+    det_scores = instances.scores.detach().cpu().numpy()
+    cats = instances.pred_cats.detach().cpu().numpy()
 
-    oc_scores = cats[:, 3] * det_scores
+    oc_scores = cats[:, 3]
 
     alerts = []
 

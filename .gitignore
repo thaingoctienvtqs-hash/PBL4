@@ -25,6 +25,12 @@ models/*.onnx
 webcam_frame.jpg
 webcam_result.jpg
 webcam_status.txt
+data/camera_frame.jpg
+src/data/latest.jpg
+src/data/status.txt
+src/data/events.sqlite3*
+src/data/alerts/suspected_contact_*.jpg
+results/res_*
 
 # IDE
 .vscode/
