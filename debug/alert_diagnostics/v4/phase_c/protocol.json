@@ -1,0 +1,24 @@
+{
+  "version": "phase-c-1",
+  "window_seconds": 1,
+  "window_positive": "any human-labeled physical contact overlap",
+  "uncertain_window": "exclude entire overlapping window and report exposure",
+  "missing_prediction": "third confusion column; block primary metrics",
+  "early_tolerance_seconds": 0,
+  "late_tolerance_seconds": 0.5,
+  "max_detection_delay_seconds": 2,
+  "max_uncertain_exposure_fraction": 0.05,
+  "metrics_unit": "window classification and physical-contact event detection reported separately",
+  "split_group_keys": [
+    "session_id",
+    "capture_group_id",
+    "sha256"
+  ],
+  "target": {
+    "accuracy_strictly_greater_than": 0.8,
+    "precision_at_least": 0.8,
+    "recall_at_least": 0.8,
+    "f1_at_least": 0.8
+  },
+  "status": "PREDECLARED_NOT_MEASURED"
+}

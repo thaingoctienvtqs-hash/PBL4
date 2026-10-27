@@ -1,0 +1,602 @@
+{
+  "runner_exit": 1,
+  "blocked_operation_attempts": [],
+  "write_accesses": [
+    {
+      "path": "io_tests/b3ea05067bad46fc998b1b315e4f92c2/settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/b3ea05067bad46fc998b1b315e4f92c2/predictions.jsonl",
+      "mode": "xb"
+    },
+    {
+      "path": "io_tests/b3ea05067bad46fc998b1b315e4f92c2/output/offline_20261017T045604999554Z_8560d615/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/b3ea05067bad46fc998b1b315e4f92c2/output/offline_20261017T045604999554Z_8560d615/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/a70b09bb699d45999f3d57b6a0505526/settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/a70b09bb699d45999f3d57b6a0505526/predictions.jsonl",
+      "mode": "xb"
+    },
+    {
+      "path": "io_tests/a70b09bb699d45999f3d57b6a0505526/output/offline_20261017T045605177970Z_502f915e/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/a70b09bb699d45999f3d57b6a0505526/output/offline_20261017T045605177970Z_502f915e/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/80fcb5732a7042c89d6f5e7fbf9f45cf/settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/80fcb5732a7042c89d6f5e7fbf9f45cf/predictions.jsonl",
+      "mode": "xb"
+    },
+    {
+      "path": "io_tests/80fcb5732a7042c89d6f5e7fbf9f45cf/output/offline_20261017T045605271736Z_d45be80a/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/80fcb5732a7042c89d6f5e7fbf9f45cf/output/offline_20261017T045605271736Z_d45be80a/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/050b74e66b8342209a922973d551dbef/settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/050b74e66b8342209a922973d551dbef/predictions.jsonl",
+      "mode": "xb"
+    },
+    {
+      "path": "io_tests/050b74e66b8342209a922973d551dbef/output/offline_20261017T045605372312Z_3210485c/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/050b74e66b8342209a922973d551dbef/output/offline_20261017T045605372312Z_3210485c/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/050b74e66b8342209a922973d551dbef/output/offline_20261017T045605432196Z_03c56f17/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/050b74e66b8342209a922973d551dbef/output/offline_20261017T045605432196Z_03c56f17/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/frozen_B_C.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/phase_d_tests.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/phase_e_tests.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/slow_entry.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/slow_entry.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/slow_entry/offline_20261017T045605588538Z_a2a84049/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/slow_entry/offline_20261017T045605588538Z_a2a84049/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/initial_inside.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/initial_inside.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/initial_inside/offline_20261017T045605707317Z_519eea48/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/initial_inside/offline_20261017T045605707317Z_519eea48/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/printed_static.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/printed_static.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/printed_static/offline_20261017T045605807702Z_b5fcfb7f/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/printed_static/offline_20261017T045605807702Z_b5fcfb7f/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/polygon_slow_entry.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/polygon_slow_entry.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/polygon_slow_entry/offline_20261017T045605917761Z_278926f4/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/polygon_slow_entry/offline_20261017T045605917761Z_278926f4/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/multiple_separate_hands.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/multiple_separate_hands.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/multiple_separate_hands/offline_20261017T045606028830Z_7a2fed37/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/multiple_separate_hands/offline_20261017T045606028830Z_7a2fed37/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/score_oscillation.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/score_oscillation.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/score_oscillation/offline_20261017T045606127732Z_57b5f642/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/score_oscillation/offline_20261017T045606127732Z_57b5f642/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/missing_detection.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/missing_detection.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/missing_detection/offline_20261017T045606341589Z_1e17121a/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/missing_detection/offline_20261017T045606341589Z_1e17121a/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/two_bouts_same_entry.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/two_bouts_same_entry.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/two_bouts_same_entry/offline_20261017T045606447658Z_3a2780d3/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/two_bouts_same_entry/offline_20261017T045606447658Z_3a2780d3/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_moderate_1fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_moderate_1fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_moderate_1fps/offline_20261017T045606759479Z_d54d7de8/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_moderate_1fps/offline_20261017T045606759479Z_d54d7de8/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_fast_1fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_fast_1fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_fast_1fps/offline_20261017T045606866110Z_129b792b/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_fast_1fps/offline_20261017T045606866110Z_129b792b/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_moderate_5fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_moderate_5fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_moderate_5fps/offline_20261017T045606979287Z_b19a02a2/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_moderate_5fps/offline_20261017T045606979287Z_b19a02a2/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_fast_5fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_fast_5fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_fast_5fps/offline_20261017T045607544038Z_e21e3280/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_fast_5fps/offline_20261017T045607544038Z_e21e3280/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_moderate_10fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_moderate_10fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_moderate_10fps/offline_20261017T045607667441Z_4635d4ee/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_moderate_10fps/offline_20261017T045607667441Z_4635d4ee/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_fast_10fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_fast_10fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_fast_10fps/offline_20261017T045607799947Z_ab275267/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_fast_10fps/offline_20261017T045607799947Z_ab275267/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_moderate_15fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_moderate_15fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_moderate_15fps/offline_20261017T045607923296Z_80b20ec5/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_moderate_15fps/offline_20261017T045607923296Z_80b20ec5/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_fast_15fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_fast_15fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_fast_15fps/offline_20261017T045608066056Z_71507a6a/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_fast_15fps/offline_20261017T045608066056Z_71507a6a/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_moderate_30fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_moderate_30fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_moderate_30fps/offline_20261017T045608240438Z_53867045/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_moderate_30fps/offline_20261017T045608240438Z_53867045/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_fast_30fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/contact_fast_30fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_fast_30fps/offline_20261017T045608420785Z_33e551cc/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/contact_fast_30fps/offline_20261017T045608420785Z_33e551cc/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/crossing_0.0.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/crossing_0.0.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/crossing_0.0/offline_20261017T045608696271Z_97f08d28/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/crossing_0.0/offline_20261017T045608696271Z_97f08d28/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/crossing_0.01.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/crossing_0.01.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/crossing_0.01/offline_20261017T045608820353Z_677c30ee/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/crossing_0.01/offline_20261017T045608820353Z_677c30ee/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/crossing_0.03.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/crossing_0.03.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/crossing_0.03/offline_20261017T045608951261Z_c5b52262/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/crossing_0.03/offline_20261017T045608951261Z_c5b52262/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/disconnect_alert_reconnect_inside.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/disconnect_alert_reconnect_inside.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/disconnect_alert_reconnect_inside/offline_20261017T045609057165Z_814e884c/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/disconnect_alert_reconnect_inside/offline_20261017T045609057165Z_814e884c/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/shake_recovery_requires_entry.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/shake_recovery_requires_entry.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/shake_recovery_requires_entry/offline_20261017T045609160969Z_19074dd7/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/shake_recovery_requires_entry/offline_20261017T045609160969Z_19074dd7/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/separate_episodes_default_cooldown.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/separate_episodes_default_cooldown.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/separate_episodes_default_cooldown/offline_20261017T045609277499Z_769bebf7/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/separate_episodes_default_cooldown/offline_20261017T045609277499Z_769bebf7/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/explicit_missing_frame.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/explicit_missing_frame.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/explicit_missing_frame/offline_20261017T045609426750Z_5b9c347d/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/explicit_missing_frame/offline_20261017T045609426750Z_5b9c347d/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/explicit_frame_error.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/explicit_frame_error.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/explicit_frame_error/offline_20261017T045609532769Z_203462a8/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/explicit_frame_error/offline_20261017T045609532769Z_203462a8/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/duplicate_stale_nonmonotonic.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/duplicate_stale_nonmonotonic.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/duplicate_stale_nonmonotonic/offline_20261017T045609634879Z_6111dc0a/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/duplicate_stale_nonmonotonic/offline_20261017T045609634879Z_6111dc0a/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/malformed_payload_barrier.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/malformed_payload_barrier.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/malformed_payload_barrier/offline_20261017T045609768588Z_bd3c5293/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/malformed_payload_barrier/offline_20261017T045609768588Z_bd3c5293/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/unknown_stability_real_contact.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/unknown_stability_real_contact.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/unknown_stability_real_contact/offline_20261017T045609951434Z_c74bd12c/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/unknown_stability_real_contact/offline_20261017T045609951434Z_c74bd12c/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/stable_hold_missing_recovery.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/stable_hold_missing_recovery.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/stable_hold_missing_recovery/offline_20261017T045610041820Z_cc5c330e/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/stable_hold_missing_recovery/offline_20261017T045610041820Z_cc5c330e/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/stable_hold_frame_error_recovery.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/inputs/stable_hold_frame_error_recovery.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/stable_hold_frame_error_recovery/offline_20261017T045610131880Z_891cb6ce/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/replays/stable_hold_frame_error_recovery/offline_20261017T045610131880Z_891cb6ce/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/offline_comparison.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/protected_after.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T045603588287Z_349f7bed/summary.json",
+      "mode": "x"
+    }
+  ],
+  "all_observed_writes_inside_phase_e": true,
+  "sqlite3_import_note": "Frozen v3 comparison imports EventStore; module import does not open a database.",
+  "forbidden_AI_modules_loaded": [],
+  "captured_runner_output": "{\n  \"python\": \"3.7.16 (default, Jan 17 2023, 22:20:44) \\n[GCC 11.2.0]\",\n  \"frozen_B_C\": {\n    \"tests\": 103,\n    \"pass\": 98,\n    \"fail\": 5,\n    \"error\": 0,\n    \"skip\": 0\n  },\n  \"phase_d\": {\n    \"tests\": 64,\n    \"pass\": 64,\n    \"fail\": 0,\n    \"error\": 0,\n    \"skip\": 0\n  },\n  \"phase_e\": {\n    \"tests\": 82,\n    \"pass\": 80,\n    \"fail\": 2,\n    \"error\": 0,\n    \"skip\": 0\n  },\n  \"known_B_C_failures_retained\": true,\n  \"known_D_recovery_limits_retained_as_FAIL\": true,\n  \"offline_scenarios\": 31,\n  \"jsonl_records\": 809,\n  \"direct_phase_d_records_compared\": 808,\n  \"phase_d_equivalence_pass\": true,\n  \"protected_files\": 315,\n  \"protected_unchanged\": true,\n  \"python_files_parsed\": [\n    \"__init__.py\",\n    \"compare_phase_d.py\",\n    \"controlled_cases.py\",\n    \"offline_pipeline.py\",\n    \"prediction_adapter.py\",\n    \"replay.py\",\n    \"run_tests.py\",\n    \"runtime_audit.py\",\n    \"stability.py\",\n    \"test_adapter.py\",\n    \"test_replay_io.py\"\n  ],\n  \"forbidden_runtime_modules_loaded\": [\n    \"sqlite3\"\n  ],\n  \"camera_or_gpu_run\": false,\n  \"real_AI_metrics\": \"NOT_EVALUATED\",\n  \"all_phase_e_tests_pass\": false\n}\nArtifacts: /mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045603588287Z_349f7bed\n"
+}

@@ -1,0 +1,54 @@
+{
+  "data_kind": "SYNTHETIC_TEST",
+  "purpose": "Schema unit fixtures only; NOT AI evaluation or real labels",
+  "cases": [
+    {
+      "file": "01_no_hand.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    },
+    {
+      "file": "02_touch.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    },
+    {
+      "file": "03_near_no_touch.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    },
+    {
+      "file": "04_depicted_hand.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    },
+    {
+      "file": "05_initial_inside.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    },
+    {
+      "file": "06_two_hands_crossing.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    },
+    {
+      "file": "07_moving_offline.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    },
+    {
+      "file": "08_timestamp_unknown.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    },
+    {
+      "file": "09_partial_roi.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    },
+    {
+      "file": "10_invalid_missing_video_id.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": false
+    },
+    {
+      "file": "11_optional_reid.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    },
+    {
+      "file": "12_side_reference_touch.SYNTHETIC_TEST.json",
+      "expected_annotation_valid": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "records": 15,
+  "accepted": 15,
+  "rejected": 0,
+  "unavailable_records": 0,
+  "confirmation_records": 10,
+  "event_count": 1,
+  "events": [
+    {
+      "event_key": "boot0_track_0_episode_1",
+      "track_id": 0,
+      "timestamp": 1.4000000000000001,
+      "reason": "window_and_time_confirmed",
+      "source_id": "painting0",
+      "source_event_key": "painting0::boot0_track_0_episode_1"
+    }
+  ],
+  "non_confirmation_reasons": {
+    "no_confirmable_contact_see_track_reasons": 5
+  },
+  "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+  "input_sha256": "2504a323df5b83883c3c75e9bc915222150605f26d0120a76d4b63377a336291",
+  "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/io_tests/849215eb820a481a821e5c49968b45ad/predictions.jsonl",
+  "config": {
+    "schema_version": 1,
+    "sources": {
+      "painting0": {
+        "session_id": "boot0",
+        "calibration_id": "offline_controlled_reference",
+        "pipeline_config": {
+          "roi": {
+            "enabled": true,
+            "normalized": true,
+            "shape": "rectangle",
+            "coordinates": [
+              0.4,
+              0.1,
+              0.8,
+              0.9
+            ]
+          }
+        }
+      }
+    }
+  },
+  "simulate_stability": true,
+  "real_camera_or_gpu_run": false
+}

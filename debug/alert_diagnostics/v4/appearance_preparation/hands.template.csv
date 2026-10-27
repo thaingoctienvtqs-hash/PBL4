@@ -1,0 +1,1 @@
+observation_id,session_id,frame_id,entity_kind,hand_id,person_group_id,depiction_id,side,identity_status,bbox_xyxy,occlusion,visibility_fraction,review

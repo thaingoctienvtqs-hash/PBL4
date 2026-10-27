@@ -1,0 +1,71 @@
+{
+  "python": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+  "B_C": {
+    "tests": 103,
+    "pass": 98,
+    "fail": 5,
+    "error": 0,
+    "skip": 0
+  },
+  "D": {
+    "tests": 64,
+    "pass": 64,
+    "fail": 0,
+    "error": 0,
+    "skip": 0
+  },
+  "E_in_memory": {
+    "tests": 78,
+    "pass": 76,
+    "fail": 2,
+    "error": 0,
+    "skip": 0
+  },
+  "F": {
+    "tests": 65,
+    "pass": 64,
+    "fail": 1,
+    "error": 0,
+    "skip": 0
+  },
+  "frozen_regression_behaviour_unchanged": true,
+  "E_IO_tests_not_rerun": 4,
+  "E_IO_reason": "Would write frozen E; six equivalent F file tests run instead",
+  "two_old_recovery_gates": [
+    {
+      "scenario": "explicit_missing_frame",
+      "D_events": 0,
+      "E_events": 0,
+      "F_geometry_events": 1,
+      "F_strict_events": 0,
+      "experiment_gate_pass": true
+    },
+    {
+      "scenario": "explicit_frame_error",
+      "D_events": 0,
+      "E_events": 0,
+      "F_geometry_events": 1,
+      "F_strict_events": 0,
+      "experiment_gate_pass": true
+    }
+  ],
+  "comparison_scenarios": 48,
+  "comparison_rows": 144,
+  "D_E_core_mismatches": 0,
+  "protected_files": 672,
+  "protected_unchanged": true,
+  "known_information_limit_failure_visible": true,
+  "camera_GPU_used": false,
+  "model_metrics": "NOT_EVALUATED",
+  "python_parsed": [
+    "__init__.py",
+    "cases_f.py",
+    "compare_f.py",
+    "pipeline_f.py",
+    "recovery_tracker.py",
+    "replay_f.py",
+    "run_checks.py",
+    "test_f.py",
+    "test_io_f.py"
+  ]
+}

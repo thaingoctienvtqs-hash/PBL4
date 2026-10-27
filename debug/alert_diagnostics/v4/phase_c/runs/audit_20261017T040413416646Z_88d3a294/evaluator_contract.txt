@@ -1,0 +1,12 @@
+test_complete_math_fixture_evaluates_without_model (debug.alert_diagnostics.v4.phase_c.test_evaluator.EvaluatorTests) ... ok
+test_event_in_negative_interval_rejected (debug.alert_diagnostics.v4.phase_c.test_evaluator.EvaluatorTests) ... ok
+test_missing_contact_event_annotation_rejected (debug.alert_diagnostics.v4.phase_c.test_evaluator.EvaluatorTests) ... ok
+test_missing_predictions_block_target_assessment (debug.alert_diagnostics.v4.phase_c.test_evaluator.EvaluatorTests) ... ok
+test_no_real_manifest_never_produces_metrics (debug.alert_diagnostics.v4.phase_c.test_evaluator.EvaluatorTests) ... ok
+test_unapproved_labels_rejected (debug.alert_diagnostics.v4.phase_c.test_evaluator.EvaluatorTests) ... ok
+test_unknown_video_rejected (debug.alert_diagnostics.v4.phase_c.test_evaluator.EvaluatorTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK

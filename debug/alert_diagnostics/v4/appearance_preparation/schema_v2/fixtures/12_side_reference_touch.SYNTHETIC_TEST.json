@@ -1,0 +1,209 @@
+{
+  "schema_version": "2.0",
+  "data_kind": "SYNTHETIC_TEST",
+  "dataset_id": "SYNTHETIC_TEST_ONLY",
+  "annotation_version": "SYNTHETIC_TEST_1",
+  "coordinate_convention": "ZERO_BASED_CONTINUOUS_PIXEL_XYXY",
+  "sessions": [
+    {
+      "session_id": "s1",
+      "capture_group_id": "group1",
+      "source_id": "cam1",
+      "camera": {
+        "camera_id": "cam1",
+        "sensor": "OV3660",
+        "mounting_position": "TOP_EDGE_DIRECT",
+        "viewing_direction": "OBLIQUE_DOWNWARD",
+        "tilt_degrees": null,
+        "tilt_convention": "DEGREES_FROM_ARTWORK_PLANE_0_PARALLEL_90_NORMAL",
+        "tilt_uncertainty_degrees": null,
+        "fov_horizontal_degrees": null,
+        "fov_vertical_degrees": null,
+        "configured_resolution": {
+          "width": null,
+          "height": null
+        },
+        "measurement_notes": "SYNTHETIC_TEST. Actual camera angle/FOV/resolution unmeasured."
+      },
+      "artwork_id": "SYNTHETIC_TEST_ARTWORK",
+      "host_clock_id": "host_clock",
+      "person_group_ids": [
+        "p1",
+        "p2"
+      ],
+      "split": "unassigned",
+      "scenario_tags": [
+        "SYNTHETIC_TEST"
+      ],
+      "review": {
+        "status": "APPROVED",
+        "reviewer_ids": [
+          "SYNTHETIC_TEST_REVIEWER_A",
+          "SYNTHETIC_TEST_REVIEWER_B"
+        ],
+        "notes": "SYNTHETIC_TEST only; no human/video verification was performed."
+      }
+    }
+  ],
+  "videos": [
+    {
+      "video_id": "v1",
+      "session_id": "s1",
+      "segment_id": "segment1",
+      "media_kind": "RAW_VIDEO",
+      "relative_path": "SYNTHETIC_TEST/not_a_real_video.mp4",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "capture_clock_id": "capture_clock",
+      "timestamp_basis": "VIDEO_PTS",
+      "duration_ms": 10000,
+      "nominal_fps": null,
+      "resolution": {
+        "width": 640,
+        "height": 480
+      }
+    }
+  ],
+  "reference_videos": [
+    {
+      "reference_id": "r1",
+      "session_id": "s1",
+      "view": "SIDE_GROUND_TRUTH_ONLY",
+      "relative_path": "SYNTHETIC_TEST/side.mp4",
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "clock_id": "side_clock"
+    }
+  ],
+  "synchronizations": [
+    {
+      "sync_id": "sync1",
+      "video_id": "v1",
+      "reference_id": "r1",
+      "status": "MEASURED",
+      "method": "VISUAL_MARKER",
+      "mapping": "REFERENCE_MS_EQUALS_PRIMARY_MS_PLUS_OFFSET_AT_ANCHOR",
+      "primary_anchor_ms": 0,
+      "offset_ms": 100,
+      "uncertainty_ms": 12,
+      "drift_ppm": null,
+      "notes": "SYNTHETIC_TEST values; no actual synchronization."
+    }
+  ],
+  "calibrations": [
+    {
+      "calibration_id": "c1",
+      "video_id": "v1",
+      "status": "UNMEASURED",
+      "reference_frame_id": null,
+      "image_space": "RAW",
+      "roi": null,
+      "coverage": {
+        "status": "UNKNOWN",
+        "visible_surface_fraction": null,
+        "observable_surface_fraction": null,
+        "unobservable_regions": [],
+        "notes": "SYNTHETIC_TEST; no coverage measurements."
+      },
+      "artwork_width_mm": null,
+      "artwork_height_mm": null,
+      "intrinsics_id": null,
+      "homography_image_to_artwork": null,
+      "homography_reprojection_error_px": null,
+      "notes": "SYNTHETIC_TEST; no calibration was run."
+    }
+  ],
+  "frames": [
+    {
+      "session_id": "s1",
+      "video_id": "v1",
+      "source_id": "cam1",
+      "frame_id": "f0",
+      "source_frame_id": null,
+      "sequence_index": 0,
+      "capture_clock_id": "capture_clock",
+      "capture_timestamp_ms": 0,
+      "host_clock_id": "host_clock",
+      "host_receive_timestamp_ms": 100000,
+      "timestamp_status": "VALID",
+      "frame_status": "OK",
+      "camera_state": "UNKNOWN",
+      "raw_image_path": "SYNTHETIC_TEST/frame_0.jpg",
+      "raw_image_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "width": 640,
+      "height": 480,
+      "calibration_id": "c1",
+      "image_space": "RAW",
+      "observation_notes": "SYNTHETIC_TEST; media does not exist."
+    }
+  ],
+  "hands": [
+    {
+      "observation_id": "o1",
+      "session_id": "s1",
+      "video_id": "v1",
+      "frame_id": "f0",
+      "entity_kind": "REAL_HAND",
+      "hand_id": "h1",
+      "person_group_id": "p1",
+      "depiction_id": null,
+      "identity_status": "VERIFIED",
+      "side": "LEFT",
+      "bbox_xyxy": [
+        200,
+        180,
+        280,
+        260
+      ],
+      "occlusion": "NONE",
+      "visibility_fraction": 1,
+      "first_observed_location": "UNKNOWN",
+      "review": {
+        "status": "APPROVED",
+        "reviewer_ids": [
+          "SYNTHETIC_TEST_REVIEWER_A",
+          "SYNTHETIC_TEST_REVIEWER_B"
+        ],
+        "notes": "SYNTHETIC_TEST only; no human/video verification was performed."
+      }
+    }
+  ],
+  "tracking_gaps": [],
+  "contact_events": [
+    {
+      "event_id": "e1",
+      "session_id": "s1",
+      "video_id": "v1",
+      "hand_id": "h1",
+      "observation_ids": [
+        "o1"
+      ],
+      "scope": "HAND",
+      "label": "TOUCH",
+      "start_frame_id": "f0",
+      "end_frame_id": "f0",
+      "start_timestamp_ms": 0,
+      "end_timestamp_ms": 1000,
+      "boundary_uncertainty_ms": null,
+      "near_definition": null,
+      "ground_truth": {
+        "verification_status": "VERIFIED",
+        "sources": [
+          {
+            "kind": "SIDE_REFERENCE",
+            "video_id": null,
+            "reference_id": "r1",
+            "sync_id": "sync1",
+            "evidence_notes": "SYNTHETIC_TEST side-camera label."
+          }
+        ],
+        "review": {
+          "status": "APPROVED",
+          "reviewer_ids": [
+            "SYNTHETIC_TEST_REVIEWER_A",
+            "SYNTHETIC_TEST_REVIEWER_B"
+          ],
+          "notes": "SYNTHETIC_TEST only; no human/video verification was performed."
+        }
+      }
+    }
+  ]
+}

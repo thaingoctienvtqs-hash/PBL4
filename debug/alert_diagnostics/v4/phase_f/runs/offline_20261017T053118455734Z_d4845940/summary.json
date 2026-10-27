@@ -1,0 +1,28 @@
+{
+  "records": 7,
+  "accepted": 7,
+  "rejected": 0,
+  "unavailable_records": 2,
+  "confirmation_records": 1,
+  "event_count": 1,
+  "events": [
+    {
+      "event_key": "boot0_track_0_episode_1",
+      "track_id": 0,
+      "timestamp": 1.2,
+      "reason": "contact_persists",
+      "source_id": "painting0",
+      "source_event_key": "painting0::boot0_track_0_episode_1"
+    }
+  ],
+  "non_confirmation_reasons": {
+    "no_confirmable_contact_see_track_reasons": 3,
+    "valid_frame_without_hand": 1,
+    "explicit_offline_stable": 2
+  },
+  "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+  "input_sha256": "d5e3b29b6482fab907bb9f7caf90c2b2edf019477e4144734803e4fe59de59a7",
+  "geometry_recovery": true,
+  "simulate_stability": true,
+  "real_camera_or_gpu_run": false
+}

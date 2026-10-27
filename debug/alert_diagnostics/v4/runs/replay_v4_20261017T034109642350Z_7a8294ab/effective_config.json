@@ -1,0 +1,56 @@
+{
+  "schema_version": 4,
+  "thresholds": {
+    "hand_score": 0.7,
+    "object_contact": 0.15,
+    "fast_score": 0.85,
+    "minimum_overlap": 0.3
+  },
+  "roi": {
+    "enabled": true,
+    "shape": "rectangle",
+    "normalized": true,
+    "coordinates": [
+      0.4,
+      0.1,
+      0.8,
+      0.9
+    ],
+    "points": []
+  },
+  "tracking": {
+    "max_idle_seconds": 2.0,
+    "max_distance": 0.25,
+    "reacquire_distance": 0.1,
+    "prediction_horizon_seconds": 0.5,
+    "max_velocity": 0.5,
+    "ambiguity_margin": 0.05,
+    "max_tracks": 64
+  },
+  "entry": {
+    "outside_overlap": 0.2,
+    "inside_overlap": 0.4,
+    "minimum_displacement": 0.015,
+    "entry_memory_seconds": 10.0,
+    "exit_confirm_seconds": 0.4
+  },
+  "temporal": {
+    "window_frames": 5,
+    "minimum_frames": 3,
+    "fast_frames": 2,
+    "max_evidence_age_seconds": 6.0,
+    "max_support_gap_seconds": 2.0,
+    "support_interval_cap_seconds": 0.5,
+    "minimum_supported_seconds": 0.4,
+    "fast_min_span_seconds": 0.2,
+    "clear_after_seconds": 0.75,
+    "missing_grace_seconds": 2.0,
+    "cooldown_seconds": 60.0,
+    "ema_tau_seconds": 0.5
+  },
+  "input": {
+    "max_frame_age_seconds": 3.0,
+    "frame_id_cache_size": 4096,
+    "max_detections": 32
+  }
+}

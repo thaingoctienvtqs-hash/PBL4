@@ -1,0 +1,3731 @@
+[
+  {
+    "scenario": "camera_fast_jolt_printed_hand",
+    "timeout_seconds": 1,
+    "predictions_sha256": "b1b192a72cb1d7f4537295efd29b18a9e910de2e8579cfc9a46b74587d77ba5c",
+    "camera_evidence": "controlled_background_jolt_from_reference",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 1
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 4
+    }
+  },
+  {
+    "scenario": "camera_fast_jolt_printed_hand",
+    "timeout_seconds": 2,
+    "predictions_sha256": "b1b192a72cb1d7f4537295efd29b18a9e910de2e8579cfc9a46b74587d77ba5c",
+    "camera_evidence": "controlled_background_jolt_from_reference",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 1
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 4
+    }
+  },
+  {
+    "scenario": "camera_fast_jolt_printed_hand",
+    "timeout_seconds": 3,
+    "predictions_sha256": "b1b192a72cb1d7f4537295efd29b18a9e910de2e8579cfc9a46b74587d77ba5c",
+    "camera_evidence": "controlled_background_jolt_from_reference",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 1
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 4
+    }
+  },
+  {
+    "scenario": "camera_slow_pan_printed_hand",
+    "timeout_seconds": 1,
+    "predictions_sha256": "0ff79ae03b86bdcc3b0d4b5fd6affe1fe98601197214454bc51c0e21b8de6eb7",
+    "camera_evidence": "controlled_background_pan_from_reference",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 44
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 46
+    }
+  },
+  {
+    "scenario": "camera_slow_pan_printed_hand",
+    "timeout_seconds": 2,
+    "predictions_sha256": "0ff79ae03b86bdcc3b0d4b5fd6affe1fe98601197214454bc51c0e21b8de6eb7",
+    "camera_evidence": "controlled_background_pan_from_reference",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 44
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 46
+    }
+  },
+  {
+    "scenario": "camera_slow_pan_printed_hand",
+    "timeout_seconds": 3,
+    "predictions_sha256": "0ff79ae03b86bdcc3b0d4b5fd6affe1fe98601197214454bc51c0e21b8de6eb7",
+    "camera_evidence": "controlled_background_pan_from_reference",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 44
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 46
+    }
+  },
+  {
+    "scenario": "depicted_static",
+    "timeout_seconds": 1,
+    "predictions_sha256": "2e9b737b71055d6a6b7511e34b2993402ce82deb9378948f70456332afd6a495",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 20
+    }
+  },
+  {
+    "scenario": "depicted_static",
+    "timeout_seconds": 2,
+    "predictions_sha256": "2e9b737b71055d6a6b7511e34b2993402ce82deb9378948f70456332afd6a495",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 20
+    }
+  },
+  {
+    "scenario": "depicted_static",
+    "timeout_seconds": 3,
+    "predictions_sha256": "2e9b737b71055d6a6b7511e34b2993402ce82deb9378948f70456332afd6a495",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 20
+    }
+  },
+  {
+    "scenario": "fast_path",
+    "timeout_seconds": 1,
+    "predictions_sha256": "6b33e7cb22578c3ba120df82bbeb7a6abbcb25ca7d8fb78fb9e98b6283f9b737",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 4
+    }
+  },
+  {
+    "scenario": "fast_path",
+    "timeout_seconds": 2,
+    "predictions_sha256": "6b33e7cb22578c3ba120df82bbeb7a6abbcb25ca7d8fb78fb9e98b6283f9b737",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 4
+    }
+  },
+  {
+    "scenario": "fast_path",
+    "timeout_seconds": 3,
+    "predictions_sha256": "6b33e7cb22578c3ba120df82bbeb7a6abbcb25ca7d8fb78fb9e98b6283f9b737",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 4
+    }
+  },
+  {
+    "scenario": "gap_1_01",
+    "timeout_seconds": 1,
+    "predictions_sha256": "848fac37f3ce37968683f879b435fc575e9545be7c4e3e7ccd07b1e100fce51c",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 6,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 6,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 6,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "gap_1_01",
+    "timeout_seconds": 2,
+    "predictions_sha256": "848fac37f3ce37968683f879b435fc575e9545be7c4e3e7ccd07b1e100fce51c",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "gap_1_01",
+    "timeout_seconds": 3,
+    "predictions_sha256": "848fac37f3ce37968683f879b435fc575e9545be7c4e3e7ccd07b1e100fce51c",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "hands_cross_offset_0.0",
+    "timeout_seconds": 1,
+    "predictions_sha256": "b7bcd691d773a560fa72f440c6eb0ec9c3fc1e3f71d31de3cf854888bc451fca",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 17
+    }
+  },
+  {
+    "scenario": "hands_cross_offset_0.0",
+    "timeout_seconds": 2,
+    "predictions_sha256": "b7bcd691d773a560fa72f440c6eb0ec9c3fc1e3f71d31de3cf854888bc451fca",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 17
+    }
+  },
+  {
+    "scenario": "hands_cross_offset_0.0",
+    "timeout_seconds": 3,
+    "predictions_sha256": "b7bcd691d773a560fa72f440c6eb0ec9c3fc1e3f71d31de3cf854888bc451fca",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 17
+    }
+  },
+  {
+    "scenario": "hands_cross_offset_0.01",
+    "timeout_seconds": 1,
+    "predictions_sha256": "8bd28166686884fd5b4e2d7c502c593aa87a101b29ceb04ec6c278df8b444d87",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 6,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 2
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 3
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 3,
+            "new_id": 4
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 2,
+            "new_id": 5
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 17
+    }
+  },
+  {
+    "scenario": "hands_cross_offset_0.01",
+    "timeout_seconds": 2,
+    "predictions_sha256": "8bd28166686884fd5b4e2d7c502c593aa87a101b29ceb04ec6c278df8b444d87",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 6,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 2
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 3
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 3,
+            "new_id": 4
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 2,
+            "new_id": 5
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 17
+    }
+  },
+  {
+    "scenario": "hands_cross_offset_0.01",
+    "timeout_seconds": 3,
+    "predictions_sha256": "8bd28166686884fd5b4e2d7c502c593aa87a101b29ceb04ec6c278df8b444d87",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 6,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 2
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 3
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 3,
+            "new_id": 4
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 2,
+            "new_id": 5
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 17
+    }
+  },
+  {
+    "scenario": "hands_cross_offset_0.03",
+    "timeout_seconds": 1,
+    "predictions_sha256": "d7cd27aad9a03eb873e53434d77c34791c986ad3395eb52db28c4d67e90423b2",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 17
+    }
+  },
+  {
+    "scenario": "hands_cross_offset_0.03",
+    "timeout_seconds": 2,
+    "predictions_sha256": "d7cd27aad9a03eb873e53434d77c34791c986ad3395eb52db28c4d67e90423b2",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 17
+    }
+  },
+  {
+    "scenario": "hands_cross_offset_0.03",
+    "timeout_seconds": 3,
+    "predictions_sha256": "d7cd27aad9a03eb873e53434d77c34791c986ad3395eb52db28c4d67e90423b2",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 17
+    }
+  },
+  {
+    "scenario": "high_fps_20_moderate",
+    "timeout_seconds": 1,
+    "predictions_sha256": "a577934694f5fd527133b69a5e526c65ea65fa1a54b856dd1fd9cfb754a827da",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 61
+    }
+  },
+  {
+    "scenario": "high_fps_20_moderate",
+    "timeout_seconds": 2,
+    "predictions_sha256": "a577934694f5fd527133b69a5e526c65ea65fa1a54b856dd1fd9cfb754a827da",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 61
+    }
+  },
+  {
+    "scenario": "high_fps_20_moderate",
+    "timeout_seconds": 3,
+    "predictions_sha256": "a577934694f5fd527133b69a5e526c65ea65fa1a54b856dd1fd9cfb754a827da",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 61
+    }
+  },
+  {
+    "scenario": "high_fps_30_fast",
+    "timeout_seconds": 1,
+    "predictions_sha256": "03d90db44c12a193d23252597e41d6ec2c71d8e48eebd74499de96219e0507a6",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 61
+    }
+  },
+  {
+    "scenario": "high_fps_30_fast",
+    "timeout_seconds": 2,
+    "predictions_sha256": "03d90db44c12a193d23252597e41d6ec2c71d8e48eebd74499de96219e0507a6",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 61
+    }
+  },
+  {
+    "scenario": "high_fps_30_fast",
+    "timeout_seconds": 3,
+    "predictions_sha256": "03d90db44c12a193d23252597e41d6ec2c71d8e48eebd74499de96219e0507a6",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 61
+    }
+  },
+  {
+    "scenario": "high_fps_30_moderate",
+    "timeout_seconds": 1,
+    "predictions_sha256": "45d2b3ec6869d40797ba879868d593cdf5739eabe2eba7aa69f694f035f03035",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 61
+    }
+  },
+  {
+    "scenario": "high_fps_30_moderate",
+    "timeout_seconds": 2,
+    "predictions_sha256": "45d2b3ec6869d40797ba879868d593cdf5739eabe2eba7aa69f694f035f03035",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 61
+    }
+  },
+  {
+    "scenario": "high_fps_30_moderate",
+    "timeout_seconds": 3,
+    "predictions_sha256": "45d2b3ec6869d40797ba879868d593cdf5739eabe2eba7aa69f694f035f03035",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 61
+    }
+  },
+  {
+    "scenario": "initial_inside",
+    "timeout_seconds": 1,
+    "predictions_sha256": "bb1390cef1c72077174df98bf599a98c05b893171044d98f06577b39ff178253",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "initial_inside",
+    "timeout_seconds": 2,
+    "predictions_sha256": "bb1390cef1c72077174df98bf599a98c05b893171044d98f06577b39ff178253",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "initial_inside",
+    "timeout_seconds": 3,
+    "predictions_sha256": "bb1390cef1c72077174df98bf599a98c05b893171044d98f06577b39ff178253",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "long_detection_loss",
+    "timeout_seconds": 1,
+    "predictions_sha256": "bcd674568bb13010e089a110fcf39157a59d49d67a88fafbfe3c7fd000e10d8c",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 5
+    }
+  },
+  {
+    "scenario": "long_detection_loss",
+    "timeout_seconds": 2,
+    "predictions_sha256": "bcd674568bb13010e089a110fcf39157a59d49d67a88fafbfe3c7fd000e10d8c",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 5
+    }
+  },
+  {
+    "scenario": "long_detection_loss",
+    "timeout_seconds": 3,
+    "predictions_sha256": "bcd674568bb13010e089a110fcf39157a59d49d67a88fafbfe3c7fd000e10d8c",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 5
+    }
+  },
+  {
+    "scenario": "multiple_hands",
+    "timeout_seconds": 1,
+    "predictions_sha256": "c2cc722e27f5734614669fb8e2dd845f96f5b12ac25f1d45cc8a1f57120b9a25",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "multiple_hands",
+    "timeout_seconds": 2,
+    "predictions_sha256": "c2cc722e27f5734614669fb8e2dd845f96f5b12ac25f1d45cc8a1f57120b9a25",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "multiple_hands",
+    "timeout_seconds": 3,
+    "predictions_sha256": "c2cc722e27f5734614669fb8e2dd845f96f5b12ac25f1d45cc8a1f57120b9a25",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "normal_entry_hold",
+    "timeout_seconds": 1,
+    "predictions_sha256": "b16d8f5275efcc83422f637cdb1bfdffc0b89e8a2d463a395150c0d65a827328",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 18
+    }
+  },
+  {
+    "scenario": "normal_entry_hold",
+    "timeout_seconds": 2,
+    "predictions_sha256": "b16d8f5275efcc83422f637cdb1bfdffc0b89e8a2d463a395150c0d65a827328",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 18
+    }
+  },
+  {
+    "scenario": "normal_entry_hold",
+    "timeout_seconds": 3,
+    "predictions_sha256": "b16d8f5275efcc83422f637cdb1bfdffc0b89e8a2d463a395150c0d65a827328",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 18
+    }
+  },
+  {
+    "scenario": "pass_by_low_score",
+    "timeout_seconds": 1,
+    "predictions_sha256": "ac8e9575a8ec125c4c7be15c9f568e00e8dda841da4789de8e9fc4e4908a26ce",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 5
+    }
+  },
+  {
+    "scenario": "pass_by_low_score",
+    "timeout_seconds": 2,
+    "predictions_sha256": "ac8e9575a8ec125c4c7be15c9f568e00e8dda841da4789de8e9fc4e4908a26ce",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 5
+    }
+  },
+  {
+    "scenario": "pass_by_low_score",
+    "timeout_seconds": 3,
+    "predictions_sha256": "ac8e9575a8ec125c4c7be15c9f568e00e8dda841da4789de8e9fc4e4908a26ce",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 5
+    }
+  },
+  {
+    "scenario": "pass_by_one_spike",
+    "timeout_seconds": 1,
+    "predictions_sha256": "e956840b47055068a1c00465f3b01284fa33c84066c7779e22f8a2fee0a168f7",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 4
+    }
+  },
+  {
+    "scenario": "pass_by_one_spike",
+    "timeout_seconds": 2,
+    "predictions_sha256": "e956840b47055068a1c00465f3b01284fa33c84066c7779e22f8a2fee0a168f7",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 4
+    }
+  },
+  {
+    "scenario": "pass_by_one_spike",
+    "timeout_seconds": 3,
+    "predictions_sha256": "e956840b47055068a1c00465f3b01284fa33c84066c7779e22f8a2fee0a168f7",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 4
+    }
+  },
+  {
+    "scenario": "repeated_detection_missing",
+    "timeout_seconds": 1,
+    "predictions_sha256": "04578304834c25471836a16fa7df38d2848755687510012d8a95951d8014177a",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 3,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 22
+    }
+  },
+  {
+    "scenario": "repeated_detection_missing",
+    "timeout_seconds": 2,
+    "predictions_sha256": "04578304834c25471836a16fa7df38d2848755687510012d8a95951d8014177a",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 3,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 22
+    }
+  },
+  {
+    "scenario": "repeated_detection_missing",
+    "timeout_seconds": 3,
+    "predictions_sha256": "04578304834c25471836a16fa7df38d2848755687510012d8a95951d8014177a",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 2,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 3,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 22
+    }
+  },
+  {
+    "scenario": "score_oscillation",
+    "timeout_seconds": 1,
+    "predictions_sha256": "3aaf1d4923ffeda7fe7fb32538718f03d63716fb473541ae9d4a49241dbc08e7",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 10
+    }
+  },
+  {
+    "scenario": "score_oscillation",
+    "timeout_seconds": 2,
+    "predictions_sha256": "3aaf1d4923ffeda7fe7fb32538718f03d63716fb473541ae9d4a49241dbc08e7",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 10
+    }
+  },
+  {
+    "scenario": "score_oscillation",
+    "timeout_seconds": 3,
+    "predictions_sha256": "3aaf1d4923ffeda7fe7fb32538718f03d63716fb473541ae9d4a49241dbc08e7",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 10
+    }
+  },
+  {
+    "scenario": "short_detection_loss",
+    "timeout_seconds": 1,
+    "predictions_sha256": "177827abf2b6a1705a0b6bdef395827b37a7e490f8f2d5316e236f39c5cfbee3",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 8
+    }
+  },
+  {
+    "scenario": "short_detection_loss",
+    "timeout_seconds": 2,
+    "predictions_sha256": "177827abf2b6a1705a0b6bdef395827b37a7e490f8f2d5316e236f39c5cfbee3",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 8
+    }
+  },
+  {
+    "scenario": "short_detection_loss",
+    "timeout_seconds": 3,
+    "predictions_sha256": "177827abf2b6a1705a0b6bdef395827b37a7e490f8f2d5316e236f39c5cfbee3",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 8
+    }
+  },
+  {
+    "scenario": "slow_entry",
+    "timeout_seconds": 1,
+    "predictions_sha256": "248ebcbf3d441b212fe77211e853c0540d1cf3eda39c6346067f3f0b11000b25",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 15
+    }
+  },
+  {
+    "scenario": "slow_entry",
+    "timeout_seconds": 2,
+    "predictions_sha256": "248ebcbf3d441b212fe77211e853c0540d1cf3eda39c6346067f3f0b11000b25",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 15
+    }
+  },
+  {
+    "scenario": "slow_entry",
+    "timeout_seconds": 3,
+    "predictions_sha256": "248ebcbf3d441b212fe77211e853c0540d1cf3eda39c6346067f3f0b11000b25",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 15
+    }
+  },
+  {
+    "scenario": "thin_border_overlap_035",
+    "timeout_seconds": 1,
+    "predictions_sha256": "eb11a8048d8e040b1d5b458c0cfd465f6452e3afb047e1a0044c5f059a965f1d",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 10
+    }
+  },
+  {
+    "scenario": "thin_border_overlap_035",
+    "timeout_seconds": 2,
+    "predictions_sha256": "eb11a8048d8e040b1d5b458c0cfd465f6452e3afb047e1a0044c5f059a965f1d",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 10
+    }
+  },
+  {
+    "scenario": "thin_border_overlap_035",
+    "timeout_seconds": 3,
+    "predictions_sha256": "eb11a8048d8e040b1d5b458c0cfd465f6452e3afb047e1a0044c5f059a965f1d",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 10
+    }
+  },
+  {
+    "scenario": "three_five_strong_oscillation",
+    "timeout_seconds": 1,
+    "predictions_sha256": "b3b17912f1803f433b573811bad497bf841fd9bcdd3db4da4913ad647a93c631",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 12
+    }
+  },
+  {
+    "scenario": "three_five_strong_oscillation",
+    "timeout_seconds": 2,
+    "predictions_sha256": "b3b17912f1803f433b573811bad497bf841fd9bcdd3db4da4913ad647a93c631",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 12
+    }
+  },
+  {
+    "scenario": "three_five_strong_oscillation",
+    "timeout_seconds": 3,
+    "predictions_sha256": "b3b17912f1803f433b573811bad497bf841fd9bcdd3db4da4913ad647a93c631",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 12
+    }
+  },
+  {
+    "scenario": "two_contact_bouts_same_roi",
+    "timeout_seconds": 1,
+    "predictions_sha256": "706a644736ca9d6c843a15a622a4815521b0a7f3cc7050133ec2cd750fd68c0e",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 2,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 133
+    }
+  },
+  {
+    "scenario": "two_contact_bouts_same_roi",
+    "timeout_seconds": 2,
+    "predictions_sha256": "706a644736ca9d6c843a15a622a4815521b0a7f3cc7050133ec2cd750fd68c0e",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 2,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 133
+    }
+  },
+  {
+    "scenario": "two_contact_bouts_same_roi",
+    "timeout_seconds": 3,
+    "predictions_sha256": "706a644736ca9d6c843a15a622a4815521b0a7f3cc7050133ec2cd750fd68c0e",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 2,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 133
+    }
+  },
+  {
+    "scenario": "uneven_frames",
+    "timeout_seconds": 1,
+    "predictions_sha256": "fccddea0e4e59eb802fde9f11851aad02ad026095669656d8b875eed7defe92a",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 0,
+      "observed_ids": 4,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "uneven_frames",
+    "timeout_seconds": 2,
+    "predictions_sha256": "fccddea0e4e59eb802fde9f11851aad02ad026095669656d8b875eed7defe92a",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  },
+  {
+    "scenario": "uneven_frames",
+    "timeout_seconds": 3,
+    "predictions_sha256": "fccddea0e4e59eb802fde9f11851aad02ad026095669656d8b875eed7defe92a",
+    "camera_evidence": "controlled_background_assumed_stable_not_image_verified",
+    "real_images_evaluated": false,
+    "v3": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "v4": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_controlled": {
+      "events": 1,
+      "observed_ids": 1,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 0
+    },
+    "phase_d_unknown": {
+      "events": 0,
+      "observed_ids": 0,
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "unavailable_frames": 6
+    }
+  }
+]

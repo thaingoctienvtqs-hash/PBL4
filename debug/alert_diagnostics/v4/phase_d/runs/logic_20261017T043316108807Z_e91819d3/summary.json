@@ -1,0 +1,33 @@
+{
+  "python": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+  "frozen_B_C": {
+    "tests": 103,
+    "pass": 98,
+    "fail": 5,
+    "error": 0,
+    "skip": 0
+  },
+  "phase_d": {
+    "tests": 64,
+    "pass": 64,
+    "fail": 0,
+    "error": 0,
+    "skip": 0
+  },
+  "old_five_failures_retained_without_test_edits": true,
+  "protected_files_unchanged": true,
+  "phase_d_python_files_parsed": [
+    "__init__.py",
+    "camera_stability.py",
+    "compare.py",
+    "fixtures.py",
+    "pipeline_d.py",
+    "run_tests.py",
+    "temporal_d.py",
+    "test_phase_d.py",
+    "tracking_d.py"
+  ],
+  "comparison_rows": 75,
+  "real_camera_or_gpu_run": false,
+  "logic_regression_check_pass": true
+}

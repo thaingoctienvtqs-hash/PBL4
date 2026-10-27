@@ -1,0 +1,39 @@
+{
+  "records": 18,
+  "accepted": 18,
+  "rejected": 0,
+  "unavailable_records": 18,
+  "confirmation_records": 0,
+  "event_count": 0,
+  "events": [],
+  "non_confirmation_reasons": {
+    "explicit_offline_unknown": 18
+  },
+  "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+  "input_sha256": "8a13b509e2d034a3814dda3c073cc54a35143fa7656b4a77bd68665edce8e97e",
+  "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/unknown_stability_real_contact.jsonl",
+  "config": {
+    "schema_version": 1,
+    "sources": {
+      "painting0": {
+        "session_id": "boot0",
+        "calibration_id": "offline_controlled_reference",
+        "pipeline_config": {
+          "roi": {
+            "enabled": true,
+            "normalized": true,
+            "shape": "rectangle",
+            "coordinates": [
+              0.4,
+              0.1,
+              0.8,
+              0.9
+            ]
+          }
+        }
+      }
+    }
+  },
+  "simulate_stability": true,
+  "real_camera_or_gpu_run": false
+}

@@ -1,0 +1,1707 @@
+{
+  "python": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+  "groups": {
+    "baseline_40": {
+      "tests": 40,
+      "pass": 40,
+      "fail": 0,
+      "error": 0,
+      "failures": []
+    },
+    "adversarial_characterization": {
+      "tests": 26,
+      "pass": 26,
+      "fail": 0,
+      "error": 0,
+      "failures": []
+    },
+    "metrics_arithmetic": {
+      "tests": 25,
+      "pass": 25,
+      "fail": 0,
+      "error": 0,
+      "failures": []
+    },
+    "evaluator_contract": {
+      "tests": 7,
+      "pass": 7,
+      "fail": 0,
+      "error": 0,
+      "failures": []
+    },
+    "desired_quality_gates": {
+      "tests": 5,
+      "pass": 0,
+      "fail": 5,
+      "error": 0,
+      "failures": [
+        {
+          "test": "test_fast_valid_contact_should_confirm_at_30fps (debug.alert_diagnostics.v4.phase_c.test_quality_gates.FastPathQualityGate)",
+          "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_c/test_quality_gates.py\", line 32, in test_fast_valid_contact_should_confirm_at_30fps\n    self.assertGreaterEqual(event_count(rows),1,\"Five-sample deque also caps fast-path time span\")\nAssertionError: 0 not greater than or equal to 1 : Five-sample deque also caps fast-path time span\n"
+        },
+        {
+          "test": "test_camera_pan_should_not_alert_on_stationary_print (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates)",
+          "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_c/test_quality_gates.py\", line 15, in test_camera_pan_should_not_alert_on_stationary_print\n    self.assertEqual(event_count(rows),0,\"Camera-relative motion is mistaken for hand approach\")\nAssertionError: 1 != 0 : Camera-relative motion is mistaken for hand approach\n"
+        },
+        {
+          "test": "test_crossing_should_not_transfer_id_between_actors (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates)",
+          "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_c/test_quality_gates.py\", line 21, in test_crossing_should_not_transfer_id_between_actors\n    \"Existing IDs transfer between two constant-velocity actors\")\nAssertionError: Lists differ: [{'timestamp': 1.8, 'track_id': 0, 'from':[71 chars]'A'}] != []\n\nFirst list contains 2 additional elements.\nFirst extra element 0:\n{'timestamp': 1.8, 'track_id': 0, 'from': 'A', 'to': 'B'}\n\n+ []\n- [{'from': 'A', 'timestamp': 1.8, 'to': 'B', 'track_id': 0},\n-  {'from': 'B', 'timestamp': 1.8, 'to': 'A', 'track_id': 1}] : Existing IDs transfer between two constant-velocity actors\n"
+        },
+        {
+          "test": "test_disconnect_should_clear_active_state_even_when_cache_full (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates)",
+          "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_c/test_quality_gates.py\", line 27, in test_disconnect_should_clear_active_state_even_when_cache_full\n    self.assertEqual(p.tracker.tracks,{},\"Safety control path is blocked by frame-capacity gate\")\nAssertionError: {0: {'id': 0, 'box': [0.4, 0.3, 0.5, 0.5],[228 chars]125}} != {}\n+ {}\n- {0: {'box': [0.4, 0.3, 0.5, 0.5],\n-      'center': (0.45, 0.4),\n-      'detection_index': 0,\n-      'first_seen': 0.0,\n-      'id': 0,\n-      'last_seen': 0.8,\n-      'last_seen_gap': 0.19999999999999996,\n-      'matching_cost': 0.125,\n-      'new_track': False,\n-      'observed': True,\n-      'reacquired': False,\n-      'velocity': (0.078125, 0.0)}} : Safety control path is blocked by frame-capacity gate\n"
+        },
+        {
+          "test": "test_sustained_valid_contact_should_confirm_at_30fps (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates)",
+          "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_c/test_quality_gates.py\", line 11, in test_sustained_valid_contact_should_confirm_at_30fps\n    self.assertGreaterEqual(event_count(rows),1,\"Window size limits support below 0.4s at high FPS\")\nAssertionError: 0 not greater than or equal to 1 : Window size limits support below 0.4s at high FPS\n"
+        }
+      ]
+    }
+  },
+  "total_tests": 103,
+  "total_pass": 98,
+  "total_fail": 5,
+  "total_error": 0,
+  "comparison": [
+    {
+      "scenario": "camera_fast_jolt_printed_hand",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "camera_fast_jolt_printed_hand",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "camera_fast_jolt_printed_hand",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "camera_slow_pan_printed_hand",
+      "timeout_seconds": 1,
+      "v3_events": 0,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "camera_slow_pan_printed_hand",
+      "timeout_seconds": 2,
+      "v3_events": 0,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "camera_slow_pan_printed_hand",
+      "timeout_seconds": 3,
+      "v3_events": 0,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "depicted_static",
+      "timeout_seconds": 1,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "depicted_static",
+      "timeout_seconds": 2,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "depicted_static",
+      "timeout_seconds": 3,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "fast_path",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "fast_path",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "fast_path",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "gap_1_01",
+      "timeout_seconds": 1,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 6,
+      "v4_observed_ids": 6,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "gap_1_01",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "gap_1_01",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "hands_cross_offset_0.0",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "v4_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "hands_cross_offset_0.0",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "v4_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "hands_cross_offset_0.0",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "v4_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "hands_cross_offset_0.01",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 6,
+      "v3_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "v4_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 2
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 3
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 3,
+            "new_id": 4
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 2,
+            "new_id": 5
+          }
+        ],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "hands_cross_offset_0.01",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 6,
+      "v3_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "v4_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 2
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 3
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 3,
+            "new_id": 4
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 2,
+            "new_id": 5
+          }
+        ],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "hands_cross_offset_0.01",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 6,
+      "v3_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "v4_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 2
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 3
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 3,
+            "new_id": 4
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 2,
+            "new_id": 5
+          }
+        ],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "hands_cross_offset_0.03",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "hands_cross_offset_0.03",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "hands_cross_offset_0.03",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 1.8,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 0
+          },
+          {
+            "timestamp": 1.8,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 1
+          }
+        ],
+        "track_owner_transfers": [
+          {
+            "timestamp": 1.8,
+            "track_id": 0,
+            "from": "A",
+            "to": "B"
+          },
+          {
+            "timestamp": 1.8,
+            "track_id": 1,
+            "from": "B",
+            "to": "A"
+          }
+        ]
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "high_fps_20_moderate",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "high_fps_20_moderate",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "high_fps_20_moderate",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "high_fps_30_fast",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "high_fps_30_fast",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "high_fps_30_fast",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "high_fps_30_moderate",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "high_fps_30_moderate",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "high_fps_30_moderate",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "initial_inside",
+      "timeout_seconds": 1,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "initial_inside",
+      "timeout_seconds": 2,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "initial_inside",
+      "timeout_seconds": 3,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "long_detection_loss",
+      "timeout_seconds": 1,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "long_detection_loss",
+      "timeout_seconds": 2,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "long_detection_loss",
+      "timeout_seconds": 3,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "multiple_hands",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "multiple_hands",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "multiple_hands",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "normal_entry_hold",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "normal_entry_hold",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "normal_entry_hold",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "pass_by_low_score",
+      "timeout_seconds": 1,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "pass_by_low_score",
+      "timeout_seconds": 2,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "pass_by_low_score",
+      "timeout_seconds": 3,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "pass_by_one_spike",
+      "timeout_seconds": 1,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "pass_by_one_spike",
+      "timeout_seconds": 2,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "pass_by_one_spike",
+      "timeout_seconds": 3,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "repeated_detection_missing",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "repeated_detection_missing",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "repeated_detection_missing",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 2,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "score_oscillation",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "score_oscillation",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "score_oscillation",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "short_detection_loss",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "short_detection_loss",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "short_detection_loss",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "slow_entry",
+      "timeout_seconds": 1,
+      "v3_events": 0,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "slow_entry",
+      "timeout_seconds": 2,
+      "v3_events": 0,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "slow_entry",
+      "timeout_seconds": 3,
+      "v3_events": 0,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "thin_border_overlap_035",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "thin_border_overlap_035",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "thin_border_overlap_035",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "three_five_strong_oscillation",
+      "timeout_seconds": 1,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "three_five_strong_oscillation",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "three_five_strong_oscillation",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "two_contact_bouts_same_roi",
+      "timeout_seconds": 1,
+      "v3_events": 2,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "two_contact_bouts_same_roi",
+      "timeout_seconds": 2,
+      "v3_events": 2,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "two_contact_bouts_same_roi",
+      "timeout_seconds": 3,
+      "v3_events": 2,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "uneven_frames",
+      "timeout_seconds": 1,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 4,
+      "v4_observed_ids": 4,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "uneven_frames",
+      "timeout_seconds": 2,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    {
+      "scenario": "uneven_frames",
+      "timeout_seconds": 3,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1,
+      "v3_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      },
+      "v4_identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    }
+  ],
+  "protected_unchanged": {
+    "src/realtime_worker.py": true,
+    "src/realtime_worker.py.bak": true,
+    "src/realtime_worker_integrated.py": true,
+    "src/realtime_worker_integrated_v2.py": true,
+    "src/realtime_worker_integrated_v3.py": true,
+    "src/realtime_worker_recovered.py": true,
+    "src/realtime_worker_verified.py": true,
+    "src/core/contact_logic.py": true,
+    "web/.env.example": true,
+    "web/frontend/package-lock.json": true,
+    "models/combined_data_model.pth": true,
+    "debug/alert_diagnostics/v4/compare_v3_v4.py": true,
+    "debug/alert_diagnostics/v4/config.v4.json": true,
+    "debug/alert_diagnostics/v4/pipeline_v4.py": true,
+    "debug/alert_diagnostics/v4/preflight_01.json": true,
+    "debug/alert_diagnostics/v4/protected_before.json": true,
+    "debug/alert_diagnostics/v4/protected_verification.json": true,
+    "debug/alert_diagnostics/v4/README.vi.md": true,
+    "debug/alert_diagnostics/v4/RESULTS.vi.md": true,
+    "debug/alert_diagnostics/v4/roi_entry_v4.py": true,
+    "debug/alert_diagnostics/v4/run_tests.py": true,
+    "debug/alert_diagnostics/v4/run_v4.py": true,
+    "debug/alert_diagnostics/v4/scenarios.py": true,
+    "debug/alert_diagnostics/v4/temporal_v4.py": true,
+    "debug/alert_diagnostics/v4/test_comparison.py": true,
+    "debug/alert_diagnostics/v4/tracking_v4.py": true,
+    "debug/alert_diagnostics/v4/__init__.py": true,
+    "debug/alert_diagnostics/v4/build_inputs/compare_v3_v4.py.json": true,
+    "debug/alert_diagnostics/v4/build_inputs/config.v4.json.json": true,
+    "debug/alert_diagnostics/v4/build_inputs/pipeline_v4.py.json": true,
+    "debug/alert_diagnostics/v4/build_inputs/roi_entry_v4.py.json": true,
+    "debug/alert_diagnostics/v4/build_inputs/run_tests.py.json": true,
+    "debug/alert_diagnostics/v4/build_inputs/run_v4.py.json": true,
+    "debug/alert_diagnostics/v4/build_inputs/scenarios.py.json": true,
+    "debug/alert_diagnostics/v4/build_inputs/temporal_v4.py.json": true,
+    "debug/alert_diagnostics/v4/build_inputs/test_comparison.py.json": true,
+    "debug/alert_diagnostics/v4/build_inputs/tracking_v4.py.json": true,
+    "debug/alert_diagnostics/v4/build_inputs/__init__.py.json": true,
+    "debug/alert_diagnostics/v4/runs/logic_v4_20261017T034029080685Z_ecbd455a/comparison.jsonl": true,
+    "debug/alert_diagnostics/v4/runs/logic_v4_20261017T034029080685Z_ecbd455a/comparison_summary.json": true,
+    "debug/alert_diagnostics/v4/runs/logic_v4_20261017T034029080685Z_ecbd455a/controlled_inputs.jsonl": true,
+    "debug/alert_diagnostics/v4/runs/logic_v4_20261017T034029080685Z_ecbd455a/test_summary.json": true,
+    "debug/alert_diagnostics/v4/runs/replay_v4_20261017T034109642350Z_7a8294ab/effective_config.json": true,
+    "debug/alert_diagnostics/v4/runs/replay_v4_20261017T034109642350Z_7a8294ab/frames.jsonl": true,
+    "debug/alert_diagnostics/v4/runs/replay_v4_20261017T034109642350Z_7a8294ab/summary.json": true
+  },
+  "heavy_modules_loaded": [],
+  "gpu_inference_run": false,
+  "camera_opened": false,
+  "database_opened": false,
+  "real_accuracy_precision_recall_f1": "NOT_EVALUATED",
+  "unit_PASS_is_not_model_quality_PASS": true
+}

@@ -1,0 +1,90 @@
+import sys
+import time
+from pathlib import Path
+
+import cv2
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT / 'src'))
+
+from core.contacthands import ContactHandsDetector
+from services.alert import trigger_alert
+from services.status import save_status
+
+FRAME_PATH = '/mnt/c/Users/LEGION/PaintingProtection/webcam_frame.jpg'
+STATUS_PATH = '/mnt/c/Users/LEGION/PaintingProtection/webcam_status.txt'
+
+ROI = (0, 0, 800, 600)
+OC_THRESH = 0.15
+OVERLAP_THRESH = 0.3
+
+CONFIG_PATH = str(PROJECT_ROOT / 'src/configs/ContactHands.yaml')
+MODEL_PATH = str(PROJECT_ROOT / 'models/combined_data_model.pth')
+
+print('====================================')
+print(' PBL4 REALTIME - ESP32-CAM')
+print('====================================')
+print('Frame :', FRAME_PATH)
+print('ROI   :', ROI)
+print('Model :', MODEL_PATH)
+print()
+print('Loading ContactHands...')
+
+detector = ContactHandsDetector(
+    config=CONFIG_PATH,
+    weights=MODEL_PATH,
+    score_thresh=0.7,
+)
+
+print('ContactHands OK')
+print('Dang cho frame ESP32-CAM...')
+print('Nhan Ctrl+C de dung')
+print()
+
+last_status = None
+frame_count = 0
+
+while True:
+    try:
+        frame_count += 1
+        frame = cv2.imread(FRAME_PATH)
+
+        if frame is None:
+            time.sleep(0.1)
+            continue
+
+        touches = detector.detect(
+            frame,
+            ROI,
+            oc_thresh=OC_THRESH,
+            overlap_thresh=OVERLAP_THRESH,
+        )
+
+        if touches:
+            status = 'ALERT: CHAM TRANH'
+
+            for box, oc, overlap in touches:
+                print(
+                    f'ALERT: CHAM TRANH OC={oc:.2f} overlap={overlap:.2f}',
+                    flush=True,
+                )
+
+            trigger_alert('ALERT: CHAM TRANH')
+
+        else:
+            status = 'OK'
+
+            print(f'FRAME {frame_count} -> OK - KHONG CHAM TRANH', flush=True)
+
+        save_status(status, STATUS_PATH)
+        last_status = status
+
+        time.sleep(0.2)
+
+    except KeyboardInterrupt:
+        print('Da dung realtime worker.')
+        break
+
+    except Exception as e:
+        print('REALTIME ERROR:', repr(e), flush=True)
+        time.sleep(1)

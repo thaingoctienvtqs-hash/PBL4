@@ -1,0 +1,55 @@
+{
+  "protected_files_unchanged": {
+    "src/realtime_worker.py": true,
+    "src/realtime_worker.py.bak": true,
+    "src/realtime_worker_integrated.py": true,
+    "src/realtime_worker_integrated_v2.py": true,
+    "src/realtime_worker_integrated_v3.py": true,
+    "src/realtime_worker_recovered.py": false,
+    "src/realtime_worker_verified.py": false,
+    "src/core/contact_logic.py": true,
+    "web/.env.example": true,
+    "web/frontend/package-lock.json": true,
+    "models/combined_data_model.pth": true
+  },
+  "logic_tests": {
+    "tests_run": 17,
+    "failures": 0,
+    "errors": 0,
+    "success": true,
+    "production_sources_unchanged": true
+  },
+  "logged_frames": 83,
+  "logged_cases": [
+    "A_initial_inside",
+    "B_entry_hold",
+    "C_slow_crossing",
+    "D_timeout",
+    "E_three_of_five",
+    "F_fast_path",
+    "G_static_depicted_hand",
+    "fast_without_entry",
+    "low_object_contact"
+  ],
+  "logic_event_counts": [
+    [
+      "CONTROLLED_LOGIC_TEST_NOT_AI",
+      3
+    ]
+  ],
+  "logic_status": {
+    "tests_run": 17,
+    "failures": 0,
+    "errors": 0,
+    "model_loaded": false,
+    "camera_opened": false,
+    "status": "LOGIC_TEST_ONLY",
+    "updated_at": 1792205930.336223
+  },
+  "help_exit_code": 0,
+  "no_opt_in_exit_code": 2,
+  "no_opt_in_message": "usage: run_inference.py [-h] [--allow-inference] [--config-json CONFIG_JSON]\n                        [--frame-file FRAME_FILE] [--device {cpu,cuda}]\n                        [--poll-interval POLL_INTERVAL]\n                        [--track-timeout TRACK_TIMEOUT]\n                        [--max-frames MAX_FRAMES] [--max-seconds MAX_SECONDS]\nrun_inference.py: error: Inference is disabled: explicit --allow-inference is required",
+  "help_and_gate_created_no_runs": true,
+  "local_second_stream_cache_exists": true,
+  "bytecode_created_in_diagnostics": false
+}

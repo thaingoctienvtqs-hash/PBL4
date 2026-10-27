@@ -106,11 +106,16 @@ def _evidence_out(ev: Evidence) -> EvidenceOut:
     )
 
 
-def _evidence_detail(ev: Evidence) -> EvidenceDetail:
+def _evidence_detail(ev: Evidence, db: Session) -> EvidenceDetail:
     out = _evidence_out(ev)
     media = [EvidenceMediaOut.model_validate(m) for m in ev.media]
     history = []
-    for h in ev.history:
+    history_rows = db.scalars(
+        select(EvidenceHistory)
+        .where(EvidenceHistory.evidence_id == ev.id)
+        .order_by(EvidenceHistory.changed_at.desc(), EvidenceHistory.id.desc())
+    ).all()
+    for h in history_rows:
         history.append(EvidenceHistoryOut(
             id=h.id,
             from_status=h.from_status,
@@ -220,7 +225,7 @@ def get_evidence(
     ev = db.get(Evidence, evidence_id)
     if not ev:
         raise HTTPException(404, "Không tìm thấy bằng chứng")
-    return _evidence_detail(ev)
+    return _evidence_detail(ev, db)
 
 
 # ── Update status ───────────────────────────────────────────────────────────
@@ -235,22 +240,28 @@ def update_evidence_status(
     ev = db.get(Evidence, evidence_id)
     if not ev:
         raise HTTPException(404, "Không tìm thấy bằng chứng")
-    old_status = ev.processing_status
-    ev.processing_status = payload.processing_status
-    ev.updated_at = datetime.utcnow()
-    h = EvidenceHistory(
-        evidence_id=ev.id,
-        user_id=user.id,
-        from_status=old_status,
-        to_status=payload.processing_status,
-        note=payload.note,
-        changed_at=datetime.utcnow(),
-    )
-    db.add(h)
-    record_audit(db, user, "update_status", "evidence", ev.id, payload.processing_status)
-    db.commit()
-    db.refresh(ev)
-    return _evidence_detail(ev)
+    try:
+        old_status = ev.processing_status
+        ev.processing_status = payload.processing_status
+        ev.updated_at = datetime.utcnow()
+        h = EvidenceHistory(
+            evidence_id=ev.id,
+            user_id=user.id,
+            from_status=old_status,
+            to_status=payload.processing_status,
+            note=payload.note,
+            changed_at=datetime.utcnow(),
+        )
+        db.add(h)
+        record_audit(db, user, "update_status", "evidence", ev.id, payload.processing_status)
+        db.flush()
+        db.refresh(ev)
+        detail = _evidence_detail(ev, db)
+        db.commit()
+        return detail
+    except Exception:
+        db.rollback()
+        raise
 
 
 # ── Media list ──────────────────────────────────────────────────────────────

@@ -2,14 +2,13 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 from datetime import datetime
 from pathlib import Path
 
 import cv2
 
 from inference.camera_factory import build_camera_source
-from inference.config import DEFAULT_CAMERA_INDEX, DEFAULT_FPS, DEFAULT_HEIGHT, DEFAULT_WIDTH
+from inference.config import DEFAULT_CAMERA_INDEX, DEFAULT_HEIGHT, DEFAULT_WIDTH
 
 
 def collect_webcam_dataset(

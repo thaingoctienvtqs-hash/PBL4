@@ -1,0 +1,50 @@
+{
+  "python": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+  "frozen_B_C": {
+    "tests": 103,
+    "pass": 98,
+    "fail": 5,
+    "error": 0,
+    "skip": 0
+  },
+  "phase_d": {
+    "tests": 64,
+    "pass": 64,
+    "fail": 0,
+    "error": 0,
+    "skip": 0
+  },
+  "phase_e": {
+    "tests": 82,
+    "pass": 80,
+    "fail": 2,
+    "error": 0,
+    "skip": 0
+  },
+  "known_B_C_failures_retained": true,
+  "known_D_recovery_limits_retained_as_FAIL": true,
+  "offline_scenarios": 31,
+  "jsonl_records": 809,
+  "direct_phase_d_records_compared": 808,
+  "phase_d_equivalence_pass": true,
+  "protected_files": 315,
+  "protected_unchanged": true,
+  "python_files_parsed": [
+    "__init__.py",
+    "compare_phase_d.py",
+    "controlled_cases.py",
+    "offline_pipeline.py",
+    "prediction_adapter.py",
+    "replay.py",
+    "run_tests.py",
+    "stability.py",
+    "test_adapter.py",
+    "test_replay_io.py"
+  ],
+  "forbidden_runtime_modules_loaded": [
+    "sqlite3"
+  ],
+  "camera_or_gpu_run": false,
+  "real_AI_metrics": "NOT_EVALUATED",
+  "all_phase_e_tests_pass": false
+}

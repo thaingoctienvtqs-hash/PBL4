@@ -1,0 +1,26 @@
+test_duplicate_content_same_split_is_also_rejected (debug.alert_diagnostics.v4.phase_c.test_metrics.AdditionalExposureTests) ... ok
+test_annotation_gaps_and_overlaps_rejected (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_confusion_and_standard_metrics (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_counts_invalid (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_duplicate_event_ids_and_negative_times_rejected (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_duplicate_unexpected_or_misaligned_predictions_rejected (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_event_matching_never_crosses_video (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_explicit_unavailable_is_not_negative (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_final_partial_window_is_explicit (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_late_and_early_alerts_outside_protocol_are_false (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_latency_source_and_emission_are_separate (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_maximum_cardinality_not_greedy_matching (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_missing_prediction_blocks_primary_metrics (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_no_predicted_positive_with_true_positive_class (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_one_to_one_event_matching_penalizes_duplicates (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_percentile_interpolation (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_session_group_and_hash_split_leakage (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_short_touch_marks_window_positive (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_uncertain_window_reported_separately (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_zero_denominators_are_undefined_not_one (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+test_zero_event_exposure_is_undefined (debug.alert_diagnostics.v4.phase_c.test_metrics.MetricTests) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.001s
+
+OK

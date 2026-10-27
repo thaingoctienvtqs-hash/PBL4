@@ -1,0 +1,25 @@
+{
+  "tests_run": 17,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "source_hashes_before": {
+    "src/realtime_worker_integrated_v3.py": "2fedb97b799214b18cfff9799286a6f5be5432ac2f61cfad60ec69b1466c2272",
+    "src/core/contact_logic.py": "a2790ae68cc44d89c21c95a2db2f88e4ecbe121fd6b1229b93b82eb67f63e1e7",
+    "src/core/geometry.py": "e7e5803f2589cebae7e92bbe94ef83c865a97030a84678053bf6a8e1d7373035",
+    "src/utils/config_compat.py": "1b5cd3d10eaca8c2c648179b515f9b292bc9f8759bdaa4f0cff8a40353bbcf94",
+    "src/services/event_store.py": "9f2b0e88bd73c5db28bd37219913a0fca5095da0c87aed23650543ece4c6dc4e"
+  },
+  "source_hashes_after": {
+    "src/realtime_worker_integrated_v3.py": "2fedb97b799214b18cfff9799286a6f5be5432ac2f61cfad60ec69b1466c2272",
+    "src/core/contact_logic.py": "a2790ae68cc44d89c21c95a2db2f88e4ecbe121fd6b1229b93b82eb67f63e1e7",
+    "src/core/geometry.py": "e7e5803f2589cebae7e92bbe94ef83c865a97030a84678053bf6a8e1d7373035",
+    "src/utils/config_compat.py": "1b5cd3d10eaca8c2c648179b515f9b292bc9f8759bdaa4f0cff8a40353bbcf94",
+    "src/services/event_store.py": "9f2b0e88bd73c5db28bd37219913a0fca5095da0c87aed23650543ece4c6dc4e"
+  },
+  "model_loaded": false,
+  "camera_opened": false,
+  "note": "Characterization PASS includes reproducing current limitations; not recognition metrics.",
+  "production_sources_unchanged": true
+}

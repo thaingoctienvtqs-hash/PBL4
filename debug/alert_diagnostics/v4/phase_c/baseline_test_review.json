@@ -1,0 +1,282 @@
+[
+  {
+    "test": "ComparisonTests.test_initial_inside_neither_alerts",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 14,
+    "review": "Same prediction can describe a real touching hand already present: suppressed alert can be FN.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "ComparisonTests.test_normal_entry_stationary_hold_one_event_both",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 21,
+    "review": "0.2-second cadence fits temporal support by construction; misses high-FPS failure.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "ComparisonTests.test_slow_entry_improves_over_v3",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 26,
+    "review": "One horizontal idealized trajectory only; add camera-motion counterexample before claiming fewer FPs.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "ComparisonTests.test_timeout_comparison_1_2_3",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 32,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "ComparisonTests.test_v4_candidate_timeout_not_v3_default",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 39,
+    "review": "Different timeout (v3=1 vs v4=2): configuration benefit, not algorithm superiority.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "ComparisonTests.test_uneven_intervals_keep_id_at_two",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 47,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": true
+  },
+  {
+    "test": "ComparisonTests.test_short_miss_retains_id_but_resets_evidence",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 52,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": true
+  },
+  {
+    "test": "ComparisonTests.test_long_miss_reappearing_inside_needs_new_entry",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 63,
+    "review": "Correct conservative behavior can miss a real resumed touch; requires physical labels.",
+    "v3_result_created_but_not_asserted": true
+  },
+  {
+    "test": "ComparisonTests.test_depicted_static_high_score_never_alerts",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 69,
+    "review": "Static bbox tests entry gate, not visual real-versus-painted discrimination.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "ComparisonTests.test_pass_by_low_score_never_alerts",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 73,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "ComparisonTests.test_one_contact_spike_never_alerts",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 77,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "ComparisonTests.test_oscillation_is_conservative_not_a_claim_of_physical_truth",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 81,
+    "review": "Correctly named characterization; fewer events are not proof of better precision.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "ComparisonTests.test_fast_path_at_exact_score_threshold",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 87,
+    "review": "Only 0.2-second pair; fast span at high FPS was not tested.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "ComparisonTests.test_multiple_hands_order_invariant_and_no_entry_transfer",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 92,
+    "review": "Separated hands only; ID count can stay at two while actor identities swap.",
+    "v3_result_created_but_not_asserted": true
+  },
+  {
+    "test": "ComparisonTests.test_global_assignment_not_greedy",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 105,
+    "review": "Single fixed cost matrix; phase C adds 60 seeded brute-force oracle matrices.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_duplicate_frame_does_not_advance_state",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 113,
+    "review": "Checks tracker and timestamp, not all entry/temporal internals; phase C snapshots entire state.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_equal_timestamp_rejected",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 121,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_decreasing_timestamp_rejected",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 124,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_stale_frame_does_not_accumulate",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 127,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_timestamp_nan_and_infinity_rejected",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 132,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_mixed_clock_rejected",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 137,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_invalid_detection_rejected_atomically",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 141,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_low_hand_confidence_is_not_contact_evidence",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 146,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_frame_cache_capacity_stops_instead_of_forgetting_duplicates",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 153,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_frozen_thresholds_reject_lowering",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 160,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "InputSafetyTests.test_config_rejects_legacy_roi_and_nonfinite",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 164,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_border_jitter_does_not_arm_entry",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 171,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_predicted_motion_without_observation_never_creates_entry",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 178,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_ambiguous_crossing_cannot_inherit_entry",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 187,
+    "review": "Exact overlap tie only; does not cover confident-but-wrong cost assignment.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_camera_disconnect_clears_all_evidence_and_entry",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 200,
+    "review": "Normal frame cache only; full-cache control path not covered.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_missing_after_alert_keeps_episode_without_new_evidence",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 211,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_current_low_score_never_starts_alert_from_old_history",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 221,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_long_gap_breaks_confirmation_even_if_id_survives",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 229,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_fast_pair_too_close_in_time_cannot_force_alert",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 236,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_ema_telemetry_does_not_turn_low_score_into_positive",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 243,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_same_episode_resume_never_emits_duplicate_event",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 252,
+    "review": "Assumes one physical contact per ROI-entry episode; distinct touches within ROI can be missed.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_confirmed_exit_then_reentry_creates_distinct_episode",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 263,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_polygon_hysteresis_and_entry",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 271,
+    "review": "Polygon is an axis-aligned rectangle; perspective geometry remains insufficiently covered.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_track_ids_are_not_reused_after_disconnect",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 277,
+    "review": "Useful unit-contract regression; does not establish camera recognition accuracy or physical ground truth.",
+    "v3_result_created_but_not_asserted": false
+  },
+  {
+    "test": "EventAndEntryTests.test_new_session_for_changed_roi_does_not_inherit_evidence",
+    "file": "debug/alert_diagnostics/v4/test_comparison.py",
+    "line": 284,
+    "review": "Tests new object only; in-place config mutation is not guarded.",
+    "v3_result_created_but_not_asserted": false
+  }
+]

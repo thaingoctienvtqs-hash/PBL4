@@ -1,0 +1,45 @@
+test_depicted_static_high_score_never_alerts (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_fast_path_at_exact_score_threshold (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_global_assignment_not_greedy (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_initial_inside_neither_alerts (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_long_miss_reappearing_inside_needs_new_entry (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_multiple_hands_order_invariant_and_no_entry_transfer (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_normal_entry_stationary_hold_one_event_both (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_one_contact_spike_never_alerts (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_oscillation_is_conservative_not_a_claim_of_physical_truth (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_pass_by_low_score_never_alerts (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_short_miss_retains_id_but_resets_evidence (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_slow_entry_improves_over_v3 (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_timeout_comparison_1_2_3 (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_uneven_intervals_keep_id_at_two (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_v4_candidate_timeout_not_v3_default (debug.alert_diagnostics.v4.test_comparison.ComparisonTests) ... ok
+test_ambiguous_crossing_cannot_inherit_entry (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_border_jitter_does_not_arm_entry (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_camera_disconnect_clears_all_evidence_and_entry (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_confirmed_exit_then_reentry_creates_distinct_episode (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_current_low_score_never_starts_alert_from_old_history (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_ema_telemetry_does_not_turn_low_score_into_positive (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_fast_pair_too_close_in_time_cannot_force_alert (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_long_gap_breaks_confirmation_even_if_id_survives (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_missing_after_alert_keeps_episode_without_new_evidence (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_new_session_for_changed_roi_does_not_inherit_evidence (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_polygon_hysteresis_and_entry (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_predicted_motion_without_observation_never_creates_entry (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_same_episode_resume_never_emits_duplicate_event (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_track_ids_are_not_reused_after_disconnect (debug.alert_diagnostics.v4.test_comparison.EventAndEntryTests) ... ok
+test_config_rejects_legacy_roi_and_nonfinite (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+test_decreasing_timestamp_rejected (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+test_duplicate_frame_does_not_advance_state (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+test_equal_timestamp_rejected (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+test_frame_cache_capacity_stops_instead_of_forgetting_duplicates (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+test_frozen_thresholds_reject_lowering (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+test_invalid_detection_rejected_atomically (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+test_low_hand_confidence_is_not_contact_evidence (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+test_mixed_clock_rejected (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+test_stale_frame_does_not_accumulate (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+test_timestamp_nan_and_infinity_rejected (debug.alert_diagnostics.v4.test_comparison.InputSafetyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.023s
+
+OK

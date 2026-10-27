@@ -1,0 +1,2 @@
+{"accepted": false, "state": "INPUT_ERROR", "decision_available": false, "source_id": null, "frame_id": null, "reason": "invalid_utf8_jsonl", "details": null, "used_for_confirmation": false, "tracks": [], "events": [], "invalidated_track_ids": {"painting0": []}, "line_number": 1}
+{"accepted": false, "state": "INPUT_ERROR", "decision_available": false, "source_id": null, "frame_id": null, "reason": "oversized_jsonl_record", "details": null, "used_for_confirmation": false, "tracks": [], "events": [], "invalidated_track_ids": {"painting0": []}, "line_number": 2}

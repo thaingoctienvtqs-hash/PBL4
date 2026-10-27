@@ -1,0 +1,1 @@
+event_id,session_id,video_id,hand_id,observation_ids,label,start_frame_id,end_frame_id,start_timestamp_ms,end_timestamp_ms,boundary_uncertainty_ms,near_definition,ground_truth,scope

@@ -1,0 +1,1 @@
+calibration_id,video_id,status,reference_frame_id,image_space,roi,coverage,artwork_width_mm,artwork_height_mm,intrinsics_id,homography_image_to_artwork,homography_reprojection_error_px,notes

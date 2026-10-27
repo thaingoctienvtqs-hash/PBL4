@@ -1,0 +1,663 @@
+{
+  "observable_input_sha256_positive": "e6caa7a0b17211ca0228be95ed9139f749f9910156b1f6856145a965c700ee9b",
+  "observable_input_sha256_negative": "e6caa7a0b17211ca0228be95ed9139f749f9910156b1f6856145a965c700ee9b",
+  "positive_truth": [
+    {
+      "actor": "A",
+      "start": 0.8,
+      "end": 1.3
+    }
+  ],
+  "negative_truth": [],
+  "results": {
+    "strict": {
+      "outputs_identical": true,
+      "event_count_each": 0
+    },
+    "geometry": {
+      "outputs_identical": true,
+      "event_count_each": 1
+    }
+  },
+  "positive_records": [
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable0",
+      "timestamp": 0,
+      "received_timestamp": 0,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            200.0,
+            300.0,
+            300.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.1
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "A"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable0",
+        "timestamp": 0,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable1",
+      "timestamp": 0.2,
+      "received_timestamp": 0.2,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            250.0,
+            300.0,
+            350.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.1
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "A"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable1",
+        "timestamp": 0.2,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable2",
+      "timestamp": 0.4,
+      "received_timestamp": 0.4,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            400.0,
+            300.0,
+            500.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.1
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "A"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable2",
+        "timestamp": 0.4,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable3",
+      "timestamp": 0.6,
+      "received_timestamp": 0.6,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [],
+        "scores": [],
+        "pred_cats": []
+      },
+      "oracle": {
+        "actors": []
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable3",
+        "timestamp": 0.6,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable4",
+      "timestamp": 0.8,
+      "received_timestamp": 0.8,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            400.0,
+            300.0,
+            500.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.99
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "A"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable4",
+        "timestamp": 0.8,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable5",
+      "timestamp": 1,
+      "received_timestamp": 1,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            400.0,
+            300.0,
+            500.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.99
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "A"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable5",
+        "timestamp": 1,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable6",
+      "timestamp": 1.2,
+      "received_timestamp": 1.2,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            400.0,
+            300.0,
+            500.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.99
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "A"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable6",
+        "timestamp": 1.2,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    }
+  ],
+  "negative_records": [
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable0",
+      "timestamp": 0,
+      "received_timestamp": 0,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            200.0,
+            300.0,
+            300.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.1
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "A"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable0",
+        "timestamp": 0,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable1",
+      "timestamp": 0.2,
+      "received_timestamp": 0.2,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            250.0,
+            300.0,
+            350.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.1
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "A"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable1",
+        "timestamp": 0.2,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable2",
+      "timestamp": 0.4,
+      "received_timestamp": 0.4,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            400.0,
+            300.0,
+            500.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.1
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "A"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable2",
+        "timestamp": 0.4,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable3",
+      "timestamp": 0.6,
+      "received_timestamp": 0.6,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [],
+        "scores": [],
+        "pred_cats": []
+      },
+      "oracle": {
+        "actors": []
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable3",
+        "timestamp": 0.6,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable4",
+      "timestamp": 0.8,
+      "received_timestamp": 0.8,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            400.0,
+            300.0,
+            500.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.99
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "B"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable4",
+        "timestamp": 0.8,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable5",
+      "timestamp": 1,
+      "received_timestamp": 1,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            400.0,
+            300.0,
+            500.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.99
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "B"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable5",
+        "timestamp": 1,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    },
+    {
+      "schema_version": 1,
+      "kind": "prediction",
+      "source_id": "painting0",
+      "session_id": "boot0",
+      "frame_id": "replacement_indistinguishable6",
+      "timestamp": 1.2,
+      "received_timestamp": 1.2,
+      "image_size": [
+        1000,
+        1000
+      ],
+      "coordinate_space": "pixels_xyxy",
+      "prediction": {
+        "pred_boxes": [
+          [
+            400.0,
+            300.0,
+            500.0,
+            500.0
+          ]
+        ],
+        "scores": [
+          0.99
+        ],
+        "pred_cats": [
+          [
+            0.3,
+            0.4,
+            0.2,
+            0.99
+          ]
+        ]
+      },
+      "oracle": {
+        "actors": [
+          "B"
+        ]
+      },
+      "stability": {
+        "status": "STABLE",
+        "frame_id": "replacement_indistinguishable6",
+        "timestamp": 1.2,
+        "source_id": "painting0",
+        "session_id": "boot0",
+        "reference_id": "offline_controlled_reference"
+      }
+    }
+  ],
+  "conclusion": "Different scenario truth with identical observable input. Extra identity evidence is required."
+}

@@ -1,0 +1,14 @@
+{
+  "input_file": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/runs/logic_v4_20261017T034029080685Z_ecbd455a/controlled_inputs.jsonl",
+  "input_sha256": "8589b322179232c59544ecace4bb7b8e842f1ef09bc3ef1a53a07fe48d9f7e97",
+  "input_origin": "external_predictions_unverified_not_inferred_here",
+  "accepted_frames": 15,
+  "rejected_frames": 0,
+  "event_count": 1,
+  "gpu_inference_run": false,
+  "camera_opened": false,
+  "accuracy": "NOT_EVALUATED",
+  "precision": "NOT_EVALUATED",
+  "recall": "NOT_EVALUATED",
+  "f1": "NOT_EVALUATED"
+}

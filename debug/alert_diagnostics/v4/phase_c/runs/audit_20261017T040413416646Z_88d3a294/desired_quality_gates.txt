@@ -1,0 +1,62 @@
+test_camera_pan_should_not_alert_on_stationary_print (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates) ... FAIL
+test_crossing_should_not_transfer_id_between_actors (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates) ... FAIL
+test_disconnect_should_clear_active_state_even_when_cache_full (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates) ... FAIL
+test_sustained_valid_contact_should_confirm_at_30fps (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates) ... FAIL
+
+======================================================================
+FAIL: test_camera_pan_should_not_alert_on_stationary_print (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_c/test_quality_gates.py", line 15, in test_camera_pan_should_not_alert_on_stationary_print
+    self.assertEqual(event_count(rows),0,"Camera-relative motion is mistaken for hand approach")
+AssertionError: 1 != 0 : Camera-relative motion is mistaken for hand approach
+
+======================================================================
+FAIL: test_crossing_should_not_transfer_id_between_actors (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_c/test_quality_gates.py", line 21, in test_crossing_should_not_transfer_id_between_actors
+    "Existing IDs transfer between two constant-velocity actors")
+AssertionError: Lists differ: [{'timestamp': 1.8, 'track_id': 0, 'from':[71 chars]'A'}] != []
+
+First list contains 2 additional elements.
+First extra element 0:
+{'timestamp': 1.8, 'track_id': 0, 'from': 'A', 'to': 'B'}
+
++ []
+- [{'from': 'A', 'timestamp': 1.8, 'to': 'B', 'track_id': 0},
+-  {'from': 'B', 'timestamp': 1.8, 'to': 'A', 'track_id': 1}] : Existing IDs transfer between two constant-velocity actors
+
+======================================================================
+FAIL: test_disconnect_should_clear_active_state_even_when_cache_full (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_c/test_quality_gates.py", line 27, in test_disconnect_should_clear_active_state_even_when_cache_full
+    self.assertEqual(p.tracker.tracks,{},"Safety control path is blocked by frame-capacity gate")
+AssertionError: {0: {'id': 0, 'box': [0.4, 0.3, 0.5, 0.5],[228 chars]125}} != {}
++ {}
+- {0: {'box': [0.4, 0.3, 0.5, 0.5],
+-      'center': (0.45, 0.4),
+-      'detection_index': 0,
+-      'first_seen': 0.0,
+-      'id': 0,
+-      'last_seen': 0.8,
+-      'last_seen_gap': 0.19999999999999996,
+-      'matching_cost': 0.125,
+-      'new_track': False,
+-      'observed': True,
+-      'reacquired': False,
+-      'velocity': (0.078125, 0.0)}} : Safety control path is blocked by frame-capacity gate
+
+======================================================================
+FAIL: test_sustained_valid_contact_should_confirm_at_30fps (debug.alert_diagnostics.v4.phase_c.test_quality_gates.QualityGates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_c/test_quality_gates.py", line 11, in test_sustained_valid_contact_should_confirm_at_30fps
+    self.assertGreaterEqual(event_count(rows),1,"Window size limits support below 0.4s at high FPS")
+AssertionError: 0 not greater than or equal to 1 : Window size limits support below 0.4s at high FPS
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.021s
+
+FAILED (failures=4)

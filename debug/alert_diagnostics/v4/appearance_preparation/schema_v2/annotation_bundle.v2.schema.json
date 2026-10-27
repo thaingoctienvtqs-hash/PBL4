@@ -1,0 +1,2491 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "data_kind": {
+      "enum": [
+        "REAL_CAPTURE",
+        "SYNTHETIC_TEST"
+      ]
+    },
+    "dataset_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "annotation_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "coordinate_convention": {
+      "const": "ZERO_BASED_CONTINUOUS_PIXEL_XYXY"
+    },
+    "sessions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/session"
+      },
+      "minItems": 1
+    },
+    "videos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/video"
+      },
+      "minItems": 1
+    },
+    "reference_videos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/reference_video"
+      },
+      "minItems": 0
+    },
+    "synchronizations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/synchronization"
+      },
+      "minItems": 0
+    },
+    "calibrations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/calibration"
+      },
+      "minItems": 1
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/frame"
+      },
+      "minItems": 1
+    },
+    "hands": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/hand"
+      },
+      "minItems": 0
+    },
+    "tracking_gaps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/tracking_gap"
+      },
+      "minItems": 0
+    },
+    "contact_events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/contact_event"
+      },
+      "minItems": 0
+    },
+    "reidentification": {
+      "$ref": "#/definitions/reidentification"
+    }
+  },
+  "required": [
+    "schema_version",
+    "data_kind",
+    "dataset_id",
+    "annotation_version",
+    "coordinate_convention",
+    "sessions",
+    "videos",
+    "reference_videos",
+    "synchronizations",
+    "calibrations",
+    "frames",
+    "hands",
+    "tracking_gaps",
+    "contact_events"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ArtGuard top-edge camera annotation bundle v2",
+  "description": "Base annotation is independent of optional reidentification. Unknown measurements remain null. No runtime ROI import or identity recovery is performed.",
+  "definitions": {
+    "resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "width": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "width",
+        "height"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "width": {
+                "const": null
+              }
+            },
+            "required": [
+              "width"
+            ]
+          },
+          "then": {
+            "properties": {
+              "height": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "height": {
+                "const": null
+              }
+            },
+            "required": [
+              "height"
+            ]
+          },
+          "then": {
+            "properties": {
+              "width": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "camera": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "camera_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "sensor": {
+          "const": "OV3660"
+        },
+        "mounting_position": {
+          "const": "TOP_EDGE_DIRECT"
+        },
+        "viewing_direction": {
+          "const": "OBLIQUE_DOWNWARD"
+        },
+        "tilt_degrees": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 90
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tilt_convention": {
+          "const": "DEGREES_FROM_ARTWORK_PLANE_0_PARALLEL_90_NORMAL"
+        },
+        "tilt_uncertainty_degrees": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fov_horizontal_degrees": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 180
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fov_vertical_degrees": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 180
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "configured_resolution": {
+          "$ref": "#/definitions/resolution"
+        },
+        "measurement_notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "camera_id",
+        "sensor",
+        "mounting_position",
+        "viewing_direction",
+        "tilt_degrees",
+        "tilt_convention",
+        "tilt_uncertainty_degrees",
+        "fov_horizontal_degrees",
+        "fov_vertical_degrees",
+        "configured_resolution",
+        "measurement_notes"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "tilt_degrees": {
+                "const": null
+              }
+            },
+            "required": [
+              "tilt_degrees"
+            ]
+          },
+          "then": {
+            "properties": {
+              "tilt_uncertainty_degrees": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "DRAFT",
+            "APPROVED",
+            "UNRESOLVED"
+          ]
+        },
+        "reviewer_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "reviewer_ids",
+        "notes"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "APPROVED"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reviewer_ids": {
+                "minItems": 2
+              }
+            }
+          }
+        }
+      ]
+    },
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "session_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "capture_group_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "camera": {
+          "$ref": "#/definitions/camera"
+        },
+        "host_clock_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "person_group_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "split": {
+          "enum": [
+            "validation",
+            "test",
+            "unassigned"
+          ]
+        },
+        "scenario_tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "review": {
+          "$ref": "#/definitions/review"
+        },
+        "artwork_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        }
+      },
+      "required": [
+        "session_id",
+        "capture_group_id",
+        "source_id",
+        "camera",
+        "host_clock_id",
+        "person_group_ids",
+        "split",
+        "scenario_tags",
+        "review",
+        "artwork_id"
+      ]
+    },
+    "video": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "video_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "session_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "segment_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "media_kind": {
+          "enum": [
+            "RAW_VIDEO",
+            "RAW_FRAME_MANIFEST"
+          ]
+        },
+        "relative_path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\]+$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "capture_clock_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "timestamp_basis": {
+          "enum": [
+            "CAMERA_TIMESTAMP",
+            "VIDEO_PTS",
+            "HOST_RECEIVE_ONLY",
+            "UNKNOWN"
+          ]
+        },
+        "duration_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nominal_fps": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "resolution": {
+          "$ref": "#/definitions/resolution"
+        }
+      },
+      "required": [
+        "video_id",
+        "session_id",
+        "segment_id",
+        "media_kind",
+        "relative_path",
+        "sha256",
+        "capture_clock_id",
+        "timestamp_basis",
+        "duration_ms",
+        "nominal_fps",
+        "resolution"
+      ]
+    },
+    "reference_video": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reference_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "session_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "view": {
+          "const": "SIDE_GROUND_TRUTH_ONLY"
+        },
+        "relative_path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\]+$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "clock_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        }
+      },
+      "required": [
+        "reference_id",
+        "session_id",
+        "view",
+        "relative_path",
+        "sha256",
+        "clock_id"
+      ]
+    },
+    "synchronization": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sync_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "video_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "reference_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "status": {
+          "enum": [
+            "MEASURED",
+            "UNKNOWN"
+          ]
+        },
+        "method": {
+          "enum": [
+            "VISUAL_MARKER",
+            "AUDIO_MARKER",
+            "MANUAL_ALIGNMENT",
+            "UNKNOWN"
+          ]
+        },
+        "mapping": {
+          "const": "REFERENCE_MS_EQUALS_PRIMARY_MS_PLUS_OFFSET_AT_ANCHOR"
+        },
+        "primary_anchor_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "offset_ms": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "uncertainty_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "drift_ppm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sync_id",
+        "video_id",
+        "reference_id",
+        "status",
+        "method",
+        "mapping",
+        "primary_anchor_ms",
+        "offset_ms",
+        "uncertainty_ms",
+        "drift_ppm",
+        "notes"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "UNKNOWN"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "method": {
+                "const": "UNKNOWN"
+              },
+              "primary_anchor_ms": {
+                "type": "null"
+              },
+              "offset_ms": {
+                "type": "null"
+              },
+              "uncertainty_ms": {
+                "type": "null"
+              },
+              "drift_ppm": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "MEASURED"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "method": {
+                "enum": [
+                  "VISUAL_MARKER",
+                  "AUDIO_MARKER",
+                  "MANUAL_ALIGNMENT"
+                ]
+              },
+              "primary_anchor_ms": {
+                "type": "number",
+                "minimum": 0
+              },
+              "offset_ms": {
+                "type": "number"
+              },
+              "uncertainty_ms": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "roi": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "shape": {
+          "enum": [
+            "rectangle",
+            "polygon"
+          ]
+        },
+        "normalized": {
+          "const": true
+        },
+        "image_space": {
+          "enum": [
+            "RAW",
+            "UNDISTORTED"
+          ]
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "minItems": 3
+        }
+      },
+      "required": [
+        "shape",
+        "normalized",
+        "image_space",
+        "coordinates"
+      ],
+      "description": "Ordered image-normalized vertices. Rectangle requires four axis-aligned perimeter corners; polygon supports convex perimeter order. This is annotation, not runtime config.",
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "shape": {
+                "const": "rectangle"
+              }
+            },
+            "required": [
+              "shape"
+            ]
+          },
+          "then": {
+            "properties": {
+              "coordinates": {
+                "minItems": 4,
+                "maxItems": 4
+              }
+            }
+          }
+        }
+      ]
+    },
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "region_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "reason": {
+          "enum": [
+            "OUTSIDE_FOV",
+            "STATIC_OCCLUSION",
+            "LOW_RESOLUTION",
+            "UNKNOWN"
+          ]
+        },
+        "coordinate_space": {
+          "enum": [
+            "ARTWORK_NORMALIZED",
+            "IMAGE_NORMALIZED",
+            "UNKNOWN"
+          ]
+        },
+        "coordinates": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "minItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "region_id",
+        "reason",
+        "coordinate_space",
+        "coordinates",
+        "notes"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "coordinate_space": {
+                "const": "UNKNOWN"
+              }
+            },
+            "required": [
+              "coordinate_space"
+            ]
+          },
+          "then": {
+            "properties": {
+              "coordinates": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "FULL",
+            "PARTIAL",
+            "UNKNOWN"
+          ]
+        },
+        "visible_surface_fraction": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observable_surface_fraction": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unobservable_regions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/region"
+          },
+          "minItems": 0
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "visible_surface_fraction",
+        "observable_surface_fraction",
+        "unobservable_regions",
+        "notes"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "UNKNOWN"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "visible_surface_fraction": {
+                "type": "null"
+              },
+              "observable_surface_fraction": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "FULL"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "visible_surface_fraction": {
+                "const": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "PARTIAL"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "visible_surface_fraction": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "exclusiveMaximum": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unobservable_regions": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "calibration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "calibration_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "video_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "status": {
+          "enum": [
+            "UNMEASURED",
+            "ANNOTATED",
+            "VERIFIED"
+          ]
+        },
+        "reference_frame_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "image_space": {
+          "enum": [
+            "RAW",
+            "UNDISTORTED"
+          ]
+        },
+        "roi": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/roi"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "coverage": {
+          "$ref": "#/definitions/coverage"
+        },
+        "artwork_width_mm": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artwork_height_mm": {
+          "anyOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "intrinsics_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "homography_image_to_artwork": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "homography_reprojection_error_px": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "calibration_id",
+        "video_id",
+        "status",
+        "reference_frame_id",
+        "image_space",
+        "roi",
+        "coverage",
+        "artwork_width_mm",
+        "artwork_height_mm",
+        "intrinsics_id",
+        "homography_image_to_artwork",
+        "homography_reprojection_error_px",
+        "notes"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "UNMEASURED"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "roi": {
+                "type": "null"
+              },
+              "reference_frame_id": {
+                "type": "null"
+              },
+              "homography_image_to_artwork": {
+                "type": "null"
+              },
+              "homography_reprojection_error_px": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "ANNOTATED",
+                  "VERIFIED"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "roi": {
+                "$ref": "#/definitions/roi"
+              },
+              "reference_frame_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "frame": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "session_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "video_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "frame_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "sequence_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "capture_clock_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "capture_timestamp_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "host_clock_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "host_receive_timestamp_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timestamp_status": {
+          "enum": [
+            "VALID",
+            "DUPLICATE",
+            "STALE",
+            "UNKNOWN"
+          ]
+        },
+        "frame_status": {
+          "enum": [
+            "OK",
+            "MISSING",
+            "CORRUPT",
+            "OFFLINE"
+          ]
+        },
+        "camera_state": {
+          "enum": [
+            "STABLE",
+            "MOVING",
+            "UNKNOWN",
+            "OFFLINE"
+          ]
+        },
+        "raw_image_path": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "raw_image_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "width": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "calibration_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "observation_notes": {
+          "type": "string"
+        },
+        "source_frame_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "image_space": {
+          "enum": [
+            "RAW",
+            "UNDISTORTED"
+          ]
+        }
+      },
+      "required": [
+        "session_id",
+        "video_id",
+        "source_id",
+        "frame_id",
+        "sequence_index",
+        "capture_clock_id",
+        "capture_timestamp_ms",
+        "host_clock_id",
+        "host_receive_timestamp_ms",
+        "timestamp_status",
+        "frame_status",
+        "camera_state",
+        "raw_image_path",
+        "raw_image_sha256",
+        "width",
+        "height",
+        "calibration_id",
+        "observation_notes",
+        "source_frame_id",
+        "image_space"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "frame_status": {
+                "const": "OK"
+              }
+            },
+            "required": [
+              "frame_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "raw_image_path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "raw_image_sha256": {
+                "type": "string",
+                "minLength": 1
+              },
+              "width": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "height": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "camera_state": {
+                "enum": [
+                  "STABLE",
+                  "MOVING",
+                  "UNKNOWN"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "frame_status": {
+                "enum": [
+                  "MISSING",
+                  "OFFLINE"
+                ]
+              }
+            },
+            "required": [
+              "frame_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "raw_image_path": {
+                "type": "null"
+              },
+              "raw_image_sha256": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "frame_status": {
+                "const": "OFFLINE"
+              }
+            },
+            "required": [
+              "frame_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "camera_state": {
+                "const": "OFFLINE"
+              },
+              "capture_timestamp_ms": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "camera_state": {
+                "const": "OFFLINE"
+              }
+            },
+            "required": [
+              "camera_state"
+            ]
+          },
+          "then": {
+            "properties": {
+              "frame_status": {
+                "const": "OFFLINE"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "timestamp_status": {
+                "const": "UNKNOWN"
+              }
+            },
+            "required": [
+              "timestamp_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "capture_timestamp_ms": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "timestamp_status": {
+                "const": "VALID"
+              }
+            },
+            "required": [
+              "timestamp_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "capture_timestamp_ms": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "hand": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "observation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "session_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "video_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "frame_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "entity_kind": {
+          "enum": [
+            "REAL_HAND",
+            "DEPICTED_HAND",
+            "UNKNOWN"
+          ]
+        },
+        "hand_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "person_group_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "depiction_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "identity_status": {
+          "enum": [
+            "VERIFIED",
+            "UNCERTAIN",
+            "NOT_REVIEWED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "side": {
+          "enum": [
+            "LEFT",
+            "RIGHT",
+            "UNKNOWN",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "bbox_xyxy": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "minimum": 0
+              },
+              "minItems": 4,
+              "maxItems": 4
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "occlusion": {
+          "enum": [
+            "NONE",
+            "PARTIAL",
+            "FULL",
+            "UNKNOWN"
+          ]
+        },
+        "visibility_fraction": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "first_observed_location": {
+          "enum": [
+            "INSIDE_ROI",
+            "OUTSIDE_ROI",
+            "BOUNDARY",
+            "UNKNOWN"
+          ]
+        },
+        "review": {
+          "$ref": "#/definitions/review"
+        }
+      },
+      "required": [
+        "observation_id",
+        "session_id",
+        "video_id",
+        "frame_id",
+        "entity_kind",
+        "hand_id",
+        "person_group_id",
+        "depiction_id",
+        "identity_status",
+        "side",
+        "bbox_xyxy",
+        "occlusion",
+        "visibility_fraction",
+        "first_observed_location",
+        "review"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "identity_status": {
+                "const": "VERIFIED"
+              }
+            },
+            "required": [
+              "identity_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "entity_kind": {
+                "const": "REAL_HAND"
+              },
+              "hand_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "depiction_id": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "identity_status": {
+                "enum": [
+                  "UNCERTAIN",
+                  "NOT_REVIEWED",
+                  "NOT_APPLICABLE"
+                ]
+              }
+            },
+            "required": [
+              "identity_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "hand_id": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "entity_kind": {
+                "const": "DEPICTED_HAND"
+              }
+            },
+            "required": [
+              "entity_kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "hand_id": {
+                "type": "null"
+              },
+              "person_group_id": {
+                "type": "null"
+              },
+              "depiction_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "identity_status": {
+                "const": "NOT_APPLICABLE"
+              },
+              "side": {
+                "const": "NOT_APPLICABLE"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "entity_kind": {
+                "const": "REAL_HAND"
+              }
+            },
+            "required": [
+              "entity_kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "depiction_id": {
+                "type": "null"
+              },
+              "identity_status": {
+                "enum": [
+                  "VERIFIED",
+                  "UNCERTAIN",
+                  "NOT_REVIEWED"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "entity_kind": {
+                "const": "UNKNOWN"
+              }
+            },
+            "required": [
+              "entity_kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "hand_id": {
+                "type": "null"
+              },
+              "depiction_id": {
+                "type": "null"
+              },
+              "identity_status": {
+                "enum": [
+                  "UNCERTAIN",
+                  "NOT_REVIEWED"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "occlusion": {
+                "const": "FULL"
+              }
+            },
+            "required": [
+              "occlusion"
+            ]
+          },
+          "then": {
+            "properties": {
+              "bbox_xyxy": {
+                "type": "null"
+              },
+              "visibility_fraction": {
+                "enum": [
+                  0,
+                  null
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "occlusion": {
+                "enum": [
+                  "NONE",
+                  "PARTIAL"
+                ]
+              }
+            },
+            "required": [
+              "occlusion"
+            ]
+          },
+          "then": {
+            "properties": {
+              "bbox_xyxy": {
+                "type": "array"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "tracking_gap": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "gap_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "session_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "video_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "before_observation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "after_observation_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "start_timestamp_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "end_timestamp_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "gap_kind": {
+          "enum": [
+            "DETECTION_GAP",
+            "CAPTURE_GAP",
+            "OCCLUSION",
+            "CAMERA_OFFLINE"
+          ]
+        },
+        "continuity": {
+          "enum": [
+            "SAME_HAND",
+            "REPLACEMENT",
+            "UNKNOWN",
+            "NOT_RETURNED"
+          ]
+        },
+        "review": {
+          "$ref": "#/definitions/review"
+        }
+      },
+      "required": [
+        "gap_id",
+        "session_id",
+        "video_id",
+        "before_observation_id",
+        "after_observation_id",
+        "start_timestamp_ms",
+        "end_timestamp_ms",
+        "gap_kind",
+        "continuity",
+        "review"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "continuity": {
+                "enum": [
+                  "SAME_HAND",
+                  "REPLACEMENT"
+                ]
+              }
+            },
+            "required": [
+              "continuity"
+            ]
+          },
+          "then": {
+            "properties": {
+              "after_observation_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "continuity": {
+                "const": "NOT_RETURNED"
+              }
+            },
+            "required": [
+              "continuity"
+            ]
+          },
+          "then": {
+            "properties": {
+              "after_observation_id": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ground_truth_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "PRIMARY_VIDEO",
+            "SIDE_REFERENCE",
+            "INDEPENDENT_OBSERVER",
+            "UNRESOLVED"
+          ]
+        },
+        "video_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reference_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sync_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "kind",
+        "video_id",
+        "reference_id",
+        "sync_id",
+        "evidence_notes"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "SIDE_REFERENCE"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reference_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sync_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "video_id": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "PRIMARY_VIDEO"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "video_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reference_id": {
+                "type": "null"
+              },
+              "sync_id": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "INDEPENDENT_OBSERVER",
+                  "UNRESOLVED"
+                ]
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "video_id": {
+                "type": "null"
+              },
+              "reference_id": {
+                "type": "null"
+              },
+              "sync_id": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ground_truth": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "verification_status": {
+          "enum": [
+            "VERIFIED",
+            "UNVERIFIABLE"
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ground_truth_source"
+          },
+          "minItems": 1
+        },
+        "review": {
+          "$ref": "#/definitions/review"
+        }
+      },
+      "required": [
+        "verification_status",
+        "sources",
+        "review"
+      ]
+    },
+    "contact_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "session_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "video_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "hand_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observation_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "label": {
+          "enum": [
+            "TOUCH",
+            "NEAR_NO_TOUCH",
+            "NO_TOUCH",
+            "UNKNOWN"
+          ]
+        },
+        "start_frame_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "end_frame_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "start_timestamp_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "end_timestamp_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "boundary_uncertainty_ms": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "near_definition": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ground_truth": {
+          "$ref": "#/definitions/ground_truth"
+        },
+        "scope": {
+          "enum": [
+            "SCENE",
+            "HAND"
+          ]
+        }
+      },
+      "required": [
+        "event_id",
+        "session_id",
+        "video_id",
+        "hand_id",
+        "observation_ids",
+        "label",
+        "start_frame_id",
+        "end_frame_id",
+        "start_timestamp_ms",
+        "end_timestamp_ms",
+        "boundary_uncertainty_ms",
+        "near_definition",
+        "ground_truth",
+        "scope"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "label": {
+                "const": "UNKNOWN"
+              }
+            },
+            "required": [
+              "label"
+            ]
+          },
+          "then": {
+            "properties": {
+              "ground_truth": {
+                "properties": {
+                  "verification_status": {
+                    "const": "UNVERIFIABLE"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "label": {
+                "enum": [
+                  "TOUCH",
+                  "NEAR_NO_TOUCH",
+                  "NO_TOUCH"
+                ]
+              }
+            },
+            "required": [
+              "label"
+            ]
+          },
+          "then": {
+            "properties": {
+              "ground_truth": {
+                "properties": {
+                  "verification_status": {
+                    "const": "VERIFIED"
+                  },
+                  "review": {
+                    "properties": {
+                      "status": {
+                        "const": "APPROVED"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "label": {
+                "const": "NEAR_NO_TOUCH"
+              }
+            },
+            "required": [
+              "label"
+            ]
+          },
+          "then": {
+            "properties": {
+              "near_definition": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "identity_link": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "link_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "gap_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "before_observation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "after_observation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "label": {
+          "enum": [
+            "SAME_HAND",
+            "DIFFERENT_HAND",
+            "UNKNOWN"
+          ]
+        },
+        "review": {
+          "$ref": "#/definitions/review"
+        }
+      },
+      "required": [
+        "link_id",
+        "gap_id",
+        "before_observation_id",
+        "after_observation_id",
+        "label",
+        "review"
+      ]
+    },
+    "pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pair_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "gap_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "gallery_observation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "query_observation_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "label": {
+          "enum": [
+            "SAME_HAND",
+            "DIFFERENT_HAND",
+            "REAL_VS_DEPICTED",
+            "UNKNOWN"
+          ]
+        },
+        "difficulty_tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "review": {
+          "$ref": "#/definitions/review"
+        }
+      },
+      "required": [
+        "pair_id",
+        "gap_id",
+        "gallery_observation_id",
+        "query_observation_id",
+        "label",
+        "difficulty_tags",
+        "review"
+      ]
+    },
+    "reidentification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "identity_links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/identity_link"
+          },
+          "minItems": 0
+        },
+        "pairs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/pair"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "identity_links",
+        "pairs"
+      ]
+    }
+  }
+}

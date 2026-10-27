@@ -1,0 +1,56 @@
+{
+  "records": 72,
+  "accepted": 72,
+  "rejected": 0,
+  "unavailable_records": 0,
+  "confirmation_records": 7,
+  "event_count": 2,
+  "events": [
+    {
+      "event_key": "boot0_track_0_episode_1",
+      "track_id": 0,
+      "timestamp": 0.8,
+      "reason": "window_and_time_confirmed",
+      "source_id": "painting0",
+      "source_event_key": "painting0::boot0_track_0_episode_1"
+    },
+    {
+      "event_key": "boot0_track_0_episode_2",
+      "track_id": 0,
+      "timestamp": 64.4,
+      "reason": "window_and_time_confirmed",
+      "source_id": "painting0",
+      "source_event_key": "painting0::boot0_track_0_episode_2"
+    }
+  ],
+  "non_confirmation_reasons": {
+    "no_confirmable_contact_see_track_reasons": 65
+  },
+  "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+  "input_sha256": "9987466a9687c84f390b95dec2546ef6217735af312a1299a9f6789d9a69cc6f",
+  "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/separate_episodes_default_cooldown.jsonl",
+  "config": {
+    "schema_version": 1,
+    "sources": {
+      "painting0": {
+        "session_id": "boot0",
+        "calibration_id": "offline_controlled_reference",
+        "pipeline_config": {
+          "roi": {
+            "enabled": true,
+            "normalized": true,
+            "shape": "rectangle",
+            "coordinates": [
+              0.4,
+              0.1,
+              0.8,
+              0.9
+            ]
+          }
+        }
+      }
+    }
+  },
+  "simulate_stability": true,
+  "real_camera_or_gpu_run": false
+}

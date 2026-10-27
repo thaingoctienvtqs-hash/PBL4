@@ -1,0 +1,43 @@
+{
+  "python": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+  "tests_run": 40,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "comparison_rows": 39,
+  "protected_before": {
+    "src/realtime_worker.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/realtime_worker.py.bak": "1a063085948d3f12d3c0a77348f4a6fc55c4466204767b631a611db09eaf65d2",
+    "src/realtime_worker_integrated.py": "cf8d6e8ea8aa7ce34a30c753725aaecef70a3aebef0386e3b8da5e1ebd875cc1",
+    "src/realtime_worker_integrated_v2.py": "0c26d939aaaf97d9ea4d966ac6f4830c3d29a466294f59c140cc546f628c9176",
+    "src/realtime_worker_integrated_v3.py": "2fedb97b799214b18cfff9799286a6f5be5432ac2f61cfad60ec69b1466c2272",
+    "src/realtime_worker_recovered.py": "c538fe183023933cf93351e65a08d87db960433960a3fbf54e526765a42f5e4e",
+    "src/realtime_worker_verified.py": "c538fe183023933cf93351e65a08d87db960433960a3fbf54e526765a42f5e4e",
+    "src/core/contact_logic.py": "a2790ae68cc44d89c21c95a2db2f88e4ecbe121fd6b1229b93b82eb67f63e1e7",
+    "web/.env.example": "9344ae9a4a483dd7f1b205e6ac2cd94be52b02aa649484bc5dbca6ddb382ca7b",
+    "web/frontend/package-lock.json": "3176f606099229a4f397e141a872bababb0a80af5107d886d77d5144c791339b",
+    "models/combined_data_model.pth": "c03f38a947d426b39b7538a5478f823799d98b34e0fb299ec35a6520342a342a"
+  },
+  "protected_after": {
+    "src/realtime_worker.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/realtime_worker.py.bak": "1a063085948d3f12d3c0a77348f4a6fc55c4466204767b631a611db09eaf65d2",
+    "src/realtime_worker_integrated.py": "cf8d6e8ea8aa7ce34a30c753725aaecef70a3aebef0386e3b8da5e1ebd875cc1",
+    "src/realtime_worker_integrated_v2.py": "0c26d939aaaf97d9ea4d966ac6f4830c3d29a466294f59c140cc546f628c9176",
+    "src/realtime_worker_integrated_v3.py": "2fedb97b799214b18cfff9799286a6f5be5432ac2f61cfad60ec69b1466c2272",
+    "src/realtime_worker_recovered.py": "c538fe183023933cf93351e65a08d87db960433960a3fbf54e526765a42f5e4e",
+    "src/realtime_worker_verified.py": "c538fe183023933cf93351e65a08d87db960433960a3fbf54e526765a42f5e4e",
+    "src/core/contact_logic.py": "a2790ae68cc44d89c21c95a2db2f88e4ecbe121fd6b1229b93b82eb67f63e1e7",
+    "web/.env.example": "9344ae9a4a483dd7f1b205e6ac2cd94be52b02aa649484bc5dbca6ddb382ca7b",
+    "web/frontend/package-lock.json": "3176f606099229a4f397e141a872bababb0a80af5107d886d77d5144c791339b",
+    "models/combined_data_model.pth": "c03f38a947d426b39b7538a5478f823799d98b34e0fb299ec35a6520342a342a"
+  },
+  "protected_files_unchanged": true,
+  "gpu_inference_run": false,
+  "camera_opened": false,
+  "database_opened": false,
+  "accuracy": "NOT_EVALUATED",
+  "precision": "NOT_EVALUATED",
+  "recall": "NOT_EVALUATED",
+  "f1": "NOT_EVALUATED"
+}

@@ -1,0 +1,85 @@
+{
+  "purpose": "OFFLINE_LATENCY_TOOL_PREPARATION; not camera or AI latency benchmark",
+  "new_directory": "debug/latency_diagnostics",
+  "destination_existed_before": false,
+  "before": {
+    "content_aggregate": "8bdf9bde70e8c4867762d9217e66c062d254b7caf5adec4456c11254c34b5b1f",
+    "metadata_aggregate": "79a06f55291bf151f7ae366aac729a2d9f5b394463e5e526565d55c546de340c",
+    "hash_count": 1163,
+    "metadata_count": 15330,
+    "checkpoint_sha256": "c03f38a947d426b39b7538a5478f823799d98b34e0fb299ec35a6520342a342a",
+    "errors": [],
+    "skipped_links": []
+  },
+  "after": {
+    "content_aggregate": "8bdf9bde70e8c4867762d9217e66c062d254b7caf5adec4456c11254c34b5b1f",
+    "metadata_aggregate": "79a06f55291bf151f7ae366aac729a2d9f5b394463e5e526565d55c546de340c",
+    "hash_count": 1163,
+    "metadata_count": 15330,
+    "checkpoint_sha256": "c03f38a947d426b39b7538a5478f823799d98b34e0fb299ec35a6520342a342a",
+    "errors": [],
+    "skipped_links": []
+  },
+  "outside_new_directory_unchanged": true,
+  "hash_scope": "All project file contents except .git, installed dependencies/cache/build, database content and actual secret files; metadata covers remaining project files. New diagnostics directory excluded. External dataset/environment not hashed.",
+  "git": {
+    "branch": "test-web",
+    "head": "aca33ee901bd12f527499c20222100b104d0d6b1",
+    "before_short": " M inference/dataset_collector.py\n M web/.env.example\n M web/frontend/package-lock.json\n?? \"C\\357\\200\\272\\357\\201\\234Users\\357\\201\\234LEGION\\357\\201\\234PaintingProtection\\357\\201\\234webcam_frame.jpg\"\n?? backups/\n?? \"bject Name,Length,LastWriteTime\"\n?? camera_hand_test.jpg\n?? camera_test.jpg\n?? configs/pbl4_test.json.before_cooldown\n?? data/\n?? dataset/README.md\n?? debug/\n?? docs/maintenance_audit/\n?? src/contact_hands_two_stream/engine/second_stream_alignment.py\n?? src/core/contact_logic.py\n?? src/core/contacthands_compat.py\n?? src/core/geometry.py\n?? src/data/alerts/\n?? src/data/latest.jpg\n?? src/detect_compat.py\n?? src/realtime_worker.py.bak\n?? src/realtime_worker_integrated.py\n?? src/realtime_worker_integrated_v2.py\n?? src/realtime_worker_integrated_v3.py\n?? src/realtime_worker_recovered.py\n?? src/realtime_worker_verified.py\n?? src/services/camera_compat.py\n?? src/services/event_store.py\n?? src/services/sensors.py\n?? src/utils/config_compat.py\n?? tests/test_two_stream_alignment.py\n",
+    "after_short": " M inference/dataset_collector.py\n M web/.env.example\n M web/frontend/package-lock.json\n?? \"C\\357\\200\\272\\357\\201\\234Users\\357\\201\\234LEGION\\357\\201\\234PaintingProtection\\357\\201\\234webcam_frame.jpg\"\n?? backups/\n?? \"bject Name,Length,LastWriteTime\"\n?? camera_hand_test.jpg\n?? camera_test.jpg\n?? configs/pbl4_test.json.before_cooldown\n?? data/\n?? dataset/README.md\n?? debug/\n?? docs/maintenance_audit/\n?? src/contact_hands_two_stream/engine/second_stream_alignment.py\n?? src/core/contact_logic.py\n?? src/core/contacthands_compat.py\n?? src/core/geometry.py\n?? src/data/alerts/\n?? src/data/latest.jpg\n?? src/detect_compat.py\n?? src/realtime_worker.py.bak\n?? src/realtime_worker_integrated.py\n?? src/realtime_worker_integrated_v2.py\n?? src/realtime_worker_integrated_v3.py\n?? src/realtime_worker_recovered.py\n?? src/realtime_worker_verified.py\n?? src/services/camera_compat.py\n?? src/services/event_store.py\n?? src/services/sensors.py\n?? src/utils/config_compat.py\n?? tests/test_two_stream_alignment.py\n",
+    "before_branch": "test-web",
+    "before_head": "aca33ee901bd12f527499c20222100b104d0d6b1",
+    "unchanged": true
+  },
+  "tests": {
+    "native": {
+      "chunk_id": "6bc81a",
+      "wall_time_seconds": 0.2346826,
+      "exit_code": 0,
+      "original_token_count": 134,
+      "output": "................................................................................................................................................................................\r\n----------------------------------------------------------------------\r\nRan 176 tests in 0.067s\r\n\r\nOK\r\n\r\n{\"python\": \"3.14.7\", \"tests\": 176, \"failures\": 0, \"errors\": 0, \"forbidden_operations\": [], \"forbidden_runtime_modules_loaded\": [], \"test_data\": \"SYNTHETIC_TEST; real-kind partition copies in-memory only\", \"test_artifacts\": \"NONE; filesystem mocked\"}\r\n"
+    },
+    "wsl": {
+      "chunk_id": "4b1c71",
+      "wall_time_seconds": 2.0347923,
+      "exit_code": 0,
+      "original_token_count": 132,
+      "output": "................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 176 tests in 0.089s\n\nOK\n\n{\"python\": \"3.7.16\", \"tests\": 176, \"failures\": 0, \"errors\": 0, \"forbidden_operations\": [], \"forbidden_runtime_modules_loaded\": [], \"test_data\": \"SYNTHETIC_TEST; real-kind partition copies in-memory only\", \"test_artifacts\": \"NONE; filesystem mocked\"}\n"
+    }
+  },
+  "static": {
+    "chunk_id": "e98102",
+    "wall_time_seconds": 0.1298371,
+    "exit_code": 0,
+    "original_token_count": 321,
+    "output": "{\"python_files\": 14, \"syntax_python_37\": true, \"compile_does_not_write_bytecode\": true, \"links\": [{\"document\": \"README.vi.md\", \"target\": \"examples.synthetic.jsonl\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"schema.py\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"recorder.py\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"timing.py\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"../../src/realtime_worker_integrated_v3.py\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"../../src/detect_compat.py\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"../../src/services/event_store.py\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"../alert_diagnostics/v4/phase_d/pipeline_d.py\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"../alert_diagnostics/v4/phase_e/offline_pipeline.py\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"../alert_diagnostics/v4/phase_f/pipeline_f.py\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"analyzer.py\", \"exists\": true}, {\"document\": \"README.vi.md\", \"target\": \"../alert_diagnostics/run_inference.py\", \"exists\": true}], \"example_records\": 3, \"example_invalid\": [], \"example_kinds\": [\"SYNTHETIC_TEST\"], \"bytecode_files\": [], \"errors\": []}\r\n"
+  },
+  "sample_analysis": {
+    "data_kind": "SYNTHETIC_TEST",
+    "records": 3,
+    "invalid_lines": 0,
+    "new_alerts": 1,
+    "delivery_samples": 0,
+    "real_ai_inference_samples": 0,
+    "summary": "runs/analysis_20261018T064307038449Z_836259c2/summary.json"
+  },
+  "not_run": [
+    "camera",
+    "GPU/CPU model inference",
+    "training",
+    "database connections",
+    "web services",
+    "environment changes",
+    "git commit/push"
+  ],
+  "selected_protected_sha256_after": {
+    "src/realtime_worker_integrated_v3.py": "2fedb97b799214b18cfff9799286a6f5be5432ac2f61cfad60ec69b1466c2272",
+    "src/core/contact_logic.py": "a2790ae68cc44d89c21c95a2db2f88e4ecbe121fd6b1229b93b82eb67f63e1e7",
+    "src/detect_compat.py": "e3448f4d5db78c1a9beb49666626904e8077482c7c43cdba0d3d0134bdd1e23b",
+    "debug/alert_diagnostics/v4/phase_d/pipeline_d.py": "8fd7286e7b8e0f4114a83f1bca70f60ac001317be324926fa363bc2e2a138a03",
+    "debug/alert_diagnostics/v4/phase_e/offline_pipeline.py": "ff35cfbe76c7f1649d809bddc2ab87b0235f52c46cc7df757aac1bedbef17d7d",
+    "debug/alert_diagnostics/v4/phase_f/pipeline_f.py": "6b40c6e4adf8109c805afa2f04f2e3438416fdcc4942bc561fbdb29168c20064",
+    "inference/dataset_collector.py": "5110352949dc3cd6ec3ea79601daec947fc65e523eb4e6c6b288ee8e43ad65ed"
+  },
+  "selected_hash_note": "Before/after content aggregate is unchanged; individual selected hashes above are from final content."
+}

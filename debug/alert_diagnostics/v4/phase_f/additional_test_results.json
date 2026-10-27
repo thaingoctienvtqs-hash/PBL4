@@ -1,0 +1,16 @@
+{
+  "tests": {
+    "tests": 6,
+    "pass": 6,
+    "fail": 0,
+    "error": 0,
+    "skip": 0,
+    "failures": [],
+    "errors": [],
+    "output": "test_changed_view_calibration_cannot_restore_old_entry (debug.alert_diagnostics.v4.phase_f.test_additional_f.AdditionalContracts) ... ok\ntest_crossing_detection_permutation_no_owner_transfer (debug.alert_diagnostics.v4.phase_f.test_additional_f.AdditionalContracts) ... ok\ntest_explicit_missing_timeout_one_two_three (debug.alert_diagnostics.v4.phase_f.test_additional_f.AdditionalContracts) ... ok\ntest_full_cache_disconnect_clears_probation_buffers (debug.alert_diagnostics.v4.phase_f.test_additional_f.AdditionalContracts) ... ok\ntest_three_explicit_frame_errors_recover (debug.alert_diagnostics.v4.phase_f.test_additional_f.AdditionalContracts) ... ok\ntest_three_explicit_missing_frames_recover_with_fresh_evidence (debug.alert_diagnostics.v4.phase_f.test_additional_f.AdditionalContracts) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.132s\n\nOK\n"
+  },
+  "runtime_guard": {
+    "blocked_attempts": [],
+    "writes": []
+  }
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "controlled_gap_seconds": 0.6,
+    "timeout_seconds": 1.0,
+    "unique_track_ids": 1,
+    "alert_starts": 1,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 1.01,
+    "timeout_seconds": 1.0,
+    "unique_track_ids": 6,
+    "alert_starts": 0,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 2.01,
+    "timeout_seconds": 1.0,
+    "unique_track_ids": 6,
+    "alert_starts": 0,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 3.01,
+    "timeout_seconds": 1.0,
+    "unique_track_ids": 6,
+    "alert_starts": 0,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 0.6,
+    "timeout_seconds": 2.0,
+    "unique_track_ids": 1,
+    "alert_starts": 1,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 1.01,
+    "timeout_seconds": 2.0,
+    "unique_track_ids": 1,
+    "alert_starts": 1,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 2.01,
+    "timeout_seconds": 2.0,
+    "unique_track_ids": 6,
+    "alert_starts": 0,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 3.01,
+    "timeout_seconds": 2.0,
+    "unique_track_ids": 6,
+    "alert_starts": 0,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 0.6,
+    "timeout_seconds": 3.0,
+    "unique_track_ids": 1,
+    "alert_starts": 1,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 1.01,
+    "timeout_seconds": 3.0,
+    "unique_track_ids": 1,
+    "alert_starts": 1,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 2.01,
+    "timeout_seconds": 3.0,
+    "unique_track_ids": 1,
+    "alert_starts": 1,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 3.01,
+    "timeout_seconds": 3.0,
+    "unique_track_ids": 6,
+    "alert_starts": 0,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 0.6,
+    "timeout_seconds": 5.0,
+    "unique_track_ids": 1,
+    "alert_starts": 1,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 1.01,
+    "timeout_seconds": 5.0,
+    "unique_track_ids": 1,
+    "alert_starts": 1,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 2.01,
+    "timeout_seconds": 5.0,
+    "unique_track_ids": 1,
+    "alert_starts": 1,
+    "not_real_inference_timing": true
+  },
+  {
+    "controlled_gap_seconds": 3.01,
+    "timeout_seconds": 5.0,
+    "unique_track_ids": 1,
+    "alert_starts": 1,
+    "not_real_inference_timing": true
+  }
+]

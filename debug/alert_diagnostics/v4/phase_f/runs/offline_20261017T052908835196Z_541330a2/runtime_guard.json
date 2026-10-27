@@ -1,0 +1,1082 @@
+{
+  "blocked_attempts": [],
+  "writes": [
+    {
+      "path": "io_tests/457dfe240e5e4bc19d19f334e6fbded0/settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/457dfe240e5e4bc19d19f334e6fbded0/input.jsonl",
+      "mode": "xb"
+    },
+    {
+      "path": "io_tests/457dfe240e5e4bc19d19f334e6fbded0/output/offline_20261017T052919243022Z_b416967f/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/457dfe240e5e4bc19d19f334e6fbded0/output/offline_20261017T052919243022Z_b416967f/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/699f130f0d094c8ba0edb921b5e1a86b/settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/699f130f0d094c8ba0edb921b5e1a86b/input.jsonl",
+      "mode": "xb"
+    },
+    {
+      "path": "io_tests/699f130f0d094c8ba0edb921b5e1a86b/output/offline_20261017T052919355370Z_aac1b981/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/699f130f0d094c8ba0edb921b5e1a86b/output/offline_20261017T052919355370Z_aac1b981/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/c90dee5eaec04409a9f035dd93514226/settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/c90dee5eaec04409a9f035dd93514226/input.jsonl",
+      "mode": "xb"
+    },
+    {
+      "path": "io_tests/c90dee5eaec04409a9f035dd93514226/output/offline_20261017T052919462182Z_f4633108/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/c90dee5eaec04409a9f035dd93514226/output/offline_20261017T052919462182Z_f4633108/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/0003c28a65b04e18a223fc8fed462411/settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/0003c28a65b04e18a223fc8fed462411/input.jsonl",
+      "mode": "xb"
+    },
+    {
+      "path": "io_tests/0003c28a65b04e18a223fc8fed462411/output/offline_20261017T052919566157Z_d98d74b8/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/0003c28a65b04e18a223fc8fed462411/output/offline_20261017T052919566157Z_d98d74b8/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/0003c28a65b04e18a223fc8fed462411/output/offline_20261017T052919617814Z_e83fa225/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/0003c28a65b04e18a223fc8fed462411/output/offline_20261017T052919617814Z_e83fa225/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/344f89652225405ead9157e14c5ca49a/settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/344f89652225405ead9157e14c5ca49a/input.jsonl",
+      "mode": "xb"
+    },
+    {
+      "path": "io_tests/344f89652225405ead9157e14c5ca49a/output/offline_20261017T052919709330Z_131d924c/frames.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "io_tests/344f89652225405ead9157e14c5ca49a/output/offline_20261017T052919709330Z_131d924c/summary.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/B_C.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/D.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/E_in_memory.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/F.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/00_slow_entry.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/00_slow_entry.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/00_slow_entry_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/00_slow_entry_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/00_slow_entry_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/01_initial_inside.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/01_initial_inside.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/01_initial_inside_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/01_initial_inside_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/01_initial_inside_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/02_printed_static.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/02_printed_static.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/02_printed_static_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/02_printed_static_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/02_printed_static_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/03_polygon_slow_entry.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/03_polygon_slow_entry.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/03_polygon_slow_entry_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/03_polygon_slow_entry_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/03_polygon_slow_entry_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/04_multiple_separate_hands.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/04_multiple_separate_hands.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/04_multiple_separate_hands_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/04_multiple_separate_hands_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/04_multiple_separate_hands_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/05_score_oscillation.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/05_score_oscillation.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/05_score_oscillation_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/05_score_oscillation_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/05_score_oscillation_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/06_missing_detection.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/06_missing_detection.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/06_missing_detection_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/06_missing_detection_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/06_missing_detection_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/07_two_bouts_same_entry.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/07_two_bouts_same_entry.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/07_two_bouts_same_entry_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/07_two_bouts_same_entry_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/07_two_bouts_same_entry_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/08_contact_moderate_1fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/08_contact_moderate_1fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/08_contact_moderate_1fps_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/08_contact_moderate_1fps_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/08_contact_moderate_1fps_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/09_contact_fast_1fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/09_contact_fast_1fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/09_contact_fast_1fps_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/09_contact_fast_1fps_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/09_contact_fast_1fps_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/10_contact_moderate_5fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/10_contact_moderate_5fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/10_contact_moderate_5fps_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/10_contact_moderate_5fps_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/10_contact_moderate_5fps_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/11_contact_fast_5fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/11_contact_fast_5fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/11_contact_fast_5fps_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/11_contact_fast_5fps_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/11_contact_fast_5fps_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/12_contact_moderate_10fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/12_contact_moderate_10fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/12_contact_moderate_10fps_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/12_contact_moderate_10fps_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/12_contact_moderate_10fps_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/13_contact_fast_10fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/13_contact_fast_10fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/13_contact_fast_10fps_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/13_contact_fast_10fps_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/13_contact_fast_10fps_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/14_contact_moderate_15fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/14_contact_moderate_15fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/14_contact_moderate_15fps_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/14_contact_moderate_15fps_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/14_contact_moderate_15fps_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/15_contact_fast_15fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/15_contact_fast_15fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/15_contact_fast_15fps_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/15_contact_fast_15fps_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/15_contact_fast_15fps_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/16_contact_moderate_30fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/16_contact_moderate_30fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/16_contact_moderate_30fps_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/16_contact_moderate_30fps_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/16_contact_moderate_30fps_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/17_contact_fast_30fps.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/17_contact_fast_30fps.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/17_contact_fast_30fps_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/17_contact_fast_30fps_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/17_contact_fast_30fps_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/18_crossing_0.0.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/18_crossing_0.0.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/18_crossing_0.0_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/18_crossing_0.0_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/18_crossing_0.0_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/19_crossing_0.01.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/19_crossing_0.01.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/19_crossing_0.01_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/19_crossing_0.01_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/19_crossing_0.01_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/20_crossing_0.03.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/20_crossing_0.03.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/20_crossing_0.03_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/20_crossing_0.03_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/20_crossing_0.03_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/21_disconnect_alert_reconnect_inside.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/21_disconnect_alert_reconnect_inside.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/21_disconnect_alert_reconnect_inside_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/21_disconnect_alert_reconnect_inside_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/21_disconnect_alert_reconnect_inside_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/22_shake_recovery_requires_entry.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/22_shake_recovery_requires_entry.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/22_shake_recovery_requires_entry_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/22_shake_recovery_requires_entry_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/22_shake_recovery_requires_entry_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/23_separate_episodes_default_cooldown.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/23_separate_episodes_default_cooldown.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/23_separate_episodes_default_cooldown_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/23_separate_episodes_default_cooldown_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/23_separate_episodes_default_cooldown_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/24_explicit_missing_frame.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/24_explicit_missing_frame.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/24_explicit_missing_frame_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/24_explicit_missing_frame_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/24_explicit_missing_frame_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/25_explicit_frame_error.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/25_explicit_frame_error.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/25_explicit_frame_error_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/25_explicit_frame_error_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/25_explicit_frame_error_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/26_duplicate_stale_nonmonotonic.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/26_duplicate_stale_nonmonotonic.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/26_duplicate_stale_nonmonotonic_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/26_duplicate_stale_nonmonotonic_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/26_duplicate_stale_nonmonotonic_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/27_malformed_payload_barrier.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/27_malformed_payload_barrier.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/27_malformed_payload_barrier_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/27_malformed_payload_barrier_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/27_malformed_payload_barrier_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/28_unknown_stability_real_contact.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/28_unknown_stability_real_contact.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/28_unknown_stability_real_contact_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/28_unknown_stability_real_contact_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/28_unknown_stability_real_contact_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/29_stable_hold_missing_recovery.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/29_stable_hold_missing_recovery.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/29_stable_hold_missing_recovery_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/29_stable_hold_missing_recovery_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/29_stable_hold_missing_recovery_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/30_stable_hold_frame_error_recovery.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/30_stable_hold_frame_error_recovery.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/30_stable_hold_frame_error_recovery_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/30_stable_hold_frame_error_recovery_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/30_stable_hold_frame_error_recovery_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/31_explicit_missing_frame.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/31_explicit_missing_frame.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/31_explicit_missing_frame_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/31_explicit_missing_frame_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/31_explicit_missing_frame_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/32_explicit_frame_error.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/32_explicit_frame_error.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/32_explicit_frame_error_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/32_explicit_frame_error_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/32_explicit_frame_error_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/33_multiple_missing.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/33_multiple_missing.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/33_multiple_missing_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/33_multiple_missing_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/33_multiple_missing_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/34_speed_direction_change.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/34_speed_direction_change.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/34_speed_direction_change_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/34_speed_direction_change_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/34_speed_direction_change_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/35_unsupported_large_motion.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/35_unsupported_large_motion.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/35_unsupported_large_motion_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/35_unsupported_large_motion_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/35_unsupported_large_motion_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/36_replacement_near_prediction.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/36_replacement_near_prediction.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/36_replacement_near_prediction_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/36_replacement_near_prediction_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/36_replacement_near_prediction_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/37_replacement_indistinguishable.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/37_replacement_indistinguishable.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/37_replacement_indistinguishable_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/37_replacement_indistinguishable_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/37_replacement_indistinguishable_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/38_replacement_scale_change.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/38_replacement_scale_change.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/38_replacement_scale_change_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/38_replacement_scale_change_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/38_replacement_scale_change_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/39_recovered_low_contact_score.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/39_recovered_low_contact_score.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/39_recovered_low_contact_score_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/39_recovered_low_contact_score_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/39_recovered_low_contact_score_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/40_recover_current_score_invalid.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/40_recover_current_score_invalid.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/40_recover_current_score_invalid_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/40_recover_current_score_invalid_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/40_recover_current_score_invalid_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/41_timeout_expired.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/41_timeout_expired.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/41_timeout_expired_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/41_timeout_expired_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/41_timeout_expired_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/42_camera_shake.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/42_camera_shake.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/42_camera_shake_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/42_camera_shake_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/42_camera_shake_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/43_camera_unknown.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/43_camera_unknown.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/43_camera_unknown_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/43_camera_unknown_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/43_camera_unknown_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/44_printed_static.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/44_printed_static.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/44_printed_static_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/44_printed_static_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/44_printed_static_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/45_duplicate_and_bad_timestamp.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/45_duplicate_and_bad_timestamp.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/45_duplicate_and_bad_timestamp_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/45_duplicate_and_bad_timestamp_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/45_duplicate_and_bad_timestamp_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/46_crossing_after_missing.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/46_crossing_after_missing.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/46_crossing_after_missing_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/46_crossing_after_missing_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/46_crossing_after_missing_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/47_two_candidates_after_gap.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/inputs/47_two_candidates_after_gap.settings.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/47_two_candidates_after_gap_timeout1.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/47_two_candidates_after_gap_timeout2.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/47_two_candidates_after_gap_timeout3.jsonl",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/comparison.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/protected_after.json",
+      "mode": "x"
+    },
+    {
+      "path": "runs/offline_20261017T052908835196Z_541330a2/summary.json",
+      "mode": "x"
+    }
+  ],
+  "AI_modules_loaded": []
+}

@@ -1,0 +1,1 @@
+session_id,video_id,source_id,frame_id,sequence_index,capture_clock_id,capture_timestamp_ms,host_clock_id,host_receive_timestamp_ms,timestamp_status,frame_status,camera_state,raw_image_path,raw_image_sha256,width,height,calibration_id,observation_notes,source_frame_id,image_space

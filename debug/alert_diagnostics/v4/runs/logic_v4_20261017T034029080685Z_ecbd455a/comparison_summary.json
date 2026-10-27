@@ -1,0 +1,319 @@
+{
+  "input_kind": "controlled_logic_not_model_predictions",
+  "baseline": "v3 pure functions; this is not its file-watch scheduler",
+  "metrics_status": "NOT_EVALUATED_ON_LABELED_DATA",
+  "rows": [
+    {
+      "scenario": "depicted_static",
+      "timeout_seconds": 1.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "depicted_static",
+      "timeout_seconds": 2.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "depicted_static",
+      "timeout_seconds": 3.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "fast_path",
+      "timeout_seconds": 1.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "fast_path",
+      "timeout_seconds": 2.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "fast_path",
+      "timeout_seconds": 3.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "gap_1_01",
+      "timeout_seconds": 1.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 6,
+      "v4_observed_ids": 6
+    },
+    {
+      "scenario": "gap_1_01",
+      "timeout_seconds": 2.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "gap_1_01",
+      "timeout_seconds": 3.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "initial_inside",
+      "timeout_seconds": 1.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "initial_inside",
+      "timeout_seconds": 2.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "initial_inside",
+      "timeout_seconds": 3.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "long_detection_loss",
+      "timeout_seconds": 1.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2
+    },
+    {
+      "scenario": "long_detection_loss",
+      "timeout_seconds": 2.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2
+    },
+    {
+      "scenario": "long_detection_loss",
+      "timeout_seconds": 3.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2
+    },
+    {
+      "scenario": "multiple_hands",
+      "timeout_seconds": 1.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2
+    },
+    {
+      "scenario": "multiple_hands",
+      "timeout_seconds": 2.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2
+    },
+    {
+      "scenario": "multiple_hands",
+      "timeout_seconds": 3.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2
+    },
+    {
+      "scenario": "normal_entry_hold",
+      "timeout_seconds": 1.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "normal_entry_hold",
+      "timeout_seconds": 2.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "normal_entry_hold",
+      "timeout_seconds": 3.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "pass_by_low_score",
+      "timeout_seconds": 1.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "pass_by_low_score",
+      "timeout_seconds": 2.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "pass_by_low_score",
+      "timeout_seconds": 3.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "pass_by_one_spike",
+      "timeout_seconds": 1.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2
+    },
+    {
+      "scenario": "pass_by_one_spike",
+      "timeout_seconds": 2.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2
+    },
+    {
+      "scenario": "pass_by_one_spike",
+      "timeout_seconds": 3.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 2,
+      "v4_observed_ids": 2
+    },
+    {
+      "scenario": "score_oscillation",
+      "timeout_seconds": 1.0,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "score_oscillation",
+      "timeout_seconds": 2.0,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "score_oscillation",
+      "timeout_seconds": 3.0,
+      "v3_events": 1,
+      "v4_events": 0,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "short_detection_loss",
+      "timeout_seconds": 1.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "short_detection_loss",
+      "timeout_seconds": 2.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "short_detection_loss",
+      "timeout_seconds": 3.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "slow_entry",
+      "timeout_seconds": 1.0,
+      "v3_events": 0,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "slow_entry",
+      "timeout_seconds": 2.0,
+      "v3_events": 0,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "slow_entry",
+      "timeout_seconds": 3.0,
+      "v3_events": 0,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "uneven_frames",
+      "timeout_seconds": 1.0,
+      "v3_events": 0,
+      "v4_events": 0,
+      "v3_observed_ids": 4,
+      "v4_observed_ids": 4
+    },
+    {
+      "scenario": "uneven_frames",
+      "timeout_seconds": 2.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    },
+    {
+      "scenario": "uneven_frames",
+      "timeout_seconds": 3.0,
+      "v3_events": 1,
+      "v4_events": 1,
+      "v3_observed_ids": 1,
+      "v4_observed_ids": 1
+    }
+  ]
+}

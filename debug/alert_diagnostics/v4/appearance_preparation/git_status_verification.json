@@ -1,0 +1,28 @@
+{
+  "diff_check_exit_code": 0,
+  "diff_check_output": "warning: in the working copy of 'src/services/alert.py', LF will be replaced by CRLF the next time Git touches it\n",
+  "git_status": "M web/.env.example\n M web/frontend/package-lock.json\n?? \"C\\357\\200\\272\\357\\201\\234Users\\357\\201\\234LEGION\\357\\201\\234PaintingProtection\\357\\201\\234webcam_frame.jpg\"\n?? \"bject Name,Length,LastWriteTime\"\n?? camera_hand_test.jpg\n?? camera_test.jpg\n?? configs/pbl4_test.json.before_cooldown\n?? data/\n?? dataset/README.md\n?? debug/\n?? src/contact_hands_two_stream/engine/second_stream_alignment.py\n?? src/core/contact_logic.py\n?? src/core/contacthands_compat.py\n?? src/core/geometry.py\n?? src/data/alerts/\n?? src/data/latest.jpg\n?? src/detect_compat.py\n?? src/realtime_worker.py.bak\n?? src/realtime_worker_integrated.py\n?? src/realtime_worker_integrated_v2.py\n?? src/realtime_worker_integrated_v3.py\n?? src/realtime_worker_recovered.py\n?? src/realtime_worker_verified.py\n?? src/services/camera_compat.py\n?? src/services/event_store.py\n?? src/services/sensors.py\n?? src/utils/config_compat.py\n?? tests/test_two_stream_alignment.py",
+  "baseline_git_status": "M web/.env.example\n M web/frontend/package-lock.json\n?? \"C\\357\\200\\272\\357\\201\\234Users\\357\\201\\234LEGION\\357\\201\\234PaintingProtection\\357\\201\\234webcam_frame.jpg\"\n?? \"bject Name,Length,LastWriteTime\"\n?? camera_hand_test.jpg\n?? camera_test.jpg\n?? configs/pbl4_test.json.before_cooldown\n?? data/\n?? dataset/README.md\n?? debug/\n?? src/contact_hands_two_stream/engine/second_stream_alignment.py\n?? src/core/contact_logic.py\n?? src/core/contacthands_compat.py\n?? src/core/geometry.py\n?? src/data/alerts/\n?? src/data/latest.jpg\n?? src/detect_compat.py\n?? src/realtime_worker.py.bak\n?? src/realtime_worker_integrated.py\n?? src/realtime_worker_integrated_v2.py\n?? src/realtime_worker_integrated_v3.py\n?? src/realtime_worker_recovered.py\n?? src/realtime_worker_verified.py\n?? src/services/camera_compat.py\n?? src/services/event_store.py\n?? src/services/sensors.py\n?? src/utils/config_compat.py\n?? tests/test_two_stream_alignment.py",
+  "status_matches_baseline": true,
+  "baseline_note": "Status checkpoint matches the initial git status recorded in the audit; debug/ was already untracked.",
+  "verification_sha256": "d09e4bb4f27aed7a486c08b24189a94297be83add436b00a8abb109ce59c6112",
+  "prepared_files": [
+    "COLLECTION_PROTOCOL.vi.md",
+    "DATA_AUDIT.vi.md",
+    "EVALUATION_DESIGN.vi.md",
+    "README.vi.md",
+    "annotation_bundle.schema.json",
+    "contact_events.template.csv",
+    "data_inventory.json",
+    "frames.template.csv",
+    "gaps.template.csv",
+    "hands.template.csv",
+    "pairs.template.csv",
+    "protected_before.json",
+    "sessions.template.csv",
+    "verification.json",
+    "git_status_verification.json"
+  ],
+  "new_preparation_file_count": 15,
+  "status_note": "debug/ was already untracked; unchanged short status does not inventory new files. All new files are listed here; protected hashes checked separately."
+}

@@ -1,0 +1,40 @@
+{
+  "records": 2,
+  "accepted": 0,
+  "rejected": 2,
+  "unavailable_records": 2,
+  "confirmation_records": 0,
+  "event_count": 0,
+  "events": [],
+  "non_confirmation_reasons": {
+    "invalid_utf8_jsonl": 1,
+    "oversized_jsonl_record": 1
+  },
+  "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+  "input_sha256": "293b14c14f35edd433114e0c59eeccbb7cab48a59d0ee6da5a8812e6ea096c3b",
+  "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/io_tests/66c3454966f0463a9a3684db8519dadd/predictions.jsonl",
+  "config": {
+    "schema_version": 1,
+    "sources": {
+      "painting0": {
+        "session_id": "boot0",
+        "calibration_id": "offline_controlled_reference",
+        "pipeline_config": {
+          "roi": {
+            "enabled": true,
+            "normalized": true,
+            "shape": "rectangle",
+            "coordinates": [
+              0.4,
+              0.1,
+              0.8,
+              0.9
+            ]
+          }
+        }
+      }
+    }
+  },
+  "simulate_stability": true,
+  "real_camera_or_gpu_run": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "painting0": {
+      "session_id": "boot0",
+      "calibration_id": "offline_controlled_reference",
+      "pipeline_config": {
+        "roi": {
+          "enabled": true,
+          "normalized": true,
+          "shape": "rectangle",
+          "coordinates": [
+            0.4,
+            0.1,
+            0.8,
+            0.9
+          ]
+        },
+        "tracking": {
+          "max_idle_seconds": 1
+        }
+      }
+    }
+  }
+}

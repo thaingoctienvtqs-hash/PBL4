@@ -1,0 +1,18 @@
+{
+  "records": 2,
+  "accepted": 0,
+  "rejected": 2,
+  "unavailable_records": 2,
+  "confirmation_records": 0,
+  "event_count": 0,
+  "events": [],
+  "non_confirmation_reasons": {
+    "invalid_utf8_jsonl": 1,
+    "oversized_jsonl_record": 1
+  },
+  "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+  "input_sha256": "293b14c14f35edd433114e0c59eeccbb7cab48a59d0ee6da5a8812e6ea096c3b",
+  "geometry_recovery": true,
+  "simulate_stability": true,
+  "real_camera_or_gpu_run": false
+}

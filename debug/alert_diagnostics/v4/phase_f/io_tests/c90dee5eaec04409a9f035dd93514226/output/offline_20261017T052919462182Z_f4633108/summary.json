@@ -1,0 +1,18 @@
+{
+  "records": 7,
+  "accepted": 7,
+  "rejected": 0,
+  "unavailable_records": 7,
+  "confirmation_records": 0,
+  "event_count": 0,
+  "events": [],
+  "non_confirmation_reasons": {
+    "no_verified_image_stability": 6,
+    "frame_missing_no_new_evidence": 1
+  },
+  "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+  "input_sha256": "4516921bf6b5cb6928e14cec837386e948d431311b8425b15f8e54da22037178",
+  "geometry_recovery": true,
+  "simulate_stability": false,
+  "real_camera_or_gpu_run": false
+}

@@ -1,0 +1,2324 @@
+[
+  {
+    "records": 15,
+    "accepted": 15,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 10,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 1.4000000000000001,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 5
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "25b975f32f11db2894b82c0570f8f7d17f55ecfc7810e6f6f75b1789a89fbb48",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/slow_entry.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "slow_entry",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "slow_entry",
+      "compared_records": 15,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/slow_entry/offline_20261017T045344482546Z_e6b57978",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 1,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 6,
+    "accepted": 6,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 0,
+    "event_count": 0,
+    "events": [],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 6
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "011453a36d8ed67b1ff535cf13b0fbeaa9df6d16612ab0cbe0016eb144284266",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/initial_inside.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "initial_inside",
+    "desired_logic_events": 0,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "initial_inside",
+      "compared_records": 6,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/initial_inside/offline_20261017T045344547229Z_faf9873a",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 6,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 20,
+    "accepted": 20,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 0,
+    "event_count": 0,
+    "events": [],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 20
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "ed7ad3c189129fd725f7a35376ae99c5e726ec377ca3b1ce12d44562e8fef3e6",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/printed_static.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "printed_static",
+    "desired_logic_events": 0,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 0,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "printed_static",
+      "compared_records": 20,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/printed_static/offline_20261017T045344598239Z_b2a4854b",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 20,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 15,
+    "accepted": 15,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 10,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 1.4000000000000001,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 5
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "25b975f32f11db2894b82c0570f8f7d17f55ecfc7810e6f6f75b1789a89fbb48",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/polygon_slow_entry.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "polygon",
+              "points": [
+                [
+                  0.4,
+                  0.1
+                ],
+                [
+                  0.75,
+                  0.15
+                ],
+                [
+                  0.85,
+                  0.85
+                ],
+                [
+                  0.4,
+                  0.9
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "polygon_slow_entry",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "polygon_slow_entry",
+      "compared_records": 15,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/polygon_slow_entry/offline_20261017T045344667453Z_519cbbda",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 1,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 6,
+    "accepted": 6,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 4,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.8,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 2
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "89f8325467f7dde0c88200e94e241d13e86e4c261bc4cdbd623a8a5fb65c229a",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/multiple_separate_hands.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "multiple_separate_hands",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "multiple_separate_hands",
+      "compared_records": 6,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/multiple_separate_hands/offline_20261017T045344730703Z_ae7b3de6",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 10,
+    "accepted": 10,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 4,
+    "event_count": 0,
+    "events": [],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 6
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "f41f98d7f742543e8ad9fbe26db3acc0bb4e7e6379ce1a655ee1489de38ee345",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/score_oscillation.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "score_oscillation",
+    "desired_logic_events": 0,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "score_oscillation",
+      "compared_records": 10,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/score_oscillation/offline_20261017T045344813924Z_d49c36d2",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 8,
+    "accepted": 8,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 5,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 1.4,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 2,
+      "valid_frame_without_hand": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "3f9b27b22fc2a222634ee8e571a0574db72213250b07e7494f3446f47915f455",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/missing_detection.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "missing_detection",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "missing_detection",
+      "compared_records": 8,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/missing_detection/offline_20261017T045344897132Z_a6b02aaf",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 133,
+    "accepted": 133,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 7,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.8,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 126
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "ed0ea53a137e00cf5afd733774f4b834d9930650b01e08c1593c8450d61cf361",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/two_bouts_same_entry.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "two_bouts_same_entry",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 2,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "two_bouts_same_entry",
+      "compared_records": 133,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/two_bouts_same_entry/offline_20261017T045344956698Z_56eca458",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 4,
+    "accepted": 4,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 3,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 3.0,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "2ef3376c660ec44370f68abead3ad768b340e3e33aca08948a527a2640976869",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/contact_moderate_1fps.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "contact_moderate_1fps",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "contact_moderate_1fps",
+      "compared_records": 4,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/contact_moderate_1fps/offline_20261017T045345110246Z_89d7ca18",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 4,
+    "accepted": 4,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 3,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 2.0,
+        "reason": "fast_contact_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "542b55d4cf06502f12bd90ad3516d695da97eaeaaec6bf74b68da02fe05f58e7",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/contact_fast_1fps.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "contact_fast_1fps",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "contact_fast_1fps",
+      "compared_records": 4,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/contact_fast_1fps/offline_20261017T045345160399Z_6601bb16",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 16,
+    "accepted": 16,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 15,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.6,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "b3a0db1d5d30ac2b1ff96facb13040d68ab5dca0ad016c7514ff954d3d040fff",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/contact_moderate_5fps.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "contact_moderate_5fps",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "contact_moderate_5fps",
+      "compared_records": 16,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/contact_moderate_5fps/offline_20261017T045345207015Z_315140b3",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 16,
+    "accepted": 16,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 15,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.4,
+        "reason": "fast_contact_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "969bae6f87f0405c454a66d63cf08eacb21d703d720239b12d97647b74283c34",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/contact_fast_5fps.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "contact_fast_5fps",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "contact_fast_5fps",
+      "compared_records": 16,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/contact_fast_5fps/offline_20261017T045345263383Z_fc7eb81f",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 31,
+    "accepted": 31,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 30,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.5,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "fee1c57d899ffd389e08c331a527604661300ba6856d2984caa3ebc66564fb02",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/contact_moderate_10fps.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "contact_moderate_10fps",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "contact_moderate_10fps",
+      "compared_records": 31,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/contact_moderate_10fps/offline_20261017T045345404906Z_113bbfff",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 31,
+    "accepted": 31,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 30,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.3,
+        "reason": "fast_contact_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "508e3afc9fe4dda41a06cb2e91f3885e333060dc8e1594e6a55624d070cea1ed",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/contact_fast_10fps.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "contact_fast_10fps",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "contact_fast_10fps",
+      "compared_records": 31,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/contact_fast_10fps/offline_20261017T045345472693Z_9bfea123",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 46,
+    "accepted": 46,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 45,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.4666666666666667,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "1969437e28d6facbc2bc50ee1f60fa840ff837b1c3fa9cf4d6e91600d9beea86",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/contact_moderate_15fps.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "contact_moderate_15fps",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "contact_moderate_15fps",
+      "compared_records": 46,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/contact_moderate_15fps/offline_20261017T045345776140Z_a3e04a0b",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 46,
+    "accepted": 46,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 45,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.26666666666666666,
+        "reason": "fast_contact_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "fd8189c337cef9caf4b70d5145afb54235bf4bf29018b17fc0f405cef425615b",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/contact_fast_15fps.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "contact_fast_15fps",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "contact_fast_15fps",
+      "compared_records": 46,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/contact_fast_15fps/offline_20261017T045345989965Z_f5c45680",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 91,
+    "accepted": 91,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 90,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.43333333333333335,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "8fbff5829e53efcb2e39cd02298604768af587c40a66830b58cd79722e1b915f",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/contact_moderate_30fps.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "contact_moderate_30fps",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "contact_moderate_30fps",
+      "compared_records": 91,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/contact_moderate_30fps/offline_20261017T045346157813Z_b0a455d9",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 91,
+    "accepted": 91,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 90,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.23333333333333334,
+        "reason": "fast_contact_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "1f1ac61cb88700ddf55e085fce91a331fd1a6b793a48c9bf3cb762490a16bedf",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/contact_fast_30fps.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "contact_fast_30fps",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "contact_fast_30fps",
+      "compared_records": 91,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/contact_fast_30fps/offline_20261017T045346383001Z_64383fcb",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 17,
+    "accepted": 17,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 2,
+    "event_count": 0,
+    "events": [],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 13,
+      "ambiguous_tracking_no_evidence_for_uncertain_hands": 2
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "1c8dc0f8cdd61353d509a169fa9665a57b8f159c82cfd8180e5a7c78eba39931",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/crossing_0.0.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "crossing_0.0",
+    "desired_logic_events": 0,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "crossing_0.0",
+      "compared_records": 17,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/crossing_0.0/offline_20261017T045346593729Z_58e60334",
+    "safety_observations": {
+      "uncertain_frames": 2,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 15,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 17,
+    "accepted": 17,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 2,
+    "event_count": 0,
+    "events": [],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 13,
+      "ambiguous_tracking_no_evidence_for_uncertain_hands": 2
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "4b3083dbedccf6f5ecfc952ba6afbeef93b49d3433c5dba33ac7415ca5495c1d",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/crossing_0.01.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "crossing_0.01",
+    "desired_logic_events": 0,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "crossing_0.01",
+      "compared_records": 17,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/crossing_0.01/offline_20261017T045346748324Z_2e066017",
+    "safety_observations": {
+      "uncertain_frames": 2,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 15,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 17,
+    "accepted": 17,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 2,
+    "event_count": 0,
+    "events": [],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 13,
+      "ambiguous_tracking_no_evidence_for_uncertain_hands": 2
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "c7e6e71ec1a6e103ac2383f07ca91d76265dd7a942d1174ca8c661bd55335eb8",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/crossing_0.03.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "crossing_0.03",
+    "desired_logic_events": 0,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "crossing_0.03",
+      "compared_records": 17,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [
+          {
+            "timestamp": 2.0,
+            "actor": "A",
+            "old_id": 0,
+            "new_id": 2
+          },
+          {
+            "timestamp": 2.0,
+            "actor": "B",
+            "old_id": 1,
+            "new_id": 3
+          }
+        ],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/crossing_0.03/offline_20261017T045346900841Z_ec29c861",
+    "safety_observations": {
+      "uncertain_frames": 2,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 15,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 14,
+    "accepted": 13,
+    "rejected": 1,
+    "unavailable_records": 3,
+    "confirmation_records": 3,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.8,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 8,
+      "camera_disconnected": 1,
+      "camera_offline_requires_reconnect": 1,
+      "reconnected_requires_new_entry": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "62ea6cde88d9fe95dbe36a17dafa109f838d2f20d67646751bea65fc19d6540a",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/disconnect_alert_reconnect_inside.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "disconnect_alert_reconnect_inside",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 2,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "disconnect_alert_reconnect_inside",
+      "compared_records": 14,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/disconnect_alert_reconnect_inside/offline_20261017T045347048470Z_a8b42dd7",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 1,
+      "moving_frames": 0,
+      "offline_frames": 2,
+      "awaiting_entry_frames": 6,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 17,
+    "accepted": 17,
+    "rejected": 0,
+    "unavailable_records": 1,
+    "confirmation_records": 7,
+    "event_count": 2,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.8,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      },
+      {
+        "event_key": "boot0_track_1_episode_1",
+        "track_id": 1,
+        "timestamp": 3.4,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_1_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 9,
+      "explicit_offline_moving": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "c24dfd075a0affaab8c43f26b2e5f2c9d6d6acbb647f235fa9dc6eff7f72cf0f",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/shake_recovery_requires_entry.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "shake_recovery_requires_entry",
+    "desired_logic_events": 2,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 2,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "shake_recovery_requires_entry",
+      "compared_records": 17,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/shake_recovery_requires_entry/offline_20261017T045347178654Z_75ff2ac4",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 1,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 4,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 72,
+    "accepted": 72,
+    "rejected": 0,
+    "unavailable_records": 0,
+    "confirmation_records": 7,
+    "event_count": 2,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.8,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      },
+      {
+        "event_key": "boot0_track_0_episode_2",
+        "track_id": 0,
+        "timestamp": 64.4,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_2"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 65
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "9987466a9687c84f390b95dec2546ef6217735af312a1299a9f6789d9a69cc6f",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/separate_episodes_default_cooldown.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "separate_episodes_default_cooldown",
+    "desired_logic_events": 2,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 2,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "separate_episodes_default_cooldown",
+      "compared_records": 72,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/separate_episodes_default_cooldown/offline_20261017T045347325186Z_9e9c62be",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 7,
+    "accepted": 7,
+    "rejected": 0,
+    "unavailable_records": 1,
+    "confirmation_records": 1,
+    "event_count": 0,
+    "events": [],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 4,
+      "frame_missing_no_new_evidence": 1,
+      "ambiguous_tracking_no_evidence_for_uncertain_hands": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "b406c8f2ca39e22e7b3cec4427379fa8a24afceb6780859426a70dc87d4a4dde",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/explicit_missing_frame.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "explicit_missing_frame",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": false,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "explicit_missing_frame",
+      "compared_records": 7,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/explicit_missing_frame/offline_20261017T045347497765Z_7adc0829",
+    "safety_observations": {
+      "uncertain_frames": 1,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 2,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 7,
+    "accepted": 7,
+    "rejected": 0,
+    "unavailable_records": 1,
+    "confirmation_records": 1,
+    "event_count": 0,
+    "events": [],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 4,
+      "frame_error_no_new_evidence": 1,
+      "ambiguous_tracking_no_evidence_for_uncertain_hands": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "bfaed04ad58dbe45b7f6a2eda06064212408cd409992d448a5b7909946c33dc8",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/explicit_frame_error.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "explicit_frame_error",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": false,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "explicit_frame_error",
+      "compared_records": 7,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/explicit_frame_error/offline_20261017T045347568026Z_513fd85f",
+    "safety_observations": {
+      "uncertain_frames": 1,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 2,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 8,
+    "accepted": 5,
+    "rejected": 3,
+    "unavailable_records": 3,
+    "confirmation_records": 3,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 0.8,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 2,
+      "frame_rejected_duplicate_frame": 1,
+      "frame_rejected_stale_frame": 1,
+      "frame_rejected_non_increasing_timestamp": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "744c2052e07d06966aa6c8b152106b2c5382a258cebc416a8773830bd1a18db8",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/duplicate_stale_nonmonotonic.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "duplicate_stale_nonmonotonic",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "duplicate_stale_nonmonotonic",
+      "compared_records": 8,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/duplicate_stale_nonmonotonic/offline_20261017T045347648486Z_2b3a809b",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 10,
+    "accepted": 9,
+    "rejected": 1,
+    "unavailable_records": 1,
+    "confirmation_records": 1,
+    "event_count": 0,
+    "events": [],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 8,
+      "invalid_frame_payload": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "3a1c0185f388a9d12c5e62c3bce74b4df2a222affc60d50393f26835f91a346c",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/malformed_payload_barrier.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "malformed_payload_barrier",
+    "desired_logic_events": 0,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "malformed_payload_barrier",
+      "compared_records": 9,
+      "adapter_only_rejection_indices": [
+        3
+      ],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/malformed_payload_barrier/offline_20261017T045347703780Z_83992180",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 6,
+      "input_error_frames": 1
+    }
+  },
+  {
+    "records": 18,
+    "accepted": 18,
+    "rejected": 0,
+    "unavailable_records": 18,
+    "confirmation_records": 0,
+    "event_count": 0,
+    "events": [],
+    "non_confirmation_reasons": {
+      "explicit_offline_unknown": 18
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "8a13b509e2d034a3814dda3c073cc54a35143fa7656b4a77bd68665edce8e97e",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/unknown_stability_real_contact.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "unknown_stability_real_contact",
+    "desired_logic_events": 0,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 1,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "unknown_stability_real_contact",
+      "compared_records": 18,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/unknown_stability_real_contact/offline_20261017T045347757102Z_81b20d46",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 18,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 8,
+    "accepted": 8,
+    "rejected": 0,
+    "unavailable_records": 1,
+    "confirmation_records": 5,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 1.4,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 2,
+      "frame_missing_no_new_evidence": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "d781474cddb2b3387a690028c0e9a2899f0e874a016539c286f1d5832e58fd3b",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/stable_hold_missing_recovery.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "stable_hold_missing_recovery",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "stable_hold_missing_recovery",
+      "compared_records": 8,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/stable_hold_missing_recovery/offline_20261017T045347901429Z_8006996d",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  },
+  {
+    "records": 8,
+    "accepted": 8,
+    "rejected": 0,
+    "unavailable_records": 1,
+    "confirmation_records": 5,
+    "event_count": 1,
+    "events": [
+      {
+        "event_key": "boot0_track_0_episode_1",
+        "track_id": 0,
+        "timestamp": 1.4,
+        "reason": "window_and_time_confirmed",
+        "source_id": "painting0",
+        "source_event_key": "painting0::boot0_track_0_episode_1"
+      }
+    ],
+    "non_confirmation_reasons": {
+      "no_confirmable_contact_see_track_reasons": 2,
+      "frame_error_no_new_evidence": 1
+    },
+    "evaluation_kind": "controlled_offline_predictions_not_AI_model_metrics",
+    "input_sha256": "ff17753ba04688c5b1d67e9e7fcb4a7410cc5341873d61a82682f858c2077834",
+    "input_path": "/mnt/c/Users/LEGION/Pbl4/debug/alert_diagnostics/v4/phase_e/runs/offline_20261017T045342879783Z_8b52bfc5/inputs/stable_hold_frame_error_recovery.jsonl",
+    "config": {
+      "schema_version": 1,
+      "sources": {
+        "painting0": {
+          "session_id": "boot0",
+          "calibration_id": "offline_controlled_reference",
+          "pipeline_config": {
+            "roi": {
+              "enabled": true,
+              "normalized": true,
+              "shape": "rectangle",
+              "coordinates": [
+                0.4,
+                0.1,
+                0.8,
+                0.9
+              ]
+            }
+          }
+        }
+      }
+    },
+    "simulate_stability": true,
+    "real_camera_or_gpu_run": false,
+    "scenario": "stable_hold_frame_error_recovery",
+    "desired_logic_events": 1,
+    "desired_logic_gate_pass": true,
+    "controlled_expected_contact_events": 1,
+    "controlled_event_shortfall": 0,
+    "label_kind": "controlled_scenario_expectation_not_real_video_ground_truth",
+    "direct_phase_d": {
+      "scenario": "stable_hold_frame_error_recovery",
+      "compared_records": 8,
+      "adapter_only_rejection_indices": [],
+      "mismatch_count": 0,
+      "mismatches": [],
+      "identity": {
+        "actor_id_changes": [],
+        "track_owner_transfers": []
+      }
+    },
+    "serialized_replay_matches_in_memory": true,
+    "replay_directory": "runs/offline_20261017T045342879783Z_8b52bfc5/replays/stable_hold_frame_error_recovery/offline_20261017T045348002235Z_27a940cb",
+    "safety_observations": {
+      "uncertain_frames": 0,
+      "unknown_stability_frames": 0,
+      "moving_frames": 0,
+      "offline_frames": 0,
+      "awaiting_entry_frames": 0,
+      "input_error_frames": 0
+    }
+  }
+]

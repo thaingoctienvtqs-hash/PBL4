@@ -1,0 +1,1269 @@
+{
+  "calibration_caveat": "clock_sync is trusted external calibration evidence; this analyzer cannot verify calibration accuracy",
+  "counts": {
+    "accepted_records": 3,
+    "alerts": 1,
+    "chronology_rejected_records": 0,
+    "clock_conflict_records": 0,
+    "conflicting_duplicates": 0,
+    "duplicate_records": 0,
+    "input_records": 3,
+    "invalid_jsonl_lines": 0,
+    "invalid_records": 0,
+    "valid_records": 3
+  },
+  "counts_scope": "INPUT_INVENTORY_ONLY; sums may include synthetic/real and cold/warm; use separate groups, never treat these totals as AI accuracy",
+  "errors": [],
+  "groups": [
+    {
+      "cadence": {
+        "prediction": {
+          "series": [
+            {
+              "clock_id": "synthetic-wsl-process-epoch-1",
+              "fps": null,
+              "fps_status": "NOT_AVAILABLE",
+              "intervals": {
+                "ESTIMATED": {
+                  "max_ms": null,
+                  "min_ms": null,
+                  "n": 0,
+                  "p50_ms": null,
+                  "p95_ms": null,
+                  "p99_ms": null,
+                  "uncertainty_ms_max": null
+                },
+                "MEASURED": {
+                  "max_ms": null,
+                  "min_ms": null,
+                  "n": 0,
+                  "p50_ms": null,
+                  "p95_ms": null,
+                  "p99_ms": null,
+                  "uncertainty_ms_max": null
+                },
+                "unavailable": {}
+              },
+              "n": 1,
+              "span_ms": null,
+              "span_uncertainty_ms": null
+            }
+          ]
+        },
+        "receive": {
+          "series": [
+            {
+              "clock_id": "synthetic-wsl-process-epoch-1",
+              "fps": null,
+              "fps_status": "NOT_AVAILABLE",
+              "intervals": {
+                "ESTIMATED": {
+                  "max_ms": null,
+                  "min_ms": null,
+                  "n": 0,
+                  "p50_ms": null,
+                  "p95_ms": null,
+                  "p99_ms": null,
+                  "uncertainty_ms_max": null
+                },
+                "MEASURED": {
+                  "max_ms": null,
+                  "min_ms": null,
+                  "n": 0,
+                  "p50_ms": null,
+                  "p95_ms": null,
+                  "p99_ms": null,
+                  "uncertainty_ms_max": null
+                },
+                "unavailable": {}
+              },
+              "n": 1,
+              "span_ms": null,
+              "span_uncertainty_ms": null
+            }
+          ]
+        }
+      },
+      "counts": {
+        "accepted_records": 1,
+        "alerts": 0,
+        "chronology_rejected_records": 0,
+        "clock_conflict_records": 0,
+        "conflicting_duplicates": 0,
+        "duplicate_records": 0,
+        "frame_status": {
+          "PROCESSED": 1
+        },
+        "input_records": 1
+      },
+      "data_kind": "SYNTHETIC_TEST",
+      "ground_truth": {
+        "annotated_frames": 1,
+        "complete_touch_episodes": 0,
+        "cross_phase_episodes": [],
+        "excluded_observation_records": 0,
+        "incomplete_touch_episodes": 0,
+        "missed_complete_episodes": 0,
+        "missed_events": null,
+        "observed_matched_events": 0,
+        "status": "PARTIAL",
+        "unknown_frames": 1,
+        "unobserved_matched_event_keys": [],
+        "verification": "EXPLICIT_REVIEWER_MATCHES_NOT_MODEL_GROUND_TRUTH"
+      },
+      "metrics": {
+        "capture_to_receive": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "timestamp_unknown_or_not_available": 1
+          }
+        },
+        "commit_to_delivered": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {}
+        },
+        "commit_to_visible": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {}
+        },
+        "decision_to_commit": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {}
+        },
+        "decision_to_evidence": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {}
+        },
+        "decode": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 1,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "file_publish_to_worker_read": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 1,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "frame_age_at_decision": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {}
+        },
+        "frame_age_at_decision_all_frames": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "missing_stage": 1
+          }
+        },
+        "inference_enqueue_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "not_enqueue_only": 1
+          }
+        },
+        "inference_gpu_execution": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "synchronized_cuda_event_not_available": 1
+          }
+        },
+        "inference_total_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 53.0,
+            "min_ms": 53.0,
+            "n": 1,
+            "p50_ms": 53.0,
+            "p95_ms": 53.0,
+            "p99_ms": 53.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "receive_to_decode": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 4.0,
+            "min_ms": 4.0,
+            "n": 1,
+            "p50_ms": 4.0,
+            "p95_ms": 4.0,
+            "p99_ms": 4.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "request_to_receive": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 1,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "stream1_enqueue_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "not_enqueue_only": 1
+          }
+        },
+        "stream1_gpu_execution": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "synchronized_cuda_event_not_available": 1
+          }
+        },
+        "stream1_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 30.0,
+            "min_ms": 30.0,
+            "n": 1,
+            "p50_ms": 30.0,
+            "p95_ms": 30.0,
+            "p99_ms": 30.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "stream2_enqueue_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "not_enqueue_only": 1
+          }
+        },
+        "stream2_gpu_execution": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "synchronized_cuda_event_not_available": 1
+          }
+        },
+        "stream2_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 20.0,
+            "min_ms": 20.0,
+            "n": 1,
+            "p50_ms": 20.0,
+            "p95_ms": 20.0,
+            "p99_ms": 20.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "temporal": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 1,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "tracking": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 1,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "tracking_temporal": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 2.0,
+            "min_ms": 2.0,
+            "n": 1,
+            "p50_ms": 2.0,
+            "p95_ms": 2.0,
+            "p99_ms": 2.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "worker_read": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 1,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        }
+      },
+      "phase": "COLD_START",
+      "session_id": "SYNTHETIC_TEST_SESSION_001",
+      "source_id": "SYNTHETIC_TEST_ESP32_NOT_CAPTURED"
+    },
+    {
+      "cadence": {
+        "prediction": {
+          "series": [
+            {
+              "clock_id": "synthetic-wsl-process-epoch-1",
+              "fps": 1.0,
+              "fps_status": "MEASURED",
+              "intervals": {
+                "ESTIMATED": {
+                  "max_ms": null,
+                  "min_ms": null,
+                  "n": 0,
+                  "p50_ms": null,
+                  "p95_ms": null,
+                  "p99_ms": null,
+                  "uncertainty_ms_max": null
+                },
+                "MEASURED": {
+                  "max_ms": 1000.0,
+                  "min_ms": 1000.0,
+                  "n": 1,
+                  "p50_ms": 1000.0,
+                  "p95_ms": 1000.0,
+                  "p99_ms": 1000.0,
+                  "uncertainty_ms_max": 0.0
+                },
+                "unavailable": {}
+              },
+              "n": 2,
+              "span_ms": 1000.0,
+              "span_uncertainty_ms": 0.0
+            }
+          ]
+        },
+        "receive": {
+          "series": [
+            {
+              "clock_id": "synthetic-wsl-process-epoch-1",
+              "fps": 1.0,
+              "fps_status": "MEASURED",
+              "intervals": {
+                "ESTIMATED": {
+                  "max_ms": null,
+                  "min_ms": null,
+                  "n": 0,
+                  "p50_ms": null,
+                  "p95_ms": null,
+                  "p99_ms": null,
+                  "uncertainty_ms_max": null
+                },
+                "MEASURED": {
+                  "max_ms": 1000.0,
+                  "min_ms": 1000.0,
+                  "n": 1,
+                  "p50_ms": 1000.0,
+                  "p95_ms": 1000.0,
+                  "p99_ms": 1000.0,
+                  "uncertainty_ms_max": 0.0
+                },
+                "unavailable": {}
+              },
+              "n": 2,
+              "span_ms": 1000.0,
+              "span_uncertainty_ms": 0.0
+            }
+          ]
+        }
+      },
+      "counts": {
+        "accepted_records": 2,
+        "alerts": 1,
+        "chronology_rejected_records": 0,
+        "clock_conflict_records": 0,
+        "conflicting_duplicates": 0,
+        "duplicate_records": 0,
+        "frame_status": {
+          "PROCESSED": 2
+        },
+        "input_records": 2
+      },
+      "data_kind": "SYNTHETIC_TEST",
+      "ground_truth": {
+        "annotated_frames": 2,
+        "complete_touch_episodes": 0,
+        "cross_phase_episodes": [],
+        "excluded_observation_records": 0,
+        "incomplete_touch_episodes": 0,
+        "missed_complete_episodes": 0,
+        "missed_events": null,
+        "observed_matched_events": 0,
+        "status": "PARTIAL",
+        "unknown_frames": 2,
+        "unobserved_matched_event_keys": [],
+        "verification": "EXPLICIT_REVIEWER_MATCHES_NOT_MODEL_GROUND_TRUTH"
+      },
+      "metrics": {
+        "capture_to_receive": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 2.0,
+            "min_ms": 2.0,
+            "n": 2,
+            "p50_ms": 2.0,
+            "p95_ms": 2.0,
+            "p99_ms": 2.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "commit_to_delivered": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "missing_stage": 1
+          }
+        },
+        "commit_to_visible": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "missing_stage": 1
+          }
+        },
+        "decision_to_commit": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 1,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "decision_to_evidence": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 7.0,
+            "min_ms": 7.0,
+            "n": 1,
+            "p50_ms": 7.0,
+            "p95_ms": 7.0,
+            "p99_ms": 7.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "decode": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 2,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "file_publish_to_worker_read": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 2,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "frame_age_at_decision": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 63.0,
+            "min_ms": 63.0,
+            "n": 1,
+            "p50_ms": 63.0,
+            "p95_ms": 63.0,
+            "p99_ms": 63.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "frame_age_at_decision_all_frames": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "missing_stage": 2
+          }
+        },
+        "inference_enqueue_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "not_enqueue_only": 2
+          }
+        },
+        "inference_gpu_execution": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "synchronized_cuda_event_not_available": 2
+          }
+        },
+        "inference_total_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 53.0,
+            "min_ms": 53.0,
+            "n": 2,
+            "p50_ms": 53.0,
+            "p95_ms": 53.0,
+            "p99_ms": 53.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "receive_to_decode": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 4.0,
+            "min_ms": 4.0,
+            "n": 2,
+            "p50_ms": 4.0,
+            "p95_ms": 4.0,
+            "p99_ms": 4.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "request_to_receive": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 2,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "stream1_enqueue_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "not_enqueue_only": 2
+          }
+        },
+        "stream1_gpu_execution": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "synchronized_cuda_event_not_available": 2
+          }
+        },
+        "stream1_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 30.0,
+            "min_ms": 30.0,
+            "n": 2,
+            "p50_ms": 30.0,
+            "p95_ms": 30.0,
+            "p99_ms": 30.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "stream2_enqueue_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "not_enqueue_only": 2
+          }
+        },
+        "stream2_gpu_execution": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "unavailable": {
+            "synchronized_cuda_event_not_available": 2
+          }
+        },
+        "stream2_wall": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 20.0,
+            "min_ms": 20.0,
+            "n": 2,
+            "p50_ms": 20.0,
+            "p95_ms": 20.0,
+            "p99_ms": 20.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "temporal": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 2,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "tracking": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 2,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "tracking_temporal": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 2.0,
+            "min_ms": 2.0,
+            "n": 2,
+            "p50_ms": 2.0,
+            "p95_ms": 2.0,
+            "p99_ms": 2.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        },
+        "worker_read": {
+          "ESTIMATED": {
+            "max_ms": null,
+            "min_ms": null,
+            "n": 0,
+            "p50_ms": null,
+            "p95_ms": null,
+            "p99_ms": null,
+            "uncertainty_ms_max": null
+          },
+          "MEASURED": {
+            "max_ms": 1.0,
+            "min_ms": 1.0,
+            "n": 2,
+            "p50_ms": 1.0,
+            "p95_ms": 1.0,
+            "p99_ms": 1.0,
+            "uncertainty_ms_max": 0.0
+          },
+          "unavailable": {}
+        }
+      },
+      "phase": "WARM",
+      "session_id": "SYNTHETIC_TEST_SESSION_001",
+      "source_id": "SYNTHETIC_TEST_ESP32_NOT_CAPTURED"
+    }
+  ],
+  "interpretation": "OFFLINE_TIMING_ONLY_NOT_AI_ACCURACY; measured/estimated and synthetic/real remain separate",
+  "parse_errors": [],
+  "percentile_caveat": "Tail percentiles require representative independent samples; small unit-test counts do not establish p95/p99 performance",
+  "schema_version": 1
+}
