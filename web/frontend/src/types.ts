@@ -38,6 +38,7 @@ export interface Device {
 
 export interface Alert {
   id: number; event_code: string; title: string; description: string; severity: string; status: string
+  ingest?: AlertOrigin
   source: string; detected_at: string; resolved_at: string | null; artwork_id: number | null
   artwork_title: string | null; device_id: number | null; device_name: string | null; assigned_user_id: number | null
 }
@@ -107,4 +108,15 @@ export interface EvidenceHistoryEntry {
   note: string | null
   changed_at: string
   user_name: string | null
+}
+
+export interface AlertOrigin {
+  alert_id: number; receipt_id: number; event_id: string; producer_id: string
+  producer_instance_id: string; source_event_id: string
+  data_origin: 'SYNTHETIC_TEST' | 'REAL_AI'
+  evidence_id: number | null; evidence_status: 'PENDING' | 'READY' | 'MISSING'
+}
+
+export interface IntegrationStatus {
+  enabled: boolean; profile: string; database_name: string; database_kind: string; data_mode: 'integration_test'
 }

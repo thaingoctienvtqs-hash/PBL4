@@ -1,6 +1,7 @@
 """AI producer ingest plus human-authenticated integration metadata."""
 from uuid import UUID
 from fastapi import APIRouter, Depends, Header, HTTPException, Request, Response
+from fastapi.routing import APIRoute
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 from starlette.concurrency import run_in_threadpool
@@ -14,15 +15,36 @@ from app.models import User
 from app.services.ai_event_ingest import (
     MAX_MEDIA_BYTES, attach_evidence, evidence_status, ingest_event)
 
-router = APIRouter(prefix="/ai", tags=["isolated AI integration"])
+class BoundedMetadataRoute(APIRoute):
+    """Reject oversize/chunked metadata before Pydantic parses JSON."""
+    def get_route_handler(self):
+        handler = super().get_route_handler()
+        async def bounded(request):
+            if request.method == "POST" and request.url.path.endswith("/ai/events"):
+                length = request.headers.get("content-length")
+                if length is not None:
+                    if not length.isascii() or not length.isdigit():
+                        raise HTTPException(400, "Invalid Content-Length")
+                    if int(length) > 65536:
+                        raise HTTPException(413, "Event metadata exceeds 64KiB")
+                data = bytearray()
+                async for chunk in request.stream():
+                    if len(data) + len(chunk) > 65536:
+                        raise HTTPException(413, "Event metadata exceeds 64KiB")
+                    data.extend(chunk)
+                # Starlette's body cache lets the normal FastAPI handler parse
+                # exactly the received bytes once; business input is unchanged.
+                request._body = bytes(data)
+            return await handler(request)
+        return bounded
+
+router = APIRouter(prefix="/ai", tags=["isolated AI integration"], route_class=BoundedMetadataRoute)
 
 @router.post("/events", response_model=AiEventAck, status_code=201)
 def receive_event(
     payload: AiEventIn, request: Request, response: Response,
     producer: Producer = Depends(require_ai_producer), db: Session = Depends(get_db),
 ):
-    if int(request.headers.get("content-length", "0")) > 65536:
-        raise HTTPException(413, "Event metadata exceeds 64KiB")
     result, created = ingest_event(db, payload, producer, request.app.state.integration_config)
     response.status_code = 201 if created else 200
     return result

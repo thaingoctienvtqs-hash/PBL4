@@ -19,7 +19,9 @@ def now_utc():
     return datetime.now(timezone.utc).replace(tzinfo=None)
 
 def canonical_event(event: AiEventIn):
-    value = json.dumps(event.model_dump(mode="json"), sort_keys=True,
+    normalized = event.model_dump(mode="json")
+    normalized["detected_at"] = event.detected_at.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    value = json.dumps(normalized, sort_keys=True,
                        separators=(",", ":"), ensure_ascii=False, allow_nan=False)
     return value, hashlib.sha256(value.encode("utf-8")).hexdigest()
 
@@ -149,7 +151,7 @@ def _media_ack(db, receipt, attachment, config, replayed):
     if evidence_status(db, receipt, config) != "READY":
         raise HTTPException(410, "Previously attached evidence is missing; automatic resurrection is refused")
     return MediaAck(
-        event_id=receipt.event_id, producer_id=receipt.producer_id, receipt_id=receipt.id,
+        data_origin=receipt.data_origin, event_id=receipt.event_id, producer_id=receipt.producer_id, receipt_id=receipt.id,
         alert_id=receipt.alert_id, evidence_id=receipt.evidence_id,
         media_id=attachment.media_id, evidence_status="READY", replayed=replayed)
 

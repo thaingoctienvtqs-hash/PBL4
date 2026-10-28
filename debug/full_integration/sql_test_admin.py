@@ -119,11 +119,11 @@ def apply_approved_migrations(engine, run, base):
         missing = set(base.metadata.tables) - set(inspector.get_table_names())
         if missing:
             raise RuntimeError("Missing TEST tables after migration: " + repr(sorted(missing)))
-        uniques = inspector.get_unique_constraints("ai_event_receipts")
+        uniques = [u for u in inspector.get_indexes("ai_event_receipts") if u.get("unique")]
         if not any(set(u["column_names"]) == {"producer_id", "event_id"} for u in uniques):
             raise RuntimeError("Receipt unique constraint was not created")
         schema = {name: {"columns": [c["name"] for c in inspector.get_columns(name)],
-                         "unique": inspector.get_unique_constraints(name),
+                         "unique_indexes": [u for u in inspector.get_indexes(name) if u.get("unique")],
                          "foreign_keys": inspector.get_foreign_keys(name)}
                   for name in ("ai_event_receipts", "ai_event_attachments")}
     return {"applied_or_verified_revisions": applied, "schema": schema}
@@ -221,7 +221,7 @@ def seed_approved(engine, run, config, factory, models):
         producer["device_id"] = ids["device_id"]
     # This is the new session TEST config, never a repository/production config.
     config_path = run / "integration_config.json"
-    revision = run / "integration_config.before_mapping.json"
+    revision = run / ("integration_config.before_mapping_" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ") + ".json")
     with revision.open("xb") as handle:
         handle.write(config_path.read_bytes())
     config_path.write_text(json.dumps(config, indent=2), encoding="utf8")

@@ -83,7 +83,7 @@ def validate_config(value):
     cfg.update(source_db=str(source), outbox_db=str(outbox))
     cfg["evidence_root"] = str(controlled_path(cfg.get("evidence_root", root), root))
     producer = cfg.get("producer_id")
-    if not isinstance(producer, str) or not producer or len(producer) > 100:
+    if not isinstance(producer, str) or not producer or len(producer) > 80:
         raise SafetyError("invalid_producer_id")
     cfg["producer_instance_id"] = str(uuid.UUID(str(cfg["producer_instance_id"])))
     if cfg.get("data_origin") not in ("SYNTHETIC_TEST", "REAL_AI"):
@@ -254,6 +254,16 @@ class SidecarOutbox:
                 before_commit()
         return count
 
+    def retry_exhausted(self):
+        """Explicit operator recovery only; never resend DELIVERED events."""
+        self.verify_anchor()
+        with self.connect() as db:
+            events = db.execute("UPDATE outbox SET state='RETRY',attempts=0,next_attempt=0,error_code=NULL "
+                                "WHERE state='RETRY_EXHAUSTED'").rowcount
+            media = db.execute("UPDATE outbox SET media_state='PENDING',media_attempts=0,media_next_attempt=0,error_code=NULL "
+                               "WHERE state='DELIVERED' AND media_state='RETRY_EXHAUSTED'").rowcount
+        return {"events": events, "media": media}
+
     def rows(self):
         with self.connect() as db:
             return [dict(r) for r in db.execute("SELECT * FROM outbox ORDER BY source_id")]
@@ -316,6 +326,8 @@ class Sender:
                 raise DeliveryError("invalid_ack_ids")
         if not isinstance(ack.get("replayed"), bool):
             raise DeliveryError("invalid_replay_ack")
+        if ack.get("schema_version") != "1" or ack.get("data_origin") != payload["data_origin"]:
+            raise DeliveryError("invalid_ack_origin_or_version")
         if media:
             if any(row[k] is not None and ack[k] != row[k] for k in ("receipt_id", "alert_id", "evidence_id")):
                 raise DeliveryError("media_ack_ids_changed")
@@ -323,7 +335,7 @@ class Sender:
                 raise DeliveryError("invalid_media_id")
             if ack.get("evidence_status") != "READY":
                 raise DeliveryError("invalid_media_ack")
-        elif ack.get("schema_version") != "1" or ack.get("data_origin") != payload["data_origin"] or ack.get("evidence_status") not in ("PENDING", "READY"):
+        elif ack.get("evidence_status") not in ("PENDING", "READY", "MISSING"):
             raise DeliveryError("invalid_ack_origin_or_version")
 
     def send_due(self, limit=100):
@@ -355,7 +367,7 @@ class Sender:
                 if status in (401, 403):
                     state = "AUTH_BLOCKED"
                     self.auth_blocked = True
-                elif status in (400, 404, 409, 422):
+                elif status in (400, 404, 409, 410, 413, 415, 422):
                     state = "QUARANTINED"
                 elif attempts >= self.cfg["max_attempts"]:
                     state = "RETRY_EXHAUSTED"
@@ -408,7 +420,7 @@ class Sender:
                                (str(exc), row["event_id"]))
             except DeliveryError as exc:
                 state = "AUTH_BLOCKED" if exc.status in (401, 403) else (
-                    "QUARANTINED" if exc.status in (400, 404, 409, 422) else (
+                    "QUARANTINED" if exc.status in (400, 404, 409, 410, 413, 415, 422) else (
                     "RETRY_EXHAUSTED" if attempts >= self.cfg["max_attempts"] else "PENDING"))
                 with self.outbox.connect() as db:
                     db.execute("UPDATE outbox SET media_state=?,media_attempts=?,media_next_attempt=?,error_code=? WHERE event_id=?",
@@ -423,6 +435,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", required=True)
     parser.add_argument("--send", action="store_true", help="explicit opt-in to loopback TEST backend HTTP")
+    parser.add_argument("--retry-exhausted", action="store_true", help="explicitly requeue retained exhausted attempts; delivered events stay acknowledged")
     parser.add_argument("--max-batches", type=int, default=1)
     parser.add_argument("--poll-seconds", type=float, default=1.0)
     parser.add_argument("--key-env", default="ARTGUARD_AI_PRODUCER_KEY")
@@ -432,6 +445,8 @@ def main(argv=None):
     cfg = validate_config(json.loads(Path(args.config).read_text(encoding="utf8")))
     reader = ReadOnlyEventReader(cfg["source_db"])
     outbox = SidecarOutbox(cfg, reader)
+    if args.retry_exhausted:
+        print(canonical({"requeued": outbox.retry_exhausted()}), flush=True)
     sender = Sender(cfg, outbox, HttpTransport(cfg["backend_url"], os.environ.get(args.key_env, ""))) if args.send else None
     for index in range(args.max_batches):
         queued = outbox.enqueue()

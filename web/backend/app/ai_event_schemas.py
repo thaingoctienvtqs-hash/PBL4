@@ -62,6 +62,8 @@ class AiEventAck(StrictModel):
     evidence_status: Literal["PENDING", "READY", "MISSING"]
 
 class MediaAck(StrictModel):
+    schema_version: Literal["1"] = "1"
+    data_origin: Literal["SYNTHETIC_TEST", "REAL_AI"]
     event_id: UUID
     producer_id: str
     receipt_id: int
